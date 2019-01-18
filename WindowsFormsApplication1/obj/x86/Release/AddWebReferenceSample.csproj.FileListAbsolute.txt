@@ -1,0 +1,25 @@
+D:\資訊科技處資源及文件\MCS平臺\source code\webservice-owen\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\ResolveAssemblyReference.cache
+D:\資訊科技處資源及文件\MCS平臺\source code\webservice-owen\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.exe.config
+D:\資訊科技處資源及文件\MCS平臺\source code\webservice-owen\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.exe
+D:\資訊科技處資源及文件\MCS平臺\source code\webservice-owen\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.XmlSerializers.dll
+D:\資訊科技處資源及文件\MCS平臺\source code\webservice-owen\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.pdb
+D:\資訊科技處資源及文件\MCS平臺\source code\webservice-owen\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\AddWebReferenceSample.exe
+D:\資訊科技處資源及文件\MCS平臺\source code\webservice-owen\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\AddWebReferenceSample.pdb
+D:\資訊科技處資源及文件\MCS平臺\source code\webservice-owen\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\AddWebReferenceSample.XmlSerializers.dll
+D:\資訊科技處資源及文件\MCS平臺\source code\26.webservice-owen\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.exe.config
+D:\資訊科技處資源及文件\MCS平臺\source code\26.webservice-owen\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\AddWebReferenceSample.exe
+D:\資訊科技處資源及文件\MCS平臺\source code\26.webservice-owen\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\AddWebReferenceSample.pdb
+D:\資訊科技處資源及文件\MCS平臺\source code\26.webservice-owen\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\AddWebReferenceSample.XmlSerializers.dll
+D:\資訊科技處資源及文件\MCS平臺\source code\26.webservice-owen\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\ResolveAssemblyReference.cache
+D:\資訊科技處資源及文件\MCS平臺\source code\26.webservice-owen\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.exe
+D:\資訊科技處資源及文件\MCS平臺\source code\26.webservice-owen\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.XmlSerializers.dll
+D:\資訊科技處資源及文件\MCS平臺\source code\26.webservice-owen\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.pdb
+C:\Users\ASUS\Desktop\深圳臻鼎\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.exe.config
+C:\Users\ASUS\Desktop\深圳臻鼎\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\AddWebReferenceSample.exe
+C:\Users\ASUS\Desktop\深圳臻鼎\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\AddWebReferenceSample.pdb
+C:\Users\ASUS\Desktop\深圳臻鼎\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\AddWebReferenceSample.XmlSerializers.dll
+C:\Users\ASUS\Desktop\深圳臻鼎\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.exe
+C:\Users\ASUS\Desktop\深圳臻鼎\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.XmlSerializers.dll
+C:\Users\ASUS\Desktop\深圳臻鼎\AddWebReferenceSample\AddWebReferenceSample\bin\Release\AddWebReferenceSample.pdb
+C:\Users\ASUS\Desktop\深圳臻鼎\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\AddWebReferenceSample.Form1.resources
+C:\Users\ASUS\Desktop\深圳臻鼎\AddWebReferenceSample\AddWebReferenceSample\obj\x86\Release\AddWebReferenceSample.csproj.GenerateResource.Cache

@@ -1,0 +1,9 @@
+9-3-8,C:\Users\Administrator\Desktop\310-9-2-18\8-15\WindowsFormsApplication1\bin\Debug\9-3-8.txt
+9-3-1,C:\Users\Administrator\Desktop\310-9-2-18\8-15\WindowsFormsApplication1\bin\Debug\9-3-1.txt
+9,C:\Users\Administrator\Desktop\310-9-2-18\8-15\WindowsFormsApplication1\bin\Debug\9.txt
+1,C:\Users\Administrator\Desktop\310-9-2-18\8-15\WindowsFormsApplication1\bin\Debug\1.txt
+999,C:\Users\Administrator\Desktop\310-9-3-11\8-15\WindowsFormsApplication1\bin\Debug\999.txt
+M808081781,C:\Users\Administrator\Desktop\310-9-3-20.00\8-15\WindowsFormsApplication1\bin\Debug\M808081781.txt
+M808222131,C:\Users\Administrator\Desktop\310-9-3-20.00\8-15\WindowsFormsApplication1\bin\Debug\M808222131.txt
+123,C:\Users\Administrator\Desktop\310-9-12\18-9-5\WindowsFormsApplication1\bin\Debug\123.txt
+12,C:\Users\Administrator\Desktop\310-9-12\18-9-5\WindowsFormsApplication1\bin\Debug\12.txt
