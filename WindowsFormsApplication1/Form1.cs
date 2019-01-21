@@ -27,7 +27,6 @@ namespace WindowsFormsApplication1
     public partial class Form1 : Form
     {
         private SerialPort ComDevice = new SerialPort(); //串口通信使用
-        public static Form1 frm1 = null;
         private float X, Y;
 
         #region  程序初始化
@@ -38,7 +37,6 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
-            frm1 = this;
         }
 
         #endregion
@@ -388,13 +386,7 @@ namespace WindowsFormsApplication1
 
             if (Directory.Exists(@"D:\Data backup")) //判断是否有这个文件夹--E:\数据备份\
             {
-                if (Directory.Exists(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd")))
-                    //判断是否有这个文件夹--E:\数据备份\
-                {
-
-
-                }
-                else
+                if (!Directory.Exists(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd"))) //判断是否有这个文件夹--E:\数据备份\
                 {
                     Directory.CreateDirectory(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd")); //没有就创建
                     Erasing();
@@ -2194,8 +2186,6 @@ namespace WindowsFormsApplication1
         {
             try
             {
-
-
                 timer1.Enabled = false;
 
                 PLC_MS = PcConnectPlc.Read_Data_FxUsbS("M2880", 200); //M480 
