@@ -43,3 +43,23 @@
    --- 内部异常堆栈跟踪的结尾 ---
    在 MathCollect.PcConnectPlc.Write_Data_FxUsb(String We, Int32 La)
    在 WindowsFormsApplication1.Form1.Form1_Load(Object sender, EventArgs e) 位置 e:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\Form1.cs:行号 520
+2019-01-21 11:30:11,756 [8] INFO  loginfo - System.TypeInitializationException: “MathCollect.PcConnectPlc”的类型初始值设定项引发异常。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“Modbus, Version=1.11.0.0, Culture=neutral, PublicKeyToken=b5aba55fcbc8d946”或它的某一个依赖项。系统找不到指定的文件。
+   在 MathCollect.PcConnectPlc..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 MathCollect.PcConnectPlc.OpenPortFxUsb()
+   在 WindowsFormsApplication1.Form1.Form1_Load(Object sender, EventArgs e) 位置 e:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\Form1.cs:行号 462
+2019-01-21 11:38:18,545 [10] INFO  loginfo - System.TypeInitializationException: “MathCollect.PcConnectPlc”的类型初始值设定项引发异常。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“Modbus, Version=1.11.0.0, Culture=neutral, PublicKeyToken=b5aba55fcbc8d946”或它的某一个依赖项。系统找不到指定的文件。
+   在 MathCollect.PcConnectPlc..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 MathCollect.PcConnectPlc.OpenPortFxUsb()
+   在 WindowsFormsApplication1.Form1.Form1_Load(Object sender, EventArgs e) 位置 e:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\Form1.cs:行号 462
+2019-01-21 11:50:07,457 [10] INFO  loginfo - System.TypeInitializationException: “MathCollect.PcConnectPlc”的类型初始值设定项引发异常。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“Modbus, Version=1.11.0.0, Culture=neutral, PublicKeyToken=b5aba55fcbc8d946”或它的某一个依赖项。系统找不到指定的文件。
+   在 MathCollect.PcConnectPlc..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 MathCollect.PcConnectPlc.OpenPortFxUsb()
+   在 WindowsFormsApplication1.Form1.Form1_Load(Object sender, EventArgs e) 位置 e:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\Form1.cs:行号 462
+2019-01-21 11:52:13,488 [10] INFO  loginfo - System.TypeInitializationException: “MathCollect.PcConnectPlc”的类型初始值设定项引发异常。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“Modbus, Version=1.11.0.0, Culture=neutral, PublicKeyToken=b5aba55fcbc8d946”或它的某一个依赖项。系统找不到指定的文件。
+   在 MathCollect.PcConnectPlc..cctor()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 MathCollect.PcConnectPlc.OpenPortFxUsb()
+   在 WindowsFormsApplication1.Form1.Form1_Load(Object sender, EventArgs e) 位置 e:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\Form1.cs:行号 462
