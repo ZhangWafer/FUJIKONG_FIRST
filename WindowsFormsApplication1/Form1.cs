@@ -507,8 +507,6 @@ namespace WindowsFormsApplication1
                 MessgeBoxExit();
             }
 
-
-
             timer2.Enabled = true;
             timer2.Start();
             //--------------------------------------------------------End
@@ -526,7 +524,6 @@ namespace WindowsFormsApplication1
             //代替fwqtx 之前的线程 一秒跑一次
             timer3.Enabled = true;
             timer3.Start();
-
 
             try
             {
@@ -669,40 +666,7 @@ namespace WindowsFormsApplication1
 
         #endregion
 
-        #region 保存产品料号---
 
-        private void Savepn(string pn)
-        {
-            try
-            {
-                //获取config信息
-                string[] msgS = new string[500];
-                string filePath = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\pn.txt";
-                FileOperate.OpenFileString(filePath, out msgS);
-
-                for (int i = 0; i < 499; i++)
-                {
-                    if (Running != msgS[0])
-                    {
-                        //最新的信息显示在第一行
-                        // msgS[0] = pn;
-                        pn = msgS[0].Insert(0,
-                            DateTime.Now.ToString() + "   " + textBox33.Text + "   " + label341.Text + "   " +
-                            label342.Text + "   " + label343.Text + "\r\n");
-                    }
-                    Running = msgS[0]; //1
-                }
-
-                FileOperate.SaveFileString(filePath, msgS);
-                //  msgS.close();
-            }
-            catch(Exception ex)
-            {
-                LogHelper.WriteLog(ex.ToString());
-            }
-        }
-
-        #endregion
 
         #region 误删新增功能---
 
@@ -731,9 +695,7 @@ namespace WindowsFormsApplication1
                         case 4:
                             path = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\pn.txt";
                             break;
-                        //case 5:
-                        //    path = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\Fool-Proof.txt";
-                        //    break;
+
                     }
 
                     try
@@ -1087,24 +1049,7 @@ namespace WindowsFormsApplication1
 
         #endregion
 
-        #region 保存调试时的匹配坐标
 
-        private void SaveMoelZB(string X1, string Y1, string X2, string Y2)
-        {
-            //获取config信息
-            string[] msgS = new string[500];
-            string filePath = Application.StartupPath.ToString() + "\\config.txt";
-            FileOperate.OpenFileString(filePath, out msgS);
-
-            //修改config信息
-            msgS[8] = X1 + "," + Y1 + "," + X2 + "," + Y2;
-
-            //保存修改好的config信息
-            FileOperate.SaveFileString(filePath, msgS);
-
-        }
-
-        #endregion
 
         #region 读取型号数据,传给窗体
 
@@ -1285,66 +1230,40 @@ namespace WindowsFormsApplication1
                         PcConnectPlc.Write_Data_FxUsb("D2940", Convert.ToInt32(sArray22[4])); //调
 
 
-                        
-                        try
+                        //////////////////////////////////////////////////////////
+                        label26.Text = msgS[10]; //模具防呆22
+
+                        /////////////////////////////////////////////////////
+                        if (label26.Text == textBox21.Text)
                         {
-                            label26.Text = msgS[10]; //模具防呆22
+                            gap18 = msgS[8]; //模具防呆
+                            string str24 = gap18;
+                            mold3 = Convert.ToInt32(str24);
                         }
-                        catch
+                        else
                         {
-                        }
-                        try
-                        {
-                            if (label26.Text == textBox21.Text)
-                            {
-                                gap18 = msgS[8]; //模具防呆
-                                string str24 = gap18;
-                                mold3 = Convert.ToInt32(str24);
-                            }
-                            else
-                            {
-                                mold3 = 0;
-                            }
-                        }
-                        catch
-                        {
-                        }
-                        try
-                        {
-                            gap19 = msgS[9]; //保养
-                            string str25 = gap19;
-                            by = Convert.ToInt32(str25);
-                        }
-                        catch
-                        {
+                            mold3 = 0;
                         }
 
-
-
+                        ////////////////////////////////////////////////
+                        gap19 = msgS[9]; //保养
+                        string str25 = gap19;
+                        by = Convert.ToInt32(str25);
+                        //////////////////////////////////////////
                         if (msgS[11] == "0")
                         {
-
                             PcConnectPlc.Write_Data_FxUsb("D2882", 0); //同间距
                             textBox105.Text = PLC_DS[62].ToString(); //同间距
                             label27.Text = "0";
                             label28.Text = "同间距";
-
-
                             PcConnectPlc.Write_Data_FxUsb("D2942", Convert.ToInt32(sArray22[5])); //同间距
-
-
                         }
                         else
                         {
                             label27.Text = "1";
                             label28.Text = "不同间距";
-
-
                             PcConnectPlc.Write_Data_FxUsb("D2882", 1); //同间距
                             textBox105.Text = PLC_DS[62].ToString(); //同间距
-
-
-
                             PcConnectPlc.Write_Data_FxUsb("D2942", Convert.ToInt32(sArray22[5])); //同间距
                         }
 
@@ -1374,7 +1293,7 @@ namespace WindowsFormsApplication1
                     //sr.Close();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 LogHelper.WriteLog(ex.ToString());
                 MessageBox.Show("文件不存在或数据错误", "错误提示");
@@ -1407,79 +1326,8 @@ namespace WindowsFormsApplication1
 
         #endregion
 
-        #region 保存模板路径到config
 
-        private void saveModelMsg(string ModelName)
-        {
-            //打开config，读取数据
-            List<string> msgL = new List<string>();
-            //string[] msgS = new string[500];
-            string fileName; //config的路径
 
-            string filePath = Application.StartupPath.ToString() + "\\config.txt";
-            //FileOperate.OpenFile(filePath, "List", out msgL, out msgS);
-            //msgL[1] = ModelName;
-            FileOperate.OpenFileList(filePath, out msgL);
-            msgL[1] = ModelName;
-
-            //写入修改数据到config
-            //FileOperate.SaveFile(filePath, "List", msgL, msgS, out fileName);
-            fileName = FileOperate.SaveFileList(filePath, msgL);
-            msgL.Clear();
-        }
-
-        #endregion
-
-        #region 窗体最大化 控件跟着变化
-
-        private void MaxInit()
-        {
-            this.Resize += new EventHandler(Form1_Resize);
-            X = this.Width;
-            Y = this.Height;
-            setTag(this);
-        }
-
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-
-        }
-
-        private void setTag(Control cons)
-        {
-            foreach (Control con in cons.Controls)
-            {
-                con.Tag = con.Width + ":" + con.Height + ":" + con.Left + ":" + con.Top + ":" + con.Font.Size;
-                if (con.Controls.Count > 0)
-                    setTag(con);
-            }
-        }
-
-        private void setControls(float newx, float newy, Control cons)
-        {
-            foreach (Control con in cons.Controls)
-            {
-
-                string[] mytag = con.Tag.ToString().Split(new char[] {':'});
-                float a = Convert.ToSingle(mytag[0])*newx;
-                con.Width = (int) a;
-                a = Convert.ToSingle(mytag[1])*newy;
-                con.Height = (int) (a);
-                a = Convert.ToSingle(mytag[2])*newx;
-                con.Left = (int) (a);
-                a = Convert.ToSingle(mytag[3])*newy;
-                con.Top = (int) (a);
-                Single currentSize = Convert.ToSingle(mytag[4])*newy;
-                con.Font = new Font(con.Font.Name, currentSize, con.Font.Style, con.Font.Unit);
-                if (con.Controls.Count > 0)
-                {
-                    setControls(newx, newy, con);
-                }
-            }
-
-        }
-
-        #endregion
 
         #region 控件多，不刷新界面，防止卡顿
 
@@ -2144,9 +1992,6 @@ namespace WindowsFormsApplication1
         #endregion
 
 
-        #region 技术支持
-
-        #endregion
 
         #region 窗体无边框时  可以移动窗体
 
@@ -2423,46 +2268,35 @@ namespace WindowsFormsApplication1
 
                 if (Run == true) //运行判断控制PLC
                 {
-                    try
+
+                    string a3 = textBox78.Text;
+                    Double a1 = Convert.ToDouble(a4);
+                    Double a2 = Convert.ToDouble(a3);
+                    if (a2 > 0)
                     {
-                        string a3 = textBox78.Text;
-                        Double a1 = Convert.ToDouble(a4);
-                        Double a2 = Convert.ToDouble(a3);
-                        if (a2 > 0)
+                        if ((a2 >= a1) && PNL == false)
                         {
-                            if ((a2 >= a1) && PNL == false)
-                            {
-                                PcConnectPlc.Write_Data_FxUsb("M113", 1); //正常停机
+                            PcConnectPlc.Write_Data_FxUsb("M113", 1); //正常停机
 
-                                button42_Click(null, null); //停机
+                            button42_Click(null, null); //停机
 
-                                //PNL = true;
-                            }
+                            //PNL = true;
                         }
+                    }
 
-                        if (shenghe == false)
+                    if (shenghe == false)
+                    {
+                        if (a33 == houjia)
                         {
-                            if (a33 == houjia)
-                            {
-                                PcConnectPlc.Write_Data_FxUsb("M113", 1); //正常停机
+                            PcConnectPlc.Write_Data_FxUsb("M113", 1); //正常停机
 
-                                houjia = houjia + 1;
-
-                            }
+                            houjia = houjia + 1;
 
                         }
 
                     }
-                    catch
-                    {
-
-                    }
                 }
-                else
-                {
 
-
-                }
 
                 if (PLC_MS[1] == 1)
                 {
@@ -2483,28 +2317,18 @@ namespace WindowsFormsApplication1
 
                         PcConnectPlc.Write_Data_FxUsb("M2880", 0);
 
-                        try
-                        {
-                            //获取config信息
-                            string[] msgS = new string[500];
-                            string filePath = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\pn.txt";
-                            FileOperate.OpenFileString(filePath, out msgS);
 
-                            msgS[0] = msgS[0].Insert(0, DateTime.Now.ToString() + "," + txtShowData.Text + "\r\n");
+                        //获取config信息
+                        string[] msgS = new string[500];
+                        string filePath = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\pn.txt";
+                        FileOperate.OpenFileString(filePath, out msgS);
 
-                            FileOperate.SaveFileString(filePath, msgS);
+                        msgS[0] = msgS[0].Insert(0, DateTime.Now.ToString() + "," + txtShowData.Text + "\r\n");
 
+                        FileOperate.SaveFileString(filePath, msgS);
 
-                            Barcode = txtShowData.Text; //发送数据到服务器
-                            NG = Barcode.Substring(0, Barcode.Length - 5);
-
-
-
-                        }
-                        catch
-                        {
-
-                        }
+                        Barcode = txtShowData.Text; //发送数据到服务器
+                        NG = Barcode.Substring(0, Barcode.Length - 5);
 
                         sm = sm + 1;
                         label341.Text = sm.ToString();
@@ -2514,22 +2338,17 @@ namespace WindowsFormsApplication1
                     }
                     if (saomatoug) //给PLC发送数据,扫描完成.未扫到码
                     {
-                        try
-                        {
-                            Barcode = NG + "-NG"; //发送数据到服务器
-                            //获取config信息
-                            string[] msgS = new string[500];
-                            string filePath = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\pn.txt";
-                            FileOperate.OpenFileString(filePath, out msgS);
 
-                            msgS[0] = msgS[0].Insert(0, DateTime.Now.ToString() + "," + txtShowData.Text + "\r\n");
+                        Barcode = NG + "-NG"; //发送数据到服务器
+                        //获取config信息
+                        string[] msgS = new string[500];
+                        string filePath = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\pn.txt";
+                        FileOperate.OpenFileString(filePath, out msgS);
 
-                            FileOperate.SaveFileString(filePath, msgS);
-                        }
-                        catch
-                        {
+                        msgS[0] = msgS[0].Insert(0, DateTime.Now.ToString() + "," + txtShowData.Text + "\r\n");
 
-                        }
+                        FileOperate.SaveFileString(filePath, msgS);
+
                         sm1 = sm1 + 1;
                         label342.Text = sm1.ToString();
                         saomatoug = false;
@@ -2545,23 +2364,19 @@ namespace WindowsFormsApplication1
 
 
 
-                        try
-                        {
-                            List<string> msgL = new List<string>(); //存数据
-                            string filePath = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") +
-                                              "\\Mixture.txt"; //打开根目录下的Auditor.TXT 路径
-                            FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
-                            string[] Mold1 = new string[100];
 
-                            msgL[0] = msgL[0].Insert(0,
-                                DateTime.Now.ToString() + txtShowData.Text + "扫码不成功，请检查是否有混料！" + "\r\n");
-                            FileOperate.SaveFileList(filePath, msgL);
-                            msgL.Clear();
+                        List<string> msgL = new List<string>(); //存数据
+                        string filePath = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") +
+                                          "\\Mixture.txt"; //打开根目录下的Auditor.TXT 路径
+                        FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
+                        string[] Mold1 = new string[100];
 
-                        }
-                        catch
-                        {
-                        }
+                        msgL[0] = msgL[0].Insert(0,
+                            DateTime.Now.ToString() + txtShowData.Text + "扫码不成功，请检查是否有混料！" + "\r\n");
+                        FileOperate.SaveFileList(filePath, msgL);
+                        msgL.Clear();
+
+
                         sm2 = sm2 + 1;
                         label343.Text = sm2.ToString();
 
@@ -2652,36 +2467,8 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-//厂家密码
-            if (textBox6.Text != "" || textBox6.Text.Length > 6)
-            {
 
-                cj = textBox6.Text;
 
-            }
-            else
-            {
-                MessageBox.Show("厂家密码不能为空并且不能超过六位！");
-            }
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-//gcs密码
-            if (textBox7.Text != "" || textBox7.Text.Length > 6)
-            {
-
-                gcs = textBox7.Text;
-
-            }
-            else
-            {
-                MessageBox.Show("工程师密码不能为空！");
-            }
-
-        }
 
         private void button101_Click(object sender, EventArgs e) //搜索
         {
@@ -3364,11 +3151,7 @@ namespace WindowsFormsApplication1
                                     textBox25_Click(null, null); //作业员
 
                                 }
-                                //if (label94.Text != "没有权限")
-                                //{
-                                //    shenghe = true;
-                                //    label24.Text = a33.ToString();
-                                //}
+  
 
                                 break;
                             case 6: //加模具人员
@@ -3766,38 +3549,7 @@ namespace WindowsFormsApplication1
                                 }
                             }
 
-                            //if (textBox21.Text != "" && mj == false)
-                            //{
-                            //    string muju = textBox26.Text;
-                            //    string[] muju1 = muju.Split(new char[10] { '同', '(', ')', '/', '（', '）', '或', '修', '模', '由' });
-                            //    for (int i = 0; i < muju1.Count(); i++)
-                            //    {
-                            //        if (muju1[i] == textBox21.Text)
-                            //        {
-                            //            i = 5;
-                            //            mj = true;
-                            //        }
-                            //    }
-                            //}
-
-                            //if (mj == false)
-                            //{
-                            //    MessageBox.Show(DateTime.Now.ToString() + textBox21.Text + "/" + textBox26.Text + "模具名称不匹配！");
-
-                            //    List<string> msgL = new List<string>();//存数据
-                            //    string filePath = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\Mold match.txt";//打开根目录下的Auditor.TXT 路径
-                            //    FileOperate.OpenFileList(filePath, out msgL);//存储到数值中
-                            //    string[] Mold1 = new string[100];
-
-                            //    msgL[0] = msgL[0].Insert(0, DateTime.Now.ToString() + textBox21.Text + "/" + textBox26.Text + "模具名称不匹配！" + "\r\n");
-                            //    FileOperate.SaveFileList(filePath, msgL);
-                            //    msgL.Clear();
-
-                            //    textBox21.Text = "";
-                            //    textBox18.Text = "";
-                            //    textBox24.Text = "";
-                            //    textBox29.Text = "";
-                            //}
+              
                         }
                         else
                         {
