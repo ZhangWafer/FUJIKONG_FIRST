@@ -687,7 +687,6 @@
             this.button78.TabIndex = 57;
             this.button78.Text = "确定";
             this.button78.UseVisualStyleBackColor = true;
-            this.button78.Click += new System.EventHandler(this.button78_Click);
             // 
             // groupBox3
             // 

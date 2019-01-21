@@ -2674,3 +2674,4 @@ E:\CPlus\WindowsFormsApplication1\bin\Debug\log4net.dll
 E:\CPlus\WindowsFormsApplication1\bin\Debug\log4net.xml
 E:\CPlus\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CopyComplete
 E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+E:\CPlus\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojAssemblyReference.cache
