@@ -381,11 +381,7 @@ namespace WindowsFormsApplication1
         //检查是否存在文件夹
         private void ExsitFile()
         {
-            if (Directory.Exists(@"D:\Data")) //判断是否有这个文件夹--D:\数据备份\
-            {
-
-            }
-            else
+            if (!Directory.Exists(@"D:\Data")) //判断是否有这个文件夹--D:\数据备份\
             {
                 Directory.CreateDirectory(@"D:\Data");
             }
