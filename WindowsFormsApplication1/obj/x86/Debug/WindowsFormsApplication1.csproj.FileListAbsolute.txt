@@ -2660,7 +2660,6 @@ E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsAppl
 E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
 E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
 E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
-E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
 E:\CPlus\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
 E:\CPlus\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
 E:\CPlus\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
@@ -2674,3 +2673,4 @@ E:\CPlus\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
 E:\CPlus\WindowsFormsApplication1\bin\Debug\log4net.dll
 E:\CPlus\WindowsFormsApplication1\bin\Debug\log4net.xml
 E:\CPlus\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CopyComplete
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
