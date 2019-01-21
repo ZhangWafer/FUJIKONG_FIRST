@@ -27,7 +27,7 @@ namespace WindowsFormsApplication1
     public partial class Form1 : Form
     {
         private SerialPort ComDevice = new SerialPort(); //串口通信使用
-        public static Form1 frm1 = null;
+
 
         #region  程序初始化
 
@@ -37,7 +37,7 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
-            frm1 = this;
+           
         }
 
         #endregion
