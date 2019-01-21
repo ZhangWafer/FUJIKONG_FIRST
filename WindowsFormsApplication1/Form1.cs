@@ -2212,7 +2212,7 @@ namespace WindowsFormsApplication1
                 }
                 label13.Text = DateTime.Now.ToString("ss");
 
-                if (Run == true) //运行判断控制PLC
+                if (Run) //运行判断控制PLC
                 {
 
                     string a3 = textBox78.Text;
@@ -2220,7 +2220,7 @@ namespace WindowsFormsApplication1
                     Double a2 = Convert.ToDouble(a3);
                     if (a2 > 0)
                     {
-                        if ((a2 >= a1) && PNL == false)
+                        if (a2 >= a1 && PNL == false)
                         {
                             PcConnectPlc.Write_Data_FxUsb("M113", 1); //正常停机
 
