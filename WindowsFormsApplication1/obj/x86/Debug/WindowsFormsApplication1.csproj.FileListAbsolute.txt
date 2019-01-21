@@ -2648,3 +2648,16 @@ C:\Users\zhangyufei\Desktop\1.18 晚上修改\WindowsFormsApplication1\bin\Debug
 C:\Users\zhangyufei\Desktop\1.18 晚上修改\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.dll
 C:\Users\zhangyufei\Desktop\1.18 晚上修改\WindowsFormsApplication1\bin\Debug\log4net.xml
 C:\Users\zhangyufei\Desktop\1.18 晚上修改\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\bin\Debug\log4net.dll
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.dll
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\bin\Debug\log4net.xml
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
