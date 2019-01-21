@@ -1190,19 +1190,16 @@ namespace WindowsFormsApplication1
                             textBox105.Text = PLC_DS[62].ToString(); //同间距
                             PcConnectPlc.Write_Data_FxUsb("D2942", Convert.ToInt32(sArray22[5])); //同间距
                         }
-
                     }
                     else
                     {
                         MessageBox.Show("调取位置数据有误！");
                     }
 
-
                     PcConnectPlc.Write_Data_FxUsb("M2888", 0); //打开标志位
-
                     showModelToForm(); //显示界面
-
                 }
+
                 //读取报警信息
                 string filePath = Application.StartupPath + "\\alarm.txt";
                 OpenFileDialog of = new OpenFileDialog();
