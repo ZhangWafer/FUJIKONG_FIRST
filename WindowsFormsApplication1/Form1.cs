@@ -531,23 +531,23 @@ namespace WindowsFormsApplication1
                     label352.Text = lh[1]; //
                     PH_textbox.Text = lh[2]; //
                     LayerNumber_textbox.Text = lh[3]; //
-                    textBox16.Text = lh[4]; //
+                    ZT_textbox.Text = lh[4]; //
                     LH_textbox.Text = lh[5]; //
-                    textBox20.Text = lh[6]; //
+                    WorkOrder_textbox.Text = lh[6]; //
 
                     string[] lh1 = Regex.Split(msgS[2], ",", RegexOptions.IgnoreCase); //分割读取数组数值
                     label367.Text = lh1[0]; //
-                    textBox71.Text = lh1[1]; //
-                    textBox69.Text = lh1[2]; //
-                    textBox70.Text = lh1[3]; //
+                    LayerCount_textbox.Text = lh1[1]; //
+                    TCX_textbox.Text = lh1[2]; //
+                    Main_Parts_textbox.Text = lh1[3]; //
                     label354.Text = lh1[4]; //
                     Model2_textBox1.Text = lh1[5]; //
                     LastModel2_textBox.Text = lh1[6]; //
 
                     string[] lh2 = Regex.Split(msgS[3], ",", RegexOptions.IgnoreCase); //分割读取数组数值
-                    textBox5.Text = lh2[0]; //
-                    textBox18.Text = lh2[1]; //
-                    textBox29.Text = lh2[2]; //
+                    KeepNums_textbox.Text = lh2[0]; //
+                    AbandonNums_textbox.Text = lh2[1]; //
+                    KnifeLength_textbox.Text = lh2[2]; //
                     BOM_textbox.Text = lh2[3]; //
                     Enum_textbox.Text = lh2[4]; //
                     Check_textbox.Text = lh2[5]; //
@@ -555,9 +555,9 @@ namespace WindowsFormsApplication1
                     string[] lh3 = Regex.Split(msgS[4], ",", RegexOptions.IgnoreCase); //分割读取数组数值
                     label22.Text = lh3[0]; //
                     GoodBadProduct_textbox.Text = lh3[1]; //
-                    textBox83.Text = lh3[2]; //
-                    textBox27.Text = lh3[3]; //
-                    textBox64.Text = lh3[4]; //
+                    Person_ChongNumber_textbox.Text = lh3[2]; //
+                    param1_2.Text = lh3[3]; //
+                    HandHeight_textbox.Text = lh3[4]; //
                     Audit_textBox.Text = lh3[5]; //
                     Operater_textbox.Text = lh3[6]; //
 
@@ -606,7 +606,7 @@ namespace WindowsFormsApplication1
                     Audit_textBox.Enabled = false;
                     textBox32.Enabled = false;
                     JDL_textbox.Enabled = false;
-                    textBox37.Enabled = false;
+                    param8_9.Enabled = false;
                     skinGroupBox32.Enabled = false;
                     skinGroupBox37.Enabled = false;
                     JM_textbox.Enabled = false;
@@ -761,109 +761,109 @@ namespace WindowsFormsApplication1
                     if (PLC_DS[42] != 0 && PLC_DS[52] != 0)
                     {
 
-                        textBox27.Text = (PLC_DS[64]/100f).ToString(); //写入
+                        param1_2.Text = (PLC_DS[64]/100f).ToString(); //写入
                         //PcConnectPlc.Write_Data_FxUsb("D900", Convert.ToInt32(sArray18[0]));//间距1
 
-                        textBox34.Text = (PLC_DS[66]/100f).ToString(); //写入
+                        param2_3.Text = (PLC_DS[66]/100f).ToString(); //写入
                         //PcConnectPlc.Write_Data_FxUsb("D2946", Convert.ToInt32(sArray18[1]));//间距2
 
-                        textBox36.Text = (PLC_DS[68]/100f).ToString(); //写入
+                        param3_4.Text = (PLC_DS[68]/100f).ToString(); //写入
                         //PcConnectPlc.Write_Data_FxUsb("D2948", Convert.ToInt32(sArray18[2]));//间距3
 
-                        textBox35.Text = (PLC_DS[70]/100f).ToString(); //写入
+                        param4_5.Text = (PLC_DS[70]/100f).ToString(); //写入
                         //PcConnectPlc.Write_Data_FxUsb("D2950", Convert.ToInt32(sArray18[3]));//间距4
 
-                        textBox40.Text = (PLC_DS[72]/100f).ToString(); //写入
+                        param5_6.Text = (PLC_DS[72]/100f).ToString(); //写入
                         //PcConnectPlc.Write_Data_FxUsb("D2952", Convert.ToInt32(sArray18[4]));//间距5
 
-                        textBox39.Text = (PLC_DS[74]/100f).ToString(); //写入
+                        param6_7.Text = (PLC_DS[74]/100f).ToString(); //写入
                         //PcConnectPlc.Write_Data_FxUsb("D2954", Convert.ToInt32(sArray18[5]));//间距6
 
 
-                        textBox38.Text = (PLC_DS[76]/100f).ToString();
+                        param7_8.Text = (PLC_DS[76]/100f).ToString();
                         ; //写入
                         //PcConnectPlc.Write_Data_FxUsb("D2956", Convert.ToInt32(sArray19[0]));//间距7
 
-                        textBox37.Text = (PLC_DS[78]/100f).ToString(); //写入
+                        param8_9.Text = (PLC_DS[78]/100f).ToString(); //写入
                         //PcConnectPlc.Write_Data_FxUsb("D2958", Convert.ToInt32(sArray19[1]));//间距8
 
-                        textBox52.Text = (PLC_DS[80]/100f).ToString(); //写入
+                        param9_10.Text = (PLC_DS[80]/100f).ToString(); //写入
                         //PcConnectPlc.Write_Data_FxUsb("D2960", Convert.ToInt32(sArray19[2]));//间距9
 
-                        textBox51.Text = (PLC_DS[82]/100f).ToString(); //写入
+                        param10_11.Text = (PLC_DS[82]/100f).ToString(); //写入
                         //PcConnectPlc.Write_Data_FxUsb("D2962", Convert.ToInt32(sArray19[3]));//间距10
 
-                        textBox44.Text = (PLC_DS[84]/100f).ToString(); //写入
+                        param11_12.Text = (PLC_DS[84]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2964", Convert.ToInt32(sArray19[4]));//间距11
 
-                        textBox43.Text = (PLC_DS[86]/100f).ToString(); //写入
+                        param12_13.Text = (PLC_DS[86]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2966", Convert.ToInt32(sArray19[5]));//间距12
 
 
-                        textBox42.Text = (PLC_DS[88]/100f).ToString(); //写入
+                        param13_14.Text = (PLC_DS[88]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2968", Convert.ToInt32(sArray20[0]));//间距13
                         //////
-                        textBox41.Text = (PLC_DS[90]/100f).ToString(); //写入
+                        param14_15.Text = (PLC_DS[90]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2970", Convert.ToInt32(sArray20[1]));//间距14
 
-                        textBox48.Text = (PLC_DS[92]/100f).ToString(); //写入
+                        param15_16.Text = (PLC_DS[92]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2972", Convert.ToInt32(sArray20[2]));//间距15
 
-                        textBox47.Text = (PLC_DS[94]/100f).ToString(); //写入
+                        param16_17.Text = (PLC_DS[94]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2974", Convert.ToInt32(sArray20[3]));//间距16
 
-                        textBox46.Text = (PLC_DS[96]/100f).ToString(); //写入
+                        param17_18.Text = (PLC_DS[96]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2976", Convert.ToInt32(sArray20[4]));//间距17
 
-                        textBox45.Text = (PLC_DS[98]/100f).ToString(); //写入
+                        param18_19.Text = (PLC_DS[98]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2978", Convert.ToInt32(sArray20[5]));//间距18
 
-                        textBox50.Text = (PLC_DS[100]/100f).ToString(); //写入
+                        param19_20.Text = (PLC_DS[100]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2980", Convert.ToInt32(sArray20[6]));//间距19
 
-                        textBox49.Text = (PLC_DS[102]/100f).ToString(); //写入
+                        param20_21.Text = (PLC_DS[102]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2982", Convert.ToInt32(sArray20[7]));//间距20
 
 
                         //textBox60.Text = (PLC_DS[36] / 100f).ToString();//写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2916", Convert.ToInt32(sArray21[0]));//出
 
-                        textBox59.Text = (PLC_DS[38]/48f).ToString(); //写入
+                        Right_safePosition_textbox.Text = (PLC_DS[38]/48f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2918", Convert.ToInt32(sArray21[1]));//右
 
-                        textBox58.Text = (PLC_DS[40]/48f).ToString();
+                        Right_SLposition_textbox.Text = (PLC_DS[40]/48f).ToString();
                         ////PcConnectPlc.Write_Data_FxUsb("D2920", Convert.ToInt32(sArray21[2]));//取
 
                         ////// numericUpDown94.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[3]) / 48f);//写入
-                        textBox57.Text = (PLC_DS[42]/48f).ToString();
+                        Right_ZMposition_textbox.Text = (PLC_DS[42]/48f).ToString();
                         ; //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2922", Convert.ToInt32(sArray21[3]));//装
 
                         //////  numericUpDown93.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[4]) / 48f);//写入
-                        textBox56.Text = (PLC_DS[44]/48f).ToString(); //写入
+                        Left_Chong_position_textbox.Text = (PLC_DS[44]/48f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2924", Convert.ToInt32(sArray21[4]));//第
 
                         ////// numericUpDown92.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[5]) / 48f);//写入
-                        textBox55.Text = (PLC_DS[46]/48f).ToString(); //写入
+                        Left_safePosition_textbox.Text = (PLC_DS[46]/48f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2926", Convert.ToInt32(sArray21[5]));//左
 
                         //////  numericUpDown100.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[6]) / 48f);//写入
-                        textBox54.Text = (PLC_DS[48]/48f).ToString(); //写入
+                        Left_OutThing_textbox.Text = (PLC_DS[48]/48f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2928", Convert.ToInt32(sArray21[6]));//下
 
                         ////// numericUpDown99.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[7]) / 100f);//写入
-                        textBox53.Text = (PLC_DS[50]/100f).ToString(); //写入
+                        Get_thing_hight_textbox.Text = (PLC_DS[50]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2930", Convert.ToInt32(sArray21[7]));//取
 
                         ////// numericUpDown98.Value = Convert.ToDecimal(Convert.ToInt32(sArray22[0]) / 100f);//写入
-                        textBox64.Text = (PLC_DS[52]/100f).ToString(); //写入
+                        HandHeight_textbox.Text = (PLC_DS[52]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2932", Convert.ToInt32(sArray22[0]));//手
 
                         //////  numericUpDown97.Value = Convert.ToDecimal(Convert.ToInt32(sArray22[1]) / 100f);//写入
-                        textBox63.Text = (PLC_DS[54]/100f).ToString(); //写入
+                        Right_RM_hight_Textbox.Text = (PLC_DS[54]/100f).ToString(); //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2934", Convert.ToInt32(sArray22[1]));//左
 
-                        textBox62.Text = (PLC_DS[56]/100f).ToString(); //写入
+                        Left_OutHeight_textbox.Text = (PLC_DS[56]/100f).ToString(); //写入
                         //PcConnectPlc.Write_Data_FxUsb("D2936", Convert.ToInt32(sArray22[2]));//下
 
                         //textBox61.Text = (PLC_DS[58] / 100f).ToString();//写入
@@ -872,7 +872,7 @@ namespace WindowsFormsApplication1
 
       
 
-                        textBox105.Text = PLC_DS[62].ToString(); //同间距
+                        SameDistance_textbox.Text = PLC_DS[62].ToString(); //同间距
 
                         //25----不同间距1--同间距0
                         if (PLC_DS[2] == 0)
@@ -951,8 +951,8 @@ namespace WindowsFormsApplication1
                 LastModel_Textbox.Text = s4[0]; //
                 Model2_textBox1.Text = s4[1]; //
                 LastModel2_textBox.Text = s4[2]; //
-                textBox29.Text = s4[3]; //
-                textBox18.Text = s4[4]; //
+                KnifeLength_textbox.Text = s4[3]; //
+                AbandonNums_textbox.Text = s4[4]; //
                 label34.Text = s4[5]; //
                 label35.Text = s4[6];
                 liaohao = Convert.ToInt32(label35.Text);
@@ -1063,82 +1063,82 @@ namespace WindowsFormsApplication1
                         sArray22[0] != "0" && sArray22[0] != "")
                     {
                         //   numericUpDown77.Value =Convert .ToDecimal( Convert.ToInt32(sArray18[0])/100f);//写入
-                        textBox27.Text = (Convert.ToInt32(sArray18[0])/100f).ToString(); //写入
+                        param1_2.Text = (Convert.ToInt32(sArray18[0])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2944", Convert.ToInt32(sArray18[0])); //间距1
 
-                        textBox34.Text = (Convert.ToInt32(sArray18[1])/100f).ToString(); //写入
+                        param2_3.Text = (Convert.ToInt32(sArray18[1])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2946", Convert.ToInt32(sArray18[1])); //间距2
 
-                        textBox36.Text = (Convert.ToInt32(sArray18[2])/100f).ToString(); //写入
+                        param3_4.Text = (Convert.ToInt32(sArray18[2])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2948", Convert.ToInt32(sArray18[2])); //间距3
 
-                        textBox35.Text = (Convert.ToInt32(sArray18[3])/100f).ToString(); //写入
+                        param4_5.Text = (Convert.ToInt32(sArray18[3])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2950", Convert.ToInt32(sArray18[3])); //间距4
 
-                        textBox40.Text = (Convert.ToInt32(sArray18[4])/100f).ToString(); //写入
+                        param5_6.Text = (Convert.ToInt32(sArray18[4])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2952", Convert.ToInt32(sArray18[4])); //间距5
 
-                        textBox39.Text = (Convert.ToInt32(sArray18[5])/100f).ToString(); //写入
+                        param6_7.Text = (Convert.ToInt32(sArray18[5])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2954", Convert.ToInt32(sArray18[5])); //间距6
 
 
-                        textBox74.Text = sArray17[0]; //写入
+                        Real_Chong_textbox.Text = sArray17[0]; //写入
                         PcConnectPlc.Write_Data_FxUsb("D82", Convert.ToInt32(sArray17[0])); //实际冲数
 
-                        textBox73.Text = sArray17[1]; //写入
+                        Set_Chong_textbox.Text = sArray17[1]; //写入
                         PcConnectPlc.Write_Data_FxUsb("D220", Convert.ToInt32(sArray17[1])); //设定冲数
 
-                        textBox72.Text = sArray17[2]; //写入
+                        PersonCheckPages_textbox.Text = sArray17[2]; //写入
                         PcConnectPlc.Write_Data_FxUsb("D808", Convert.ToInt32(sArray17[2])); //自检频率
 
-                        textBox22.Text = sArray17[3]; //写入
+                        RealPages_textbox.Text = sArray17[3]; //写入
                         PcConnectPlc.Write_Data_FxUsb("D56", Convert.ToInt32(sArray17[3])); //实际张数
                         //}
 
 
 
-                        textBox38.Text = (Convert.ToInt32(sArray19[0])/100f).ToString(); //写入
+                        param7_8.Text = (Convert.ToInt32(sArray19[0])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2956", Convert.ToInt32(sArray19[0])); //间距7
 
-                        textBox37.Text = (Convert.ToInt32(sArray19[1])/100f).ToString(); //写入
+                        param8_9.Text = (Convert.ToInt32(sArray19[1])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2958", Convert.ToInt32(sArray19[1])); //间距8
 
-                        textBox52.Text = (Convert.ToInt32(sArray19[2])/100f).ToString(); //写入
+                        param9_10.Text = (Convert.ToInt32(sArray19[2])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2960", Convert.ToInt32(sArray19[2])); //间距9
 
-                        textBox51.Text = (Convert.ToInt32(sArray19[3])/100f).ToString(); //写入
+                        param10_11.Text = (Convert.ToInt32(sArray19[3])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2962", Convert.ToInt32(sArray19[3])); //间距10
 
-                        textBox44.Text = (Convert.ToInt32(sArray19[4])/100f).ToString(); //写入
+                        param11_12.Text = (Convert.ToInt32(sArray19[4])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2964", Convert.ToInt32(sArray19[4])); //间距11
 
-                        textBox43.Text = (Convert.ToInt32(sArray19[5])/100f).ToString(); //写入
+                        param12_13.Text = (Convert.ToInt32(sArray19[5])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2966", Convert.ToInt32(sArray19[5])); //间距12
 
 
 
-                        textBox42.Text = (Convert.ToInt32(sArray20[0])/100f).ToString(); //写入
+                        param13_14.Text = (Convert.ToInt32(sArray20[0])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2968", Convert.ToInt32(sArray20[0])); //间距13
                         //
-                        textBox41.Text = (Convert.ToInt32(sArray20[1])/100f).ToString(); //写入
+                        param14_15.Text = (Convert.ToInt32(sArray20[1])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2970", Convert.ToInt32(sArray20[1])); //间距14
 
-                        textBox48.Text = (Convert.ToInt32(sArray20[2])/100f).ToString(); //写入
+                        param15_16.Text = (Convert.ToInt32(sArray20[2])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2972", Convert.ToInt32(sArray20[2])); //间距15
 
-                        textBox47.Text = (Convert.ToInt32(sArray20[3])/100f).ToString(); //写入
+                        param16_17.Text = (Convert.ToInt32(sArray20[3])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2974", Convert.ToInt32(sArray20[3])); //间距16
 
-                        textBox46.Text = (Convert.ToInt32(sArray20[4])/100f).ToString(); //写入
+                        param17_18.Text = (Convert.ToInt32(sArray20[4])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2976", Convert.ToInt32(sArray20[4])); //间距17
 
-                        textBox45.Text = (Convert.ToInt32(sArray20[5])/100f).ToString(); //写入
+                        param18_19.Text = (Convert.ToInt32(sArray20[5])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2978", Convert.ToInt32(sArray20[5])); //间距18
 
-                        textBox50.Text = (Convert.ToInt32(sArray20[6])/100f).ToString(); //写入
+                        param19_20.Text = (Convert.ToInt32(sArray20[6])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2980", Convert.ToInt32(sArray20[6])); //间距19
 
-                        textBox49.Text = (Convert.ToInt32(sArray20[7])/100f).ToString(); //写入
+                        param20_21.Text = (Convert.ToInt32(sArray20[7])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2982", Convert.ToInt32(sArray20[7])); //间距20
 
 
@@ -1146,49 +1146,49 @@ namespace WindowsFormsApplication1
                         //textBox60.Text = (Convert.ToInt32(sArray21[0]) / 100f).ToString();//写入
                         //PcConnectPlc.Write_Data_FxUsb("D2916", Convert.ToInt32(sArray21[0]));//出
 
-                        textBox59.Text = (Convert.ToInt32(sArray21[1])/48f).ToString(); //写入
+                        Right_safePosition_textbox.Text = (Convert.ToInt32(sArray21[1])/48f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2918", Convert.ToInt32(sArray21[1])); //右
 
-                        textBox58.Text = (Convert.ToInt32(sArray21[2])/48f).ToString(); //写入
+                        Right_SLposition_textbox.Text = (Convert.ToInt32(sArray21[2])/48f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2920", Convert.ToInt32(sArray21[2])); //取
 
                         // numericUpDown94.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[3]) / 48f);//写入
-                        textBox57.Text = (Convert.ToInt32(sArray21[3])/48f).ToString(); //写入
+                        Right_ZMposition_textbox.Text = (Convert.ToInt32(sArray21[3])/48f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2922", Convert.ToInt32(sArray21[3])); //装
 
                         //  numericUpDown93.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[4]) / 48f);//写入
-                        textBox56.Text = (Convert.ToInt32(sArray21[4])/48f).ToString(); //写入
+                        Left_Chong_position_textbox.Text = (Convert.ToInt32(sArray21[4])/48f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2924", Convert.ToInt32(sArray21[4])); //第
 
                         // numericUpDown92.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[5]) / 48f);//写入
-                        textBox55.Text = (Convert.ToInt32(sArray21[5])/48f).ToString(); //写入
+                        Left_safePosition_textbox.Text = (Convert.ToInt32(sArray21[5])/48f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2926", Convert.ToInt32(sArray21[5])); //左
 
                         //  numericUpDown100.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[6]) / 48f);//写入
-                        textBox54.Text = (Convert.ToInt32(sArray21[6])/48f).ToString(); //写入
+                        Left_OutThing_textbox.Text = (Convert.ToInt32(sArray21[6])/48f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2928", Convert.ToInt32(sArray21[6])); //下
 
                         // numericUpDown99.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[7]) / 100f);//写入
-                        textBox53.Text = (Convert.ToInt32(sArray21[7])/100f).ToString(); //写入
+                        Get_thing_hight_textbox.Text = (Convert.ToInt32(sArray21[7])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2930", Convert.ToInt32(sArray21[7])); //取
 
 
 
                         // numericUpDown98.Value = Convert.ToDecimal(Convert.ToInt32(sArray22[0]) / 100f);//写入
-                        textBox64.Text = (Convert.ToInt32(sArray22[0])/100f).ToString(); //写入
+                        HandHeight_textbox.Text = (Convert.ToInt32(sArray22[0])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2932", Convert.ToInt32(sArray22[0])); //手
 
                         //  numericUpDown97.Value = Convert.ToDecimal(Convert.ToInt32(sArray22[1]) / 100f);//写入
-                        textBox63.Text = (Convert.ToInt32(sArray22[1])/100f).ToString(); //写入
+                        Right_RM_hight_Textbox.Text = (Convert.ToInt32(sArray22[1])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2934", Convert.ToInt32(sArray22[1])); //左
 
-                        textBox62.Text = (Convert.ToInt32(sArray22[2])/100f).ToString(); //写入
+                        Left_OutHeight_textbox.Text = (Convert.ToInt32(sArray22[2])/100f).ToString(); //写入
                         PcConnectPlc.Write_Data_FxUsb("D2936", Convert.ToInt32(sArray22[2])); //下
 
                         //textBox61.Text = (Convert.ToInt32(sArray22[3]) / 100f).ToString(); ;//写入
                         //PcConnectPlc.Write_Data_FxUsb("D2938", Convert.ToInt32(sArray22[3]));//调
 
-                        textBox73.Text = (Convert.ToInt32(sArray22[4])).ToString();
+                        Set_Chong_textbox.Text = (Convert.ToInt32(sArray22[4])).ToString();
                         ; //写入
                         PcConnectPlc.Write_Data_FxUsb("D2940", Convert.ToInt32(sArray22[4])); //调
 
@@ -1216,7 +1216,7 @@ namespace WindowsFormsApplication1
                         if (msgS[11] == "0")
                         {
                             PcConnectPlc.Write_Data_FxUsb("D2882", 0); //同间距
-                            textBox105.Text = PLC_DS[62].ToString(); //同间距
+                            SameDistance_textbox.Text = PLC_DS[62].ToString(); //同间距
                             label27.Text = "0";
                             label28.Text = "同间距";
                             PcConnectPlc.Write_Data_FxUsb("D2942", Convert.ToInt32(sArray22[5])); //同间距
@@ -1226,7 +1226,7 @@ namespace WindowsFormsApplication1
                             label27.Text = "1";
                             label28.Text = "不同间距";
                             PcConnectPlc.Write_Data_FxUsb("D2882", 1); //同间距
-                            textBox105.Text = PLC_DS[62].ToString(); //同间距
+                            SameDistance_textbox.Text = PLC_DS[62].ToString(); //同间距
                             PcConnectPlc.Write_Data_FxUsb("D2942", Convert.ToInt32(sArray22[5])); //同间距
                         }
 
@@ -2135,8 +2135,8 @@ namespace WindowsFormsApplication1
 
             if (Model2_textBox1.Text != "" && LastModel2_textBox.Text != "")
             {
-                msgL[8] = LastModel_Textbox.Text + "," + Model2_textBox1.Text + "," + LastModel2_textBox.Text + "," + textBox29.Text + "," +
-                          textBox18.Text + "," + label34.Text + "," + label35.Text; //上次模具数据
+                msgL[8] = LastModel_Textbox.Text + "," + Model2_textBox1.Text + "," + LastModel2_textBox.Text + "," + KnifeLength_textbox.Text + "," +
+                          AbandonNums_textbox.Text + "," + label34.Text + "," + label35.Text; //上次模具数据
 
             }
             if (label5.Text != "没有权限" && label6.Text != "没有权限")
@@ -2201,10 +2201,10 @@ namespace WindowsFormsApplication1
 
                 if (PLC_DS[13] != 0)
                 {
-                    textBox74.Text = PLC_DS[12].ToString(); //写入
+                    Real_Chong_textbox.Text = PLC_DS[12].ToString(); //写入
                     //PcConnectPlc.Write_Data_FxUsb("D2892", Convert.ToInt32(sArray17[0]));//实际冲数
 
-                    textBox73.Text = PLC_DS[13].ToString(); //写入
+                    Set_Chong_textbox.Text = PLC_DS[13].ToString(); //写入
                     //PcConnectPlc.Write_Data_FxUsb("D2893", Convert.ToInt32(sArray17[1]));//设定冲数
                 }
 
@@ -2340,16 +2340,16 @@ namespace WindowsFormsApplication1
 
                     if (PLC_DS[151] == 0) //判断是否开启方向扫描D3031
                     {
-                        Barcodeweizhi = textBox66.Text + "/" + textBox68.Text;
+                        Barcodeweizhi = CamPosition1_textbox.Text + "/" + ScanPosition1_textbox.Text;
                     }
                     else
                     {
-                        Barcodeweizhi = textBox68.Text + "/" + textBox65.Text;
+                        Barcodeweizhi = ScanPosition1_textbox.Text + "/" + CamPosition2_textbox.Text;
                     }
                     string Para1 = "EQU_ID|DAY|SCAN_DATE|PARTNUM|BARCODE|LOCATE_XY|SET_NUM|REAL_NUM|IS_MIX";
                     string Para2 = textBox3.Text + "|" + System.DateTime.Now.ToString("yyyy/MM/dd") + "|" +
                                    System.DateTime.Now.ToString("yyyyMMddHHmmss") + "|" + LH_textbox.Text + "|" + Barcode +
-                                   "|" + Barcodeweizhi + "|" + textBox73.Text + "|" + textBox74.Text + "|" + Mixture1;
+                                   "|" + Barcodeweizhi + "|" + Set_Chong_textbox.Text + "|" + Real_Chong_textbox.Text + "|" + Mixture1;
                     string ret = webFun.sendDataToSerGrp(textBox28.Text, textBox99.Text, textBox3.Text, "CX01", "CX01",
                         Para1, Para2, System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
 
@@ -2509,17 +2509,17 @@ namespace WindowsFormsApplication1
                                 string u10 = yy.Tables[0].Rows[0][1].ToString(); //在制程
                                 label367.Text = u10;
                                 string u1 = yy.Tables[0].Rows[0][2].ToString(); //图程序
-                                textBox69.Text = u1;
+                                TCX_textbox.Text = u1;
                                 string u3 = yy.Tables[0].Rows[0][3].ToString(); //主图程序
-                                textBox16.Text = u3;
+                                ZT_textbox.Text = u3;
                                 string u5 = yy.Tables[0].Rows[0][5].ToString(); //-主配件
-                                textBox70.Text = u5;
+                                Main_Parts_textbox.Text = u5;
                                 string u6 = yy.Tables[0].Rows[0][6].ToString(); //岑别名称
-                                textBox71.Text = u6;
+                                LayerCount_textbox.Text = u6;
                                 string u7 = yy.Tables[0].Rows[0][7].ToString(); //第几次过站
                                 label354.Text = u7;
                                 string u4 = yy.Tables[0].Rows[0][8].ToString(); //工令
-                                textBox20.Text = u4;
+                                WorkOrder_textbox.Text = u4;
                                 mj = false;
 
 
@@ -2702,17 +2702,17 @@ namespace WindowsFormsApplication1
                                                     string u10 = yy.Tables[0].Rows[0][1].ToString(); //在制程
                                                     label367.Text = u10;
                                                     string u1 = yy.Tables[0].Rows[0][2].ToString(); //图程序
-                                                    textBox69.Text = u1;
+                                                    TCX_textbox.Text = u1;
                                                     string u3 = yy.Tables[0].Rows[0][3].ToString(); //主图程序
-                                                    textBox16.Text = u3;
+                                                    ZT_textbox.Text = u3;
                                                     string u5 = yy.Tables[0].Rows[0][5].ToString(); //-主配件
-                                                    textBox70.Text = u5;
+                                                    Main_Parts_textbox.Text = u5;
                                                     string u6 = yy.Tables[0].Rows[0][6].ToString(); //岑别名称
-                                                    textBox71.Text = u6;
+                                                    LayerCount_textbox.Text = u6;
                                                     string u7 = yy.Tables[0].Rows[0][7].ToString(); //第几次过站
                                                     label354.Text = u7;
                                                     string u4 = yy.Tables[0].Rows[0][8].ToString(); //工令
-                                                    textBox20.Text = u4;
+                                                    WorkOrder_textbox.Text = u4;
                                                     mj = false;
                                                     LayerNumber_textbox.BackColor = Color.White;
 
@@ -2770,9 +2770,9 @@ namespace WindowsFormsApplication1
                                             try
                                             {
                                                 string B = E.Tables[0].Rows[0][1].ToString(); //模具累计冲次数
-                                                textBox18.Text = B;
+                                                AbandonNums_textbox.Text = B;
                                                 string C = E.Tables[0].Rows[0][2].ToString(); //刀口余量
-                                                textBox29.Text = C;
+                                                KnifeLength_textbox.Text = C;
 
                                                 if (B != "")
                                                 {
@@ -2962,7 +2962,7 @@ namespace WindowsFormsApplication1
                                     a33 = 0;
 
                                     label358.Text = ZhangNumber_textbox.Text; //张数
-                                    label353.Text = textBox76.Text; //冲数
+                                    label353.Text = Sum_ChongNums_textbox.Text; //冲数
 
 
                                     PcConnectPlc.Write_Data_FxUsb("M2903", 1); //可以运行
@@ -3285,10 +3285,10 @@ namespace WindowsFormsApplication1
 
             label34.Text = Model2_textBox1.Text;
 
-            textBox72.Text = PLC_DS[14].ToString(); //写入
+            PersonCheckPages_textbox.Text = PLC_DS[14].ToString(); //写入
             //PcConnectPlc.Write_Data_FxUsb("D2894", Convert.ToInt32(sArray17[2]));//自检频率
 
-            textBox22.Text = PLC_DS[15].ToString(); //写入
+            RealPages_textbox.Text = PLC_DS[15].ToString(); //写入
             //PcConnectPlc.Write_Data_FxUsb("D2895", Convert.ToInt32(sArray17[3]));//实际张数
 
             //SFCZ1_ZD_PunchCut
@@ -3301,7 +3301,7 @@ namespace WindowsFormsApplication1
                 timer4.Enabled = false; //关闭权限定时器
                 try
                 {
-                    textBox83.Text = ((Convert.ToInt32(textBox72.Text))*(Convert.ToInt32(textBox73.Text))).ToString();
+                    Person_ChongNumber_textbox.Text = ((Convert.ToInt32(PersonCheckPages_textbox.Text))*(Convert.ToInt32(Set_Chong_textbox.Text))).ToString();
                     //自主检查
                 }
                 catch
@@ -3374,7 +3374,7 @@ namespace WindowsFormsApplication1
                     Audit_textBox.Enabled = false;
                     textBox32.Enabled = false;
                     JDL_textbox.Enabled = false;
-                    textBox37.Enabled = false;
+                    param8_9.Enabled = false;
                     skinGroupBox32.Enabled = false;
                     skinGroupBox37.Enabled = false;
 
@@ -3382,23 +3382,23 @@ namespace WindowsFormsApplication1
                     TJ_textbox.Enabled = false;
 
                     label358.Text = ZhangNumber_textbox.Text; //张数
-                    label353.Text = textBox76.Text; //冲数
+                    label353.Text = Sum_ChongNums_textbox.Text; //冲数
 
                     PcConnectPlc.Write_Data_FxUsb("M2903", 1); //可以运行
 
                     string ret = webFun.sendDataToSerGrp(textBox97.Text, textBox98.Text, "#01", "0004", "0006",
                         "paperNo|MacState|StartTime|EndTime|Lotnum|Layer|MainSerial|Partnum|WorkNo|SfcLayer|LayerName|Serial|IsMain|OrderId|Item2|Item1|Item3|Item4|Item5|Item6|Item7|Item8|Qty|Item10|Item11|Item13|Item14|Item15|Item16|CreateEmpid|CreateTime|ModifyEmpid|ModifyTime",
                         BD_textbox.Text + "|正常|" + label352.Text + "|" + "" + "|"
-                        + PH_textbox.Text + "|" + LayerNumber_textbox.Text + "|" + textBox16.Text + "|" + LH_textbox.Text + "|" +
-                        textBox20.Text + "|"
-                        + label367.Text + "|" + textBox71.Text + "|" + textBox69.Text + "|" + textBox70.Text + "|" +
+                        + PH_textbox.Text + "|" + LayerNumber_textbox.Text + "|" + ZT_textbox.Text + "|" + LH_textbox.Text + "|" +
+                        WorkOrder_textbox.Text + "|"
+                        + label367.Text + "|" + LayerCount_textbox.Text + "|" + TCX_textbox.Text + "|" + Main_Parts_textbox.Text + "|" +
                         label354.Text + "|"
-                        + Model2_textBox1.Text + "|" + LastModel2_textBox.Text + "|" + textBox5.Text + "|" + textBox18.Text + "|" +
-                        textBox29.Text + "|"
+                        + Model2_textBox1.Text + "|" + LastModel2_textBox.Text + "|" + KeepNums_textbox.Text + "|" + AbandonNums_textbox.Text + "|" +
+                        KnifeLength_textbox.Text + "|"
                         + BOM_textbox.Text + "|"
                         + Enum_textbox.Text + "|" + Check_textbox.Text + "|" + label22.Text + " | " + GoodBadProduct_textbox.Text + "|" +
-                        textBox83.Text + "|"
-                        + textBox27.Text + "|" + textBox64.Text + "|" + Audit_textBox.Text + "|" + ChongNumber_textbox.Text + "|"
+                        Person_ChongNumber_textbox.Text + "|"
+                        + param1_2.Text + "|" + HandHeight_textbox.Text + "|" + Audit_textBox.Text + "|" + ChongNumber_textbox.Text + "|"
                         + Operater_textbox.Text + "|" + System.DateTime.Now.ToString("yyyyMMddHHmmss") + "|" + Operater_textbox.Text +
                         "|" + System.DateTime.Now.ToString("yyyyMMddHHmmss"),
                         System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
@@ -3416,16 +3416,16 @@ namespace WindowsFormsApplication1
                         msgL[0] = "1";
 
                         msgL[1] = BD_textbox.Text + "," + label352.Text + "," + PH_textbox.Text + "," + LayerNumber_textbox.Text +
-                                  "," + textBox16.Text + "," + LH_textbox.Text + "," + textBox20.Text;
+                                  "," + ZT_textbox.Text + "," + LH_textbox.Text + "," + WorkOrder_textbox.Text;
 
-                        msgL[2] = label367.Text + "," + textBox71.Text + "," + textBox69.Text + "," + textBox70.Text +
+                        msgL[2] = label367.Text + "," + LayerCount_textbox.Text + "," + TCX_textbox.Text + "," + Main_Parts_textbox.Text +
                                   "," + label354.Text + "," + Model2_textBox1.Text + "," + LastModel2_textBox.Text;
 
-                        msgL[3] = textBox5.Text + "," + textBox18.Text + "," + textBox29.Text + "," + BOM_textbox.Text +
+                        msgL[3] = KeepNums_textbox.Text + "," + AbandonNums_textbox.Text + "," + KnifeLength_textbox.Text + "," + BOM_textbox.Text +
                                   "," + Enum_textbox.Text + "," + Check_textbox.Text;
 
-                        msgL[4] = label22.Text + "," + GoodBadProduct_textbox.Text + "," + textBox83.Text + "," + textBox27.Text +
-                                  "," + textBox64.Text + "," + Audit_textBox.Text + "," + Operater_textbox.Text;
+                        msgL[4] = label22.Text + "," + GoodBadProduct_textbox.Text + "," + Person_ChongNumber_textbox.Text + "," + param1_2.Text +
+                                  "," + HandHeight_textbox.Text + "," + Audit_textBox.Text + "," + Operater_textbox.Text;
 
                         msgL[5] = JM_textbox.Text + "," + label5.Text + "," + TJ_textbox.Text + "," + label6.Text + "," +
                                   ChongNumber_textbox.Text + "," + KD_Zhang_textbox.Text;
@@ -3470,9 +3470,9 @@ namespace WindowsFormsApplication1
                             string A = E.Tables[0].Rows[0][0].ToString(); //实际模具名称
                             LastModel2_textBox.Text = A;
                             string B = E.Tables[0].Rows[0][1].ToString(); //模具累计冲次数
-                            textBox18.Text = B;
+                            AbandonNums_textbox.Text = B;
                             string C = E.Tables[0].Rows[0][2].ToString(); //刀口余量
-                            textBox29.Text = C;
+                            KnifeLength_textbox.Text = C;
                             bool mold4 = false;
                             if (B != "")
                             {
@@ -3592,7 +3592,7 @@ namespace WindowsFormsApplication1
                         if (label93.Text != "没有权限")
                         {
                             label358.Text = ZhangNumber_textbox.Text; //张数
-                            label353.Text = textBox76.Text; //冲数
+                            label353.Text = Sum_ChongNums_textbox.Text; //冲数
 
                             //PcConnectPlc.Write_Data_FxUsb("M2903", 1);//可以运行
 
@@ -3781,9 +3781,9 @@ namespace WindowsFormsApplication1
                         liaohao = Convert.ToInt32(label35.Text);
                         label30.Text = liaohao.ToString();
 
-                        if (textBox61.Text == "0")
+                        if (JudgeModel_height_textbox.Text == "0")
                         {
-                            textBox61.Text = "198.66";
+                            JudgeModel_height_textbox.Text = "198.66";
                         }
                         if (ChongNumber_textbox.Text == "0")
                         {
@@ -3806,16 +3806,16 @@ namespace WindowsFormsApplication1
                             "paperNo|MacState|StartTime|EndTime|Lotnum|Layer|MainSerial|Partnum|WorkNo|SfcLayer|LayerName|Serial|IsMain|OrderId|Item2|Item1|Item3|Item4|Item5|Item6|Item7|Item8|Qty|Item10|Item11|Item13|Item14|Item15|Item16|CreateEmpid|CreateTime|ModifyEmpid|ModifyTime",
                             BD_textbox.Text + "|正常|" + label352.Text + "|" +
                             System.DateTime.Now.ToString("yyyyMMddHHmmss") + "|"
-                            + PH_textbox.Text + "|" + LayerNumber_textbox.Text + "|" + textBox16.Text + "|" + LH_textbox.Text + "|" +
-                            textBox20.Text + "|"
-                            + label367.Text + "|" + textBox71.Text + "|" + textBox69.Text + "|" + textBox70.Text + "|" +
+                            + PH_textbox.Text + "|" + LayerNumber_textbox.Text + "|" + ZT_textbox.Text + "|" + LH_textbox.Text + "|" +
+                            WorkOrder_textbox.Text + "|"
+                            + label367.Text + "|" + LayerCount_textbox.Text + "|" + TCX_textbox.Text + "|" + Main_Parts_textbox.Text + "|" +
                             label354.Text + "|"
-                            + Model2_textBox1.Text + "|" + LastModel2_textBox.Text + "|" + textBox5.Text + "|" + textBox18.Text + "|" +
-                            textBox29.Text + "|"
+                            + Model2_textBox1.Text + "|" + LastModel2_textBox.Text + "|" + KeepNums_textbox.Text + "|" + AbandonNums_textbox.Text + "|" +
+                            KnifeLength_textbox.Text + "|"
                             + BOM_textbox.Text + "|"
                             + Enum_textbox.Text + "|" + Check_textbox.Text + "|" + label22.Text + " | " + GoodBadProduct_textbox.Text + "|" +
-                            textBox83.Text + "|"
-                            + textBox27.Text + "|" + textBox64.Text + "|" + Audit_textBox.Text + "|" + ChongNumber_textbox.Text + "|"
+                            Person_ChongNumber_textbox.Text + "|"
+                            + param1_2.Text + "|" + HandHeight_textbox.Text + "|" + Audit_textBox.Text + "|" + ChongNumber_textbox.Text + "|"
                             + Operater_textbox.Text + "|" + System.DateTime.Now.ToString("yyyyMMddHHmmss") + "|" +
                             Operater_textbox.Text + "|" + System.DateTime.Now.ToString("yyyyMMddHHmmss"),
                             System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
@@ -3833,7 +3833,7 @@ namespace WindowsFormsApplication1
                         Audit_textBox.Enabled = true;
                         textBox32.Enabled = true;
                         JDL_textbox.Enabled = true;
-                        textBox37.Enabled = true;
+                        param8_9.Enabled = true;
                         skinGroupBox32.Enabled = true;
                         skinGroupBox31.Enabled = true;
                         skinGroupBox37.Enabled = true;
@@ -3865,23 +3865,23 @@ namespace WindowsFormsApplication1
                                 "paperNo|MacState|StartTime|EndTime|Lotnum|Layer|MainSerial|Partnum|WorkNo|SfcLayer|LayerName|Serial|IsMain|OrderId|Item2|Item1|Item3|Item4|Item5|Item6|Item7|Item8|Qty|Item10|Item11|Item12|Item13|Item14|Item15|CreateEmpid|CreateTime"
                                 + "\r\n" + BD_textbox.Text + "订单号|" + label344.Text + "运行状态|" + label352.Text + "开始时间|" +
                                 System.DateTime.Now.ToString("yyyyMMddHHmmss") + "结束时间|" + "\r\n"
-                                + PH_textbox.Text + "批号|" + LayerNumber_textbox.Text + "层别|" + textBox16.Text + "主图|" +
-                                LH_textbox.Text + "料号|" + textBox20.Text + "共令|" + "\r\n"
-                                + label367.Text + "SFC|" + textBox71.Text + "称别|" + textBox69.Text + "涂程序|" +
-                                textBox70.Text + "主配件|" + label354.Text + "几次过站|" + "\r\n"
-                                + Model2_textBox1.Text + "模具SG|" + LastModel2_textBox.Text + "模具编号|" + textBox5.Text + "保养|" +
-                                textBox18.Text + "报废|" + textBox29.Text + "刀量|" + BOM_textbox.Text + "BOM|" + "\r\n"
+                                + PH_textbox.Text + "批号|" + LayerNumber_textbox.Text + "层别|" + ZT_textbox.Text + "主图|" +
+                                LH_textbox.Text + "料号|" + WorkOrder_textbox.Text + "共令|" + "\r\n"
+                                + label367.Text + "SFC|" + LayerCount_textbox.Text + "称别|" + TCX_textbox.Text + "涂程序|" +
+                                Main_Parts_textbox.Text + "主配件|" + label354.Text + "几次过站|" + "\r\n"
+                                + Model2_textBox1.Text + "模具SG|" + LastModel2_textBox.Text + "模具编号|" + KeepNums_textbox.Text + "保养|" +
+                                AbandonNums_textbox.Text + "报废|" + KnifeLength_textbox.Text + "刀量|" + BOM_textbox.Text + "BOM|" + "\r\n"
                                 + Enum_textbox.Text + "类型|" + Check_textbox.Text + "检验结果|" + label22.Text + "实际PNL | " +
-                                GoodBadProduct_textbox.Text + "规格判断|" + textBox83.Text + "自主检查|" + "\r\n"
-                                + textBox61.Text + "调模高度|" + textBox27.Text + "间距1|" + textBox64.Text + "手臂高度|" +
+                                GoodBadProduct_textbox.Text + "规格判断|" + Person_ChongNumber_textbox.Text + "自主检查|" + "\r\n"
+                                + JudgeModel_height_textbox.Text + "调模高度|" + param1_2.Text + "间距1|" + HandHeight_textbox.Text + "手臂高度|" +
                                 Audit_textBox.Text + "操作人员|" + Operater_textbox.Text + "审合人员|" + "\r\n"
                                 + JM_textbox.Text + "架模人员|" + label5.Text + "架模时间|" + TJ_textbox.Text + "调机人员|" +
                                 label6.Text + "调机时间|" + ChongNumber_textbox.Text + "冲数|" + "\r\n"
-                                + KD_Zhang_textbox.Text + "提取数PNL|" + textBox93.Text + "奥特母-每卷总量|" + textBox91.Text + "实际量|" +
-                                textBox89.Text + "翻页面|" + "\r\n"
-                                + textBox92.Text + "空料数|" + textBox86.Text + "载带空数|" + textBox85.Text + "感应延时|" +
-                                textBox90.Text + "拉料速率|" + "\r\n"
-                                + textBox88.Text + "自动速度|" + textBox87.Text + "张力|" + label24.Text + "生产开始前检验张数|" +
+                                + KD_Zhang_textbox.Text + "提取数PNL|" + EveryRowProdution_textbox.Text + "奥特母-每卷总量|" + EveryRowRealNum_textbox.Text + "实际量|" +
+                                TurnPagesNum_textbox.Text + "翻页面|" + "\r\n"
+                                + EmptyNums_textbox.Text + "空料数|" + HoleNums_textbox.Text + "载带空数|" + DelayTime_textbox.Text + "感应延时|" +
+                                GetThingSpeed_textBox.Text + "拉料速率|" + "\r\n"
+                                + MoveSpeed_textbox.Text + "自动速度|" + TensionPower_textbox.Text + "张力|" + label24.Text + "生产开始前检验张数|" +
                                 label341.Text + " - " + label342.Text + " - " + label343.Text + " - " + liaohao + "料号|"
                                 + System.DateTime.Now.ToString("yyyyMMddHHmmss") + "\r\n");
 
@@ -3918,18 +3918,18 @@ namespace WindowsFormsApplication1
 
 
                             PH_textbox.Text = "";
-                            textBox69.Text = "";
-                            textBox16.Text = "";
-                            textBox70.Text = "";
+                            TCX_textbox.Text = "";
+                            ZT_textbox.Text = "";
+                            Main_Parts_textbox.Text = "";
                             //textBox21.Text = "";
                             //textBox29.Text = "";
-                            textBox5.Text = "";
+                            KeepNums_textbox.Text = "";
                             ChongNumber_textbox.Text = "";
                             Operater_textbox.Text = "";
                             LayerNumber_textbox.Text = "";
-                            textBox71.Text = "";
-                            textBox20.Text = "";
-                            textBox30.Text = "";
+                            LayerCount_textbox.Text = "";
+                            WorkOrder_textbox.Text = "";
+                            ScanSum_textbox.Text = "";
                             LH_textbox.Text = "";
                             BOM_textbox.Text = "";
                             //textBox24.Text = "";
@@ -4124,7 +4124,7 @@ namespace WindowsFormsApplication1
                     Operater_textbox.Enabled = false;
 
                     JDL_textbox.Enabled = false;
-                    textBox37.Enabled = false;
+                    param8_9.Enabled = false;
 
                     Run = true; //运行开始
 
@@ -4150,16 +4150,16 @@ namespace WindowsFormsApplication1
 
 
                 //检查保养次数
-                if (Convert.ToInt32(textBox76.Text) > 0) //不能为负数
+                if (Convert.ToInt32(Sum_ChongNums_textbox.Text) > 0) //不能为负数
                 {
-                    int baoyan = Convert.ToInt32(textBox76.Text) - Convert.ToInt32(label353.Text); //保养
+                    int baoyan = Convert.ToInt32(Sum_ChongNums_textbox.Text) - Convert.ToInt32(label353.Text); //保养
 
                     if (baoyan > 0)
                     {
                         ChongNumber_textbox.Text = baoyan.ToString();
                         by = baoyan + by;
                     }
-                    if (Convert.ToInt32(textBox5.Text) >= 20000 && (by1 == false)) //保养次数累加
+                    if (Convert.ToInt32(KeepNums_textbox.Text) >= 20000 && (by1 == false)) //保养次数累加
                     {
                         by1 = true;
                         MessageBox.Show("模具已经冲裁达到20000次，请及时保养!");
@@ -4238,7 +4238,7 @@ namespace WindowsFormsApplication1
 
                 ZhangNumber_textbox.Text = (((double) PcConnectPlc.double_Word_To_Int(PLC_DS[28], PLC_DS[29]))).ToString(); //张数
 
-                textBox76.Text = (((double) PcConnectPlc.double_Word_To_Int(PLC_DS[30], PLC_DS[31]))).ToString(); //冲数
+                Sum_ChongNums_textbox.Text = (((double) PcConnectPlc.double_Word_To_Int(PLC_DS[30], PLC_DS[31]))).ToString(); //冲数
 
 
                 //不清楚功能的界面刷新
