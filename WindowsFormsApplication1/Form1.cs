@@ -371,24 +371,15 @@ namespace WindowsFormsApplication1
         //检查是否存在文件夹
         private void ExsitFile()
         {
-            if (Directory.Exists(@"D:\Data")) //判断是否有这个文件夹--D:\数据备份\
-            {
-
-            }
-            else
+            if (!Directory.Exists(@"D:\Data")) //判断是否有这个文件夹--D:\数据备份\
             {
                 Directory.CreateDirectory(@"D:\Data");
             }
 
             if (Directory.Exists(@"D:\Data backup")) //判断是否有这个文件夹--E:\数据备份\
             {
-                if (Directory.Exists(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd")))
+                if (!Directory.Exists(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd")))
                     //判断是否有这个文件夹--E:\数据备份\
-                {
-
-
-                }
-                else
                 {
                     Directory.CreateDirectory(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd")); //没有就创建
                     Erasing();
@@ -490,22 +481,16 @@ namespace WindowsFormsApplication1
 
             try
             {
-
                 PcConnectPlc.Write_Data_FxUsb("M2904", 1); // 关PLC
-
-
                 PcConnectPlc.Write_Data_FxUsb("M2888", 0); //打开标志位
             }
             catch (Exception ex)
             {
-
                 LogHelper.WriteLog(ex.ToString());
             }
-
-
+            
             string[] msgS = new string[500]; //读取数据
             string filePath = Application.StartupPath.ToString() + "\\liaohao.txt";
-
 
             FileOperate.OpenFileString(filePath, out msgS);
 
@@ -613,7 +598,6 @@ namespace WindowsFormsApplication1
                     catch (Exception ex)
                     {
                         LogHelper.WriteLog(ex.ToString());
-                      
                     }
                  
 
@@ -946,48 +930,35 @@ namespace WindowsFormsApplication1
                 label34.Text = s4[5]; //
                 label35.Text = s4[6];
                 liaohao = Convert.ToInt32(label35.Text);
-            }
-            catch
-            {
-            }
-            try
-            {
+            
+
                 string strs5 = jmtj;
                 string[] s5 = Regex.Split(strs5, ",", RegexOptions.IgnoreCase); //加模具调机
                 JM_textbox.Text = s5[0]; //
                 label5.Text = s5[1]; //
                 TJ_textbox.Text = s5[2]; //
                 label6.Text = s5[3]; //
-            }
-            catch
-            {
-            }
-            try
-            {
+            
+
                 string strs6 = smsj;
                 string[] s6 = Regex.Split(strs6, ",", RegexOptions.IgnoreCase); //加模具调机
                 textBox28.Text = s6[0]; //
                 textBox99.Text = s6[1]; //
             }
-            catch
+            catch (Exception ex)
             {
+                LogHelper.WriteLog(ex.ToString());
             }
-            if (Directory.Exists(@"D:\Data")) //判断是否有这个文件夹--D:\数据备份\
-            {
 
-            }
-            else
+            if (!Directory.Exists(@"D:\Data")) //判断是否有这个文件夹--D:\数据备份\
             {
                 Directory.CreateDirectory(@"D:\Data");
             }
 
             if (Directory.Exists(@"D:\Data backup")) //判断是否有这个文件夹--E:\数据备份\
             {
-                if (Directory.Exists(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd")))
+                if (!Directory.Exists(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd")))
                     //判断是否有这个文件夹--E:\数据备份\
-                {
-                }
-                else
                 {
                     Directory.CreateDirectory(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd")); //没有就创建
 
@@ -3290,14 +3261,7 @@ namespace WindowsFormsApplication1
                 {
                     Person_ChongNumber_textbox.Text = ((Convert.ToInt32(PersonCheckPages_textbox.Text))*(Convert.ToInt32(Set_Chong_textbox.Text))).ToString();
                     //自主检查
-                }
-                catch
-                {
-
-                }
-
-                try
-                {
+               
 
                     label352.Text = System.DateTime.Now.ToString("yyyyMMddHHmmss"); //开始时间
                  
@@ -3487,8 +3451,6 @@ namespace WindowsFormsApplication1
                                     mold5 = true;
                                 }
                             }
-
-              
                         }
                         else
                         {
