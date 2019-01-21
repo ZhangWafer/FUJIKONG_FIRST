@@ -781,7 +781,7 @@ namespace WindowsFormsApplication1
 
 
                         param7_8.Text = (PLC_DS[76]/100f).ToString();
-                        ; //写入
+                        //写入
                         //PcConnectPlc.Write_Data_FxUsb("D2956", Convert.ToInt32(sArray19[0]));//间距7
 
                         param8_9.Text = (PLC_DS[78]/100f).ToString(); //写入

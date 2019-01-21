@@ -634,7 +634,7 @@
             this.skinTabControl2.PageHover = ((System.Drawing.Image)(resources.GetObject("skinTabControl2.PageHover")));
             this.skinTabControl2.PageImagePosition = CCWin.SkinControl.SkinTabControl.ePageImagePosition.Left;
             this.skinTabControl2.PageNorml = null;
-            this.skinTabControl2.SelectedIndex = 1;
+            this.skinTabControl2.SelectedIndex = 0;
             this.skinTabControl2.Size = new System.Drawing.Size(885, 332);
             this.skinTabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.skinTabControl2.TabIndex = 87;
@@ -4262,7 +4262,7 @@
             this.skinTabControl1.PageNorml = null;
             this.skinTabControl1.PageNormlTxtColor = System.Drawing.Color.Silver;
             this.skinTabControl1.PageTextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.skinTabControl1.SelectedIndex = 1;
+            this.skinTabControl1.SelectedIndex = 2;
             this.skinTabControl1.Size = new System.Drawing.Size(897, 615);
             this.skinTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.skinTabControl1.TabIndex = 35;
