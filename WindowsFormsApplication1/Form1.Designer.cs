@@ -110,44 +110,44 @@
             this.skinTabPage6 = new CCWin.SkinControl.SkinTabPage();
             this.skinGroupBox4 = new CCWin.SkinControl.SkinGroupBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.textBox105 = new System.Windows.Forms.TextBox();
+            this.SameDistance_textbox = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.skinGroupBox3 = new CCWin.SkinControl.SkinGroupBox();
-            this.textBox69 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.TCX_textbox = new System.Windows.Forms.TextBox();
+            this.KnifeLength_textbox = new System.Windows.Forms.TextBox();
             this.label320 = new System.Windows.Forms.Label();
             this.label349 = new System.Windows.Forms.Label();
             this.label345 = new System.Windows.Forms.Label();
-            this.textBox76 = new System.Windows.Forms.TextBox();
+            this.Sum_ChongNums_textbox = new System.Windows.Forms.TextBox();
             this.label353 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.ZT_textbox = new System.Windows.Forms.TextBox();
+            this.KeepNums_textbox = new System.Windows.Forms.TextBox();
             this.label298 = new System.Windows.Forms.Label();
-            this.textBox70 = new System.Windows.Forms.TextBox();
+            this.Main_Parts_textbox = new System.Windows.Forms.TextBox();
             this.label346 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.AbandonNums_textbox = new System.Windows.Forms.TextBox();
             this.label308 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.WorkOrder_textbox = new System.Windows.Forms.TextBox();
             this.label312 = new System.Windows.Forms.Label();
             this.label310 = new System.Windows.Forms.Label();
-            this.textBox71 = new System.Windows.Forms.TextBox();
+            this.LayerCount_textbox = new System.Windows.Forms.TextBox();
             this.label347 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.ScanSum_textbox = new System.Windows.Forms.TextBox();
             this.label319 = new System.Windows.Forms.Label();
             this.skinGroupBox38 = new CCWin.SkinControl.SkinGroupBox();
-            this.textBox85 = new System.Windows.Forms.TextBox();
-            this.textBox86 = new System.Windows.Forms.TextBox();
-            this.textBox87 = new System.Windows.Forms.TextBox();
-            this.textBox88 = new System.Windows.Forms.TextBox();
-            this.textBox89 = new System.Windows.Forms.TextBox();
-            this.textBox90 = new System.Windows.Forms.TextBox();
-            this.textBox91 = new System.Windows.Forms.TextBox();
-            this.textBox92 = new System.Windows.Forms.TextBox();
-            this.textBox93 = new System.Windows.Forms.TextBox();
-            this.textBox94 = new System.Windows.Forms.TextBox();
+            this.DelayTime_textbox = new System.Windows.Forms.TextBox();
+            this.HoleNums_textbox = new System.Windows.Forms.TextBox();
+            this.TensionPower_textbox = new System.Windows.Forms.TextBox();
+            this.MoveSpeed_textbox = new System.Windows.Forms.TextBox();
+            this.TurnPagesNum_textbox = new System.Windows.Forms.TextBox();
+            this.GetThingSpeed_textBox = new System.Windows.Forms.TextBox();
+            this.EveryRowRealNum_textbox = new System.Windows.Forms.TextBox();
+            this.EmptyNums_textbox = new System.Windows.Forms.TextBox();
+            this.EveryRowProdution_textbox = new System.Windows.Forms.TextBox();
+            this.Online_textbox = new System.Windows.Forms.TextBox();
             this.label370 = new System.Windows.Forms.Label();
             this.label371 = new System.Windows.Forms.Label();
             this.label372 = new System.Windows.Forms.Label();
@@ -159,66 +159,66 @@
             this.label378 = new System.Windows.Forms.Label();
             this.label379 = new System.Windows.Forms.Label();
             this.skinGroupBox35 = new CCWin.SkinControl.SkinGroupBox();
-            this.textBox61 = new System.Windows.Forms.TextBox();
-            this.textBox67 = new System.Windows.Forms.TextBox();
-            this.textBox65 = new System.Windows.Forms.TextBox();
-            this.textBox68 = new System.Windows.Forms.TextBox();
-            this.textBox64 = new System.Windows.Forms.TextBox();
+            this.JudgeModel_height_textbox = new System.Windows.Forms.TextBox();
+            this.ScanPosition2_textbox = new System.Windows.Forms.TextBox();
+            this.CamPosition2_textbox = new System.Windows.Forms.TextBox();
+            this.ScanPosition1_textbox = new System.Windows.Forms.TextBox();
+            this.HandHeight_textbox = new System.Windows.Forms.TextBox();
             this.label335 = new System.Windows.Forms.Label();
-            this.textBox66 = new System.Windows.Forms.TextBox();
+            this.CamPosition1_textbox = new System.Windows.Forms.TextBox();
             this.label336 = new System.Windows.Forms.Label();
             this.label327 = new System.Windows.Forms.Label();
             this.label334 = new System.Windows.Forms.Label();
             this.label333 = new System.Windows.Forms.Label();
             this.label330 = new System.Windows.Forms.Label();
             this.skinGroupBox34 = new CCWin.SkinControl.SkinGroupBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
-            this.textBox54 = new System.Windows.Forms.TextBox();
-            this.textBox62 = new System.Windows.Forms.TextBox();
-            this.textBox58 = new System.Windows.Forms.TextBox();
+            this.Get_thing_hight_textbox = new System.Windows.Forms.TextBox();
+            this.Left_OutThing_textbox = new System.Windows.Forms.TextBox();
+            this.Left_OutHeight_textbox = new System.Windows.Forms.TextBox();
+            this.Right_SLposition_textbox = new System.Windows.Forms.TextBox();
             this.label323 = new System.Windows.Forms.Label();
             this.label321 = new System.Windows.Forms.Label();
-            this.textBox59 = new System.Windows.Forms.TextBox();
-            this.textBox60 = new System.Windows.Forms.TextBox();
+            this.Right_safePosition_textbox = new System.Windows.Forms.TextBox();
+            this.OutModel_height_textbox = new System.Windows.Forms.TextBox();
             this.label322 = new System.Windows.Forms.Label();
-            this.textBox57 = new System.Windows.Forms.TextBox();
+            this.Right_ZMposition_textbox = new System.Windows.Forms.TextBox();
             this.label328 = new System.Windows.Forms.Label();
             this.label326 = new System.Windows.Forms.Label();
-            this.textBox63 = new System.Windows.Forms.TextBox();
+            this.Right_RM_hight_Textbox = new System.Windows.Forms.TextBox();
             this.label329 = new System.Windows.Forms.Label();
             this.label332 = new System.Windows.Forms.Label();
-            this.textBox55 = new System.Windows.Forms.TextBox();
-            this.textBox56 = new System.Windows.Forms.TextBox();
+            this.Left_safePosition_textbox = new System.Windows.Forms.TextBox();
+            this.Left_Chong_position_textbox = new System.Windows.Forms.TextBox();
             this.label325 = new System.Windows.Forms.Label();
             this.label331 = new System.Windows.Forms.Label();
             this.label324 = new System.Windows.Forms.Label();
             this.skinGroupBox33 = new CCWin.SkinControl.SkinGroupBox();
-            this.textBox83 = new System.Windows.Forms.TextBox();
+            this.Person_ChongNumber_textbox = new System.Windows.Forms.TextBox();
             this.label359 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox74 = new System.Windows.Forms.TextBox();
-            this.textBox72 = new System.Windows.Forms.TextBox();
-            this.textBox73 = new System.Windows.Forms.TextBox();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.textBox48 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.RealPages_textbox = new System.Windows.Forms.TextBox();
+            this.Real_Chong_textbox = new System.Windows.Forms.TextBox();
+            this.PersonCheckPages_textbox = new System.Windows.Forms.TextBox();
+            this.Set_Chong_textbox = new System.Windows.Forms.TextBox();
+            this.param20_21 = new System.Windows.Forms.TextBox();
+            this.param19_20 = new System.Windows.Forms.TextBox();
+            this.param10_11 = new System.Windows.Forms.TextBox();
+            this.param9_10 = new System.Windows.Forms.TextBox();
+            this.param18_19 = new System.Windows.Forms.TextBox();
+            this.param17_18 = new System.Windows.Forms.TextBox();
+            this.param16_17 = new System.Windows.Forms.TextBox();
+            this.param15_16 = new System.Windows.Forms.TextBox();
+            this.param14_15 = new System.Windows.Forms.TextBox();
+            this.param13_14 = new System.Windows.Forms.TextBox();
+            this.param12_13 = new System.Windows.Forms.TextBox();
+            this.param11_12 = new System.Windows.Forms.TextBox();
+            this.param8_9 = new System.Windows.Forms.TextBox();
+            this.param7_8 = new System.Windows.Forms.TextBox();
+            this.param6_7 = new System.Windows.Forms.TextBox();
+            this.param5_6 = new System.Windows.Forms.TextBox();
+            this.param4_5 = new System.Windows.Forms.TextBox();
+            this.param3_4 = new System.Windows.Forms.TextBox();
+            this.param2_3 = new System.Windows.Forms.TextBox();
+            this.param1_2 = new System.Windows.Forms.TextBox();
             this.label337 = new System.Windows.Forms.Label();
             this.label303 = new System.Windows.Forms.Label();
             this.label300 = new System.Windows.Forms.Label();
@@ -1282,7 +1282,7 @@
             this.skinGroupBox4.BackColor = System.Drawing.Color.White;
             this.skinGroupBox4.BorderColor = System.Drawing.Color.Black;
             this.skinGroupBox4.Controls.Add(this.label27);
-            this.skinGroupBox4.Controls.Add(this.textBox105);
+            this.skinGroupBox4.Controls.Add(this.SameDistance_textbox);
             this.skinGroupBox4.Controls.Add(this.label31);
             this.skinGroupBox4.Controls.Add(this.label32);
             this.skinGroupBox4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -1310,15 +1310,15 @@
             this.label27.Tag = "";
             this.label27.Text = "0";
             // 
-            // textBox105
+            // SameDistance_textbox
             // 
-            this.textBox105.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox105.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox105.Location = new System.Drawing.Point(26, 51);
-            this.textBox105.Multiline = true;
-            this.textBox105.Name = "textBox105";
-            this.textBox105.Size = new System.Drawing.Size(70, 29);
-            this.textBox105.TabIndex = 240;
+            this.SameDistance_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SameDistance_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SameDistance_textbox.Location = new System.Drawing.Point(26, 51);
+            this.SameDistance_textbox.Multiline = true;
+            this.SameDistance_textbox.Name = "SameDistance_textbox";
+            this.SameDistance_textbox.Size = new System.Drawing.Size(70, 29);
+            this.SameDistance_textbox.TabIndex = 240;
             // 
             // label31
             // 
@@ -1345,28 +1345,28 @@
             // 
             this.skinGroupBox3.BackColor = System.Drawing.Color.White;
             this.skinGroupBox3.BorderColor = System.Drawing.Color.Black;
-            this.skinGroupBox3.Controls.Add(this.textBox69);
-            this.skinGroupBox3.Controls.Add(this.textBox29);
+            this.skinGroupBox3.Controls.Add(this.TCX_textbox);
+            this.skinGroupBox3.Controls.Add(this.KnifeLength_textbox);
             this.skinGroupBox3.Controls.Add(this.label320);
             this.skinGroupBox3.Controls.Add(this.label349);
             this.skinGroupBox3.Controls.Add(this.label345);
-            this.skinGroupBox3.Controls.Add(this.textBox76);
+            this.skinGroupBox3.Controls.Add(this.Sum_ChongNums_textbox);
             this.skinGroupBox3.Controls.Add(this.label353);
-            this.skinGroupBox3.Controls.Add(this.textBox16);
-            this.skinGroupBox3.Controls.Add(this.textBox5);
+            this.skinGroupBox3.Controls.Add(this.ZT_textbox);
+            this.skinGroupBox3.Controls.Add(this.KeepNums_textbox);
             this.skinGroupBox3.Controls.Add(this.label298);
-            this.skinGroupBox3.Controls.Add(this.textBox70);
+            this.skinGroupBox3.Controls.Add(this.Main_Parts_textbox);
             this.skinGroupBox3.Controls.Add(this.label346);
             this.skinGroupBox3.Controls.Add(this.label1);
             this.skinGroupBox3.Controls.Add(this.label2);
-            this.skinGroupBox3.Controls.Add(this.textBox18);
+            this.skinGroupBox3.Controls.Add(this.AbandonNums_textbox);
             this.skinGroupBox3.Controls.Add(this.label308);
-            this.skinGroupBox3.Controls.Add(this.textBox20);
+            this.skinGroupBox3.Controls.Add(this.WorkOrder_textbox);
             this.skinGroupBox3.Controls.Add(this.label312);
             this.skinGroupBox3.Controls.Add(this.label310);
-            this.skinGroupBox3.Controls.Add(this.textBox71);
+            this.skinGroupBox3.Controls.Add(this.LayerCount_textbox);
             this.skinGroupBox3.Controls.Add(this.label347);
-            this.skinGroupBox3.Controls.Add(this.textBox30);
+            this.skinGroupBox3.Controls.Add(this.ScanSum_textbox);
             this.skinGroupBox3.Controls.Add(this.label319);
             this.skinGroupBox3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.skinGroupBox3.ForeColor = System.Drawing.Color.Black;
@@ -1382,27 +1382,27 @@
             this.skinGroupBox3.TitleRectBackColor = System.Drawing.Color.White;
             this.skinGroupBox3.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
             // 
-            // textBox69
+            // TCX_textbox
             // 
-            this.textBox69.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox69.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox69.Location = new System.Drawing.Point(11, 37);
-            this.textBox69.Multiline = true;
-            this.textBox69.Name = "textBox69";
-            this.textBox69.ReadOnly = true;
-            this.textBox69.Size = new System.Drawing.Size(61, 21);
-            this.textBox69.TabIndex = 253;
+            this.TCX_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TCX_textbox.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TCX_textbox.Location = new System.Drawing.Point(11, 37);
+            this.TCX_textbox.Multiline = true;
+            this.TCX_textbox.Name = "TCX_textbox";
+            this.TCX_textbox.ReadOnly = true;
+            this.TCX_textbox.Size = new System.Drawing.Size(61, 21);
+            this.TCX_textbox.TabIndex = 253;
             // 
-            // textBox29
+            // KnifeLength_textbox
             // 
-            this.textBox29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox29.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox29.Location = new System.Drawing.Point(76, 87);
-            this.textBox29.Multiline = true;
-            this.textBox29.Name = "textBox29";
-            this.textBox29.ReadOnly = true;
-            this.textBox29.Size = new System.Drawing.Size(61, 21);
-            this.textBox29.TabIndex = 261;
+            this.KnifeLength_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.KnifeLength_textbox.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.KnifeLength_textbox.Location = new System.Drawing.Point(76, 87);
+            this.KnifeLength_textbox.Multiline = true;
+            this.KnifeLength_textbox.Name = "KnifeLength_textbox";
+            this.KnifeLength_textbox.ReadOnly = true;
+            this.KnifeLength_textbox.Size = new System.Drawing.Size(61, 21);
+            this.KnifeLength_textbox.TabIndex = 261;
             // 
             // label320
             // 
@@ -1434,16 +1434,16 @@
             this.label345.TabIndex = 254;
             this.label345.Text = "途程序；";
             // 
-            // textBox76
+            // Sum_ChongNums_textbox
             // 
-            this.textBox76.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox76.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox76.Location = new System.Drawing.Point(11, 124);
-            this.textBox76.Multiline = true;
-            this.textBox76.Name = "textBox76";
-            this.textBox76.ReadOnly = true;
-            this.textBox76.Size = new System.Drawing.Size(85, 23);
-            this.textBox76.TabIndex = 265;
+            this.Sum_ChongNums_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Sum_ChongNums_textbox.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Sum_ChongNums_textbox.Location = new System.Drawing.Point(11, 124);
+            this.Sum_ChongNums_textbox.Multiline = true;
+            this.Sum_ChongNums_textbox.Name = "Sum_ChongNums_textbox";
+            this.Sum_ChongNums_textbox.ReadOnly = true;
+            this.Sum_ChongNums_textbox.Size = new System.Drawing.Size(85, 23);
+            this.Sum_ChongNums_textbox.TabIndex = 265;
             // 
             // label353
             // 
@@ -1455,27 +1455,27 @@
             this.label353.TabIndex = 267;
             this.label353.Text = "初冲";
             // 
-            // textBox16
+            // ZT_textbox
             // 
-            this.textBox16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox16.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox16.Location = new System.Drawing.Point(76, 37);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(61, 21);
-            this.textBox16.TabIndex = 247;
+            this.ZT_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ZT_textbox.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ZT_textbox.Location = new System.Drawing.Point(76, 37);
+            this.ZT_textbox.Multiline = true;
+            this.ZT_textbox.Name = "ZT_textbox";
+            this.ZT_textbox.ReadOnly = true;
+            this.ZT_textbox.Size = new System.Drawing.Size(61, 21);
+            this.ZT_textbox.TabIndex = 247;
             // 
-            // textBox5
+            // KeepNums_textbox
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox5.Location = new System.Drawing.Point(215, 85);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(61, 21);
-            this.textBox5.TabIndex = 262;
+            this.KeepNums_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.KeepNums_textbox.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.KeepNums_textbox.Location = new System.Drawing.Point(215, 85);
+            this.KeepNums_textbox.Multiline = true;
+            this.KeepNums_textbox.Name = "KeepNums_textbox";
+            this.KeepNums_textbox.ReadOnly = true;
+            this.KeepNums_textbox.Size = new System.Drawing.Size(61, 21);
+            this.KeepNums_textbox.TabIndex = 262;
             // 
             // label298
             // 
@@ -1487,16 +1487,16 @@
             this.label298.TabIndex = 245;
             this.label298.Text = "主途；";
             // 
-            // textBox70
+            // Main_Parts_textbox
             // 
-            this.textBox70.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox70.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox70.Location = new System.Drawing.Point(147, 37);
-            this.textBox70.Multiline = true;
-            this.textBox70.Name = "textBox70";
-            this.textBox70.ReadOnly = true;
-            this.textBox70.Size = new System.Drawing.Size(61, 21);
-            this.textBox70.TabIndex = 252;
+            this.Main_Parts_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Main_Parts_textbox.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Main_Parts_textbox.Location = new System.Drawing.Point(147, 37);
+            this.Main_Parts_textbox.Multiline = true;
+            this.Main_Parts_textbox.Name = "Main_Parts_textbox";
+            this.Main_Parts_textbox.ReadOnly = true;
+            this.Main_Parts_textbox.Size = new System.Drawing.Size(61, 21);
+            this.Main_Parts_textbox.TabIndex = 252;
             // 
             // label346
             // 
@@ -1528,16 +1528,16 @@
             this.label2.TabIndex = 263;
             this.label2.Text = "保养；";
             // 
-            // textBox18
+            // AbandonNums_textbox
             // 
-            this.textBox18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox18.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox18.Location = new System.Drawing.Point(147, 85);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(61, 21);
-            this.textBox18.TabIndex = 259;
+            this.AbandonNums_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.AbandonNums_textbox.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.AbandonNums_textbox.Location = new System.Drawing.Point(147, 85);
+            this.AbandonNums_textbox.Multiline = true;
+            this.AbandonNums_textbox.Name = "AbandonNums_textbox";
+            this.AbandonNums_textbox.ReadOnly = true;
+            this.AbandonNums_textbox.Size = new System.Drawing.Size(61, 21);
+            this.AbandonNums_textbox.TabIndex = 259;
             // 
             // label308
             // 
@@ -1549,16 +1549,16 @@
             this.label308.TabIndex = 257;
             this.label308.Text = "报废；";
             // 
-            // textBox20
+            // WorkOrder_textbox
             // 
-            this.textBox20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox20.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox20.Location = new System.Drawing.Point(215, 35);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
-            this.textBox20.Size = new System.Drawing.Size(61, 21);
-            this.textBox20.TabIndex = 248;
+            this.WorkOrder_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.WorkOrder_textbox.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.WorkOrder_textbox.Location = new System.Drawing.Point(215, 35);
+            this.WorkOrder_textbox.Multiline = true;
+            this.WorkOrder_textbox.Name = "WorkOrder_textbox";
+            this.WorkOrder_textbox.ReadOnly = true;
+            this.WorkOrder_textbox.Size = new System.Drawing.Size(61, 21);
+            this.WorkOrder_textbox.TabIndex = 248;
             // 
             // label312
             // 
@@ -1580,16 +1580,16 @@
             this.label310.TabIndex = 246;
             this.label310.Text = "工令；";
             // 
-            // textBox71
+            // LayerCount_textbox
             // 
-            this.textBox71.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox71.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox71.Location = new System.Drawing.Point(11, 85);
-            this.textBox71.Multiline = true;
-            this.textBox71.Name = "textBox71";
-            this.textBox71.ReadOnly = true;
-            this.textBox71.Size = new System.Drawing.Size(61, 21);
-            this.textBox71.TabIndex = 256;
+            this.LayerCount_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.LayerCount_textbox.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.LayerCount_textbox.Location = new System.Drawing.Point(11, 85);
+            this.LayerCount_textbox.Multiline = true;
+            this.LayerCount_textbox.Name = "LayerCount_textbox";
+            this.LayerCount_textbox.ReadOnly = true;
+            this.LayerCount_textbox.Size = new System.Drawing.Size(61, 21);
+            this.LayerCount_textbox.TabIndex = 256;
             // 
             // label347
             // 
@@ -1601,16 +1601,16 @@
             this.label347.TabIndex = 255;
             this.label347.Text = "层别；";
             // 
-            // textBox30
+            // ScanSum_textbox
             // 
-            this.textBox30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox30.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox30.Location = new System.Drawing.Point(150, 125);
-            this.textBox30.Multiline = true;
-            this.textBox30.Name = "textBox30";
-            this.textBox30.ReadOnly = true;
-            this.textBox30.Size = new System.Drawing.Size(126, 21);
-            this.textBox30.TabIndex = 250;
+            this.ScanSum_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ScanSum_textbox.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ScanSum_textbox.Location = new System.Drawing.Point(150, 125);
+            this.ScanSum_textbox.Multiline = true;
+            this.ScanSum_textbox.Name = "ScanSum_textbox";
+            this.ScanSum_textbox.ReadOnly = true;
+            this.ScanSum_textbox.Size = new System.Drawing.Size(126, 21);
+            this.ScanSum_textbox.TabIndex = 250;
             // 
             // label319
             // 
@@ -1626,16 +1626,16 @@
             // 
             this.skinGroupBox38.BackColor = System.Drawing.Color.White;
             this.skinGroupBox38.BorderColor = System.Drawing.Color.Black;
-            this.skinGroupBox38.Controls.Add(this.textBox85);
-            this.skinGroupBox38.Controls.Add(this.textBox86);
-            this.skinGroupBox38.Controls.Add(this.textBox87);
-            this.skinGroupBox38.Controls.Add(this.textBox88);
-            this.skinGroupBox38.Controls.Add(this.textBox89);
-            this.skinGroupBox38.Controls.Add(this.textBox90);
-            this.skinGroupBox38.Controls.Add(this.textBox91);
-            this.skinGroupBox38.Controls.Add(this.textBox92);
-            this.skinGroupBox38.Controls.Add(this.textBox93);
-            this.skinGroupBox38.Controls.Add(this.textBox94);
+            this.skinGroupBox38.Controls.Add(this.DelayTime_textbox);
+            this.skinGroupBox38.Controls.Add(this.HoleNums_textbox);
+            this.skinGroupBox38.Controls.Add(this.TensionPower_textbox);
+            this.skinGroupBox38.Controls.Add(this.MoveSpeed_textbox);
+            this.skinGroupBox38.Controls.Add(this.TurnPagesNum_textbox);
+            this.skinGroupBox38.Controls.Add(this.GetThingSpeed_textBox);
+            this.skinGroupBox38.Controls.Add(this.EveryRowRealNum_textbox);
+            this.skinGroupBox38.Controls.Add(this.EmptyNums_textbox);
+            this.skinGroupBox38.Controls.Add(this.EveryRowProdution_textbox);
+            this.skinGroupBox38.Controls.Add(this.Online_textbox);
             this.skinGroupBox38.Controls.Add(this.label370);
             this.skinGroupBox38.Controls.Add(this.label371);
             this.skinGroupBox38.Controls.Add(this.label372);
@@ -1661,105 +1661,105 @@
             this.skinGroupBox38.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
             this.skinGroupBox38.Visible = false;
             // 
-            // textBox85
+            // DelayTime_textbox
             // 
-            this.textBox85.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox85.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox85.Location = new System.Drawing.Point(100, 106);
-            this.textBox85.Multiline = true;
-            this.textBox85.Name = "textBox85";
-            this.textBox85.Size = new System.Drawing.Size(70, 29);
-            this.textBox85.TabIndex = 237;
+            this.DelayTime_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DelayTime_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DelayTime_textbox.Location = new System.Drawing.Point(100, 106);
+            this.DelayTime_textbox.Multiline = true;
+            this.DelayTime_textbox.Name = "DelayTime_textbox";
+            this.DelayTime_textbox.Size = new System.Drawing.Size(70, 29);
+            this.DelayTime_textbox.TabIndex = 237;
             // 
-            // textBox86
+            // HoleNums_textbox
             // 
-            this.textBox86.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox86.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox86.Location = new System.Drawing.Point(16, 106);
-            this.textBox86.Multiline = true;
-            this.textBox86.Name = "textBox86";
-            this.textBox86.Size = new System.Drawing.Size(70, 29);
-            this.textBox86.TabIndex = 236;
+            this.HoleNums_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.HoleNums_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.HoleNums_textbox.Location = new System.Drawing.Point(16, 106);
+            this.HoleNums_textbox.Multiline = true;
+            this.HoleNums_textbox.Name = "HoleNums_textbox";
+            this.HoleNums_textbox.Size = new System.Drawing.Size(70, 29);
+            this.HoleNums_textbox.TabIndex = 236;
             // 
-            // textBox87
+            // TensionPower_textbox
             // 
-            this.textBox87.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox87.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox87.Location = new System.Drawing.Point(356, 106);
-            this.textBox87.Multiline = true;
-            this.textBox87.Name = "textBox87";
-            this.textBox87.Size = new System.Drawing.Size(70, 29);
-            this.textBox87.TabIndex = 236;
+            this.TensionPower_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TensionPower_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TensionPower_textbox.Location = new System.Drawing.Point(356, 106);
+            this.TensionPower_textbox.Multiline = true;
+            this.TensionPower_textbox.Name = "TensionPower_textbox";
+            this.TensionPower_textbox.Size = new System.Drawing.Size(70, 29);
+            this.TensionPower_textbox.TabIndex = 236;
             // 
-            // textBox88
+            // MoveSpeed_textbox
             // 
-            this.textBox88.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox88.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox88.Location = new System.Drawing.Point(266, 106);
-            this.textBox88.Multiline = true;
-            this.textBox88.Name = "textBox88";
-            this.textBox88.Size = new System.Drawing.Size(70, 29);
-            this.textBox88.TabIndex = 235;
+            this.MoveSpeed_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.MoveSpeed_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MoveSpeed_textbox.Location = new System.Drawing.Point(266, 106);
+            this.MoveSpeed_textbox.Multiline = true;
+            this.MoveSpeed_textbox.Name = "MoveSpeed_textbox";
+            this.MoveSpeed_textbox.Size = new System.Drawing.Size(70, 29);
+            this.MoveSpeed_textbox.TabIndex = 235;
             // 
-            // textBox89
+            // TurnPagesNum_textbox
             // 
-            this.textBox89.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox89.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox89.Location = new System.Drawing.Point(265, 48);
-            this.textBox89.Multiline = true;
-            this.textBox89.Name = "textBox89";
-            this.textBox89.Size = new System.Drawing.Size(70, 29);
-            this.textBox89.TabIndex = 241;
+            this.TurnPagesNum_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.TurnPagesNum_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TurnPagesNum_textbox.Location = new System.Drawing.Point(265, 48);
+            this.TurnPagesNum_textbox.Multiline = true;
+            this.TurnPagesNum_textbox.Name = "TurnPagesNum_textbox";
+            this.TurnPagesNum_textbox.Size = new System.Drawing.Size(70, 29);
+            this.TurnPagesNum_textbox.TabIndex = 241;
             // 
-            // textBox90
+            // GetThingSpeed_textBox
             // 
-            this.textBox90.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox90.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox90.Location = new System.Drawing.Point(181, 106);
-            this.textBox90.Multiline = true;
-            this.textBox90.Name = "textBox90";
-            this.textBox90.Size = new System.Drawing.Size(70, 29);
-            this.textBox90.TabIndex = 235;
+            this.GetThingSpeed_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.GetThingSpeed_textBox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.GetThingSpeed_textBox.Location = new System.Drawing.Point(181, 106);
+            this.GetThingSpeed_textBox.Multiline = true;
+            this.GetThingSpeed_textBox.Name = "GetThingSpeed_textBox";
+            this.GetThingSpeed_textBox.Size = new System.Drawing.Size(70, 29);
+            this.GetThingSpeed_textBox.TabIndex = 235;
             // 
-            // textBox91
+            // EveryRowRealNum_textbox
             // 
-            this.textBox91.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox91.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox91.Location = new System.Drawing.Point(181, 48);
-            this.textBox91.Multiline = true;
-            this.textBox91.Name = "textBox91";
-            this.textBox91.Size = new System.Drawing.Size(70, 29);
-            this.textBox91.TabIndex = 240;
+            this.EveryRowRealNum_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.EveryRowRealNum_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.EveryRowRealNum_textbox.Location = new System.Drawing.Point(181, 48);
+            this.EveryRowRealNum_textbox.Multiline = true;
+            this.EveryRowRealNum_textbox.Name = "EveryRowRealNum_textbox";
+            this.EveryRowRealNum_textbox.Size = new System.Drawing.Size(70, 29);
+            this.EveryRowRealNum_textbox.TabIndex = 240;
             // 
-            // textBox92
+            // EmptyNums_textbox
             // 
-            this.textBox92.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox92.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox92.Location = new System.Drawing.Point(356, 51);
-            this.textBox92.Multiline = true;
-            this.textBox92.Name = "textBox92";
-            this.textBox92.Size = new System.Drawing.Size(70, 29);
-            this.textBox92.TabIndex = 234;
+            this.EmptyNums_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.EmptyNums_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.EmptyNums_textbox.Location = new System.Drawing.Point(356, 51);
+            this.EmptyNums_textbox.Multiline = true;
+            this.EmptyNums_textbox.Name = "EmptyNums_textbox";
+            this.EmptyNums_textbox.Size = new System.Drawing.Size(70, 29);
+            this.EmptyNums_textbox.TabIndex = 234;
             // 
-            // textBox93
+            // EveryRowProdution_textbox
             // 
-            this.textBox93.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox93.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox93.Location = new System.Drawing.Point(101, 48);
-            this.textBox93.Multiline = true;
-            this.textBox93.Name = "textBox93";
-            this.textBox93.Size = new System.Drawing.Size(70, 29);
-            this.textBox93.TabIndex = 239;
+            this.EveryRowProdution_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.EveryRowProdution_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.EveryRowProdution_textbox.Location = new System.Drawing.Point(101, 48);
+            this.EveryRowProdution_textbox.Multiline = true;
+            this.EveryRowProdution_textbox.Name = "EveryRowProdution_textbox";
+            this.EveryRowProdution_textbox.Size = new System.Drawing.Size(70, 29);
+            this.EveryRowProdution_textbox.TabIndex = 239;
             // 
-            // textBox94
+            // Online_textbox
             // 
-            this.textBox94.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox94.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox94.Location = new System.Drawing.Point(17, 48);
-            this.textBox94.Multiline = true;
-            this.textBox94.Name = "textBox94";
-            this.textBox94.Size = new System.Drawing.Size(70, 29);
-            this.textBox94.TabIndex = 238;
+            this.Online_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Online_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Online_textbox.Location = new System.Drawing.Point(17, 48);
+            this.Online_textbox.Multiline = true;
+            this.Online_textbox.Name = "Online_textbox";
+            this.Online_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Online_textbox.TabIndex = 238;
             // 
             // label370
             // 
@@ -1865,13 +1865,13 @@
             // 
             this.skinGroupBox35.BackColor = System.Drawing.Color.White;
             this.skinGroupBox35.BorderColor = System.Drawing.Color.Black;
-            this.skinGroupBox35.Controls.Add(this.textBox61);
-            this.skinGroupBox35.Controls.Add(this.textBox67);
-            this.skinGroupBox35.Controls.Add(this.textBox65);
-            this.skinGroupBox35.Controls.Add(this.textBox68);
-            this.skinGroupBox35.Controls.Add(this.textBox64);
+            this.skinGroupBox35.Controls.Add(this.JudgeModel_height_textbox);
+            this.skinGroupBox35.Controls.Add(this.ScanPosition2_textbox);
+            this.skinGroupBox35.Controls.Add(this.CamPosition2_textbox);
+            this.skinGroupBox35.Controls.Add(this.ScanPosition1_textbox);
+            this.skinGroupBox35.Controls.Add(this.HandHeight_textbox);
             this.skinGroupBox35.Controls.Add(this.label335);
-            this.skinGroupBox35.Controls.Add(this.textBox66);
+            this.skinGroupBox35.Controls.Add(this.CamPosition1_textbox);
             this.skinGroupBox35.Controls.Add(this.label336);
             this.skinGroupBox35.Controls.Add(this.label327);
             this.skinGroupBox35.Controls.Add(this.label334);
@@ -1891,55 +1891,55 @@
             this.skinGroupBox35.TitleRectBackColor = System.Drawing.Color.White;
             this.skinGroupBox35.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
             // 
-            // textBox61
+            // JudgeModel_height_textbox
             // 
-            this.textBox61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox61.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox61.Location = new System.Drawing.Point(199, 106);
-            this.textBox61.Multiline = true;
-            this.textBox61.Name = "textBox61";
-            this.textBox61.Size = new System.Drawing.Size(70, 29);
-            this.textBox61.TabIndex = 237;
+            this.JudgeModel_height_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.JudgeModel_height_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.JudgeModel_height_textbox.Location = new System.Drawing.Point(199, 106);
+            this.JudgeModel_height_textbox.Multiline = true;
+            this.JudgeModel_height_textbox.Name = "JudgeModel_height_textbox";
+            this.JudgeModel_height_textbox.Size = new System.Drawing.Size(70, 29);
+            this.JudgeModel_height_textbox.TabIndex = 237;
             // 
-            // textBox67
+            // ScanPosition2_textbox
             // 
-            this.textBox67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox67.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox67.Location = new System.Drawing.Point(114, 106);
-            this.textBox67.Multiline = true;
-            this.textBox67.Name = "textBox67";
-            this.textBox67.Size = new System.Drawing.Size(70, 29);
-            this.textBox67.TabIndex = 239;
+            this.ScanPosition2_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ScanPosition2_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ScanPosition2_textbox.Location = new System.Drawing.Point(114, 106);
+            this.ScanPosition2_textbox.Multiline = true;
+            this.ScanPosition2_textbox.Name = "ScanPosition2_textbox";
+            this.ScanPosition2_textbox.Size = new System.Drawing.Size(70, 29);
+            this.ScanPosition2_textbox.TabIndex = 239;
             // 
-            // textBox65
+            // CamPosition2_textbox
             // 
-            this.textBox65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox65.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox65.Location = new System.Drawing.Point(110, 51);
-            this.textBox65.Multiline = true;
-            this.textBox65.Name = "textBox65";
-            this.textBox65.Size = new System.Drawing.Size(70, 29);
-            this.textBox65.TabIndex = 241;
+            this.CamPosition2_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.CamPosition2_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CamPosition2_textbox.Location = new System.Drawing.Point(110, 51);
+            this.CamPosition2_textbox.Multiline = true;
+            this.CamPosition2_textbox.Name = "CamPosition2_textbox";
+            this.CamPosition2_textbox.Size = new System.Drawing.Size(70, 29);
+            this.CamPosition2_textbox.TabIndex = 241;
             // 
-            // textBox68
+            // ScanPosition1_textbox
             // 
-            this.textBox68.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox68.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox68.Location = new System.Drawing.Point(28, 106);
-            this.textBox68.Multiline = true;
-            this.textBox68.Name = "textBox68";
-            this.textBox68.Size = new System.Drawing.Size(70, 29);
-            this.textBox68.TabIndex = 238;
+            this.ScanPosition1_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ScanPosition1_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ScanPosition1_textbox.Location = new System.Drawing.Point(28, 106);
+            this.ScanPosition1_textbox.Multiline = true;
+            this.ScanPosition1_textbox.Name = "ScanPosition1_textbox";
+            this.ScanPosition1_textbox.Size = new System.Drawing.Size(70, 29);
+            this.ScanPosition1_textbox.TabIndex = 238;
             // 
-            // textBox64
+            // HandHeight_textbox
             // 
-            this.textBox64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox64.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox64.Location = new System.Drawing.Point(197, 51);
-            this.textBox64.Multiline = true;
-            this.textBox64.Name = "textBox64";
-            this.textBox64.Size = new System.Drawing.Size(70, 29);
-            this.textBox64.TabIndex = 234;
+            this.HandHeight_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.HandHeight_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.HandHeight_textbox.Location = new System.Drawing.Point(197, 51);
+            this.HandHeight_textbox.Multiline = true;
+            this.HandHeight_textbox.Name = "HandHeight_textbox";
+            this.HandHeight_textbox.Size = new System.Drawing.Size(70, 29);
+            this.HandHeight_textbox.TabIndex = 234;
             // 
             // label335
             // 
@@ -1952,15 +1952,15 @@
             this.label335.Tag = "";
             this.label335.Text = "扫码位置2";
             // 
-            // textBox66
+            // CamPosition1_textbox
             // 
-            this.textBox66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox66.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox66.Location = new System.Drawing.Point(26, 51);
-            this.textBox66.Multiline = true;
-            this.textBox66.Name = "textBox66";
-            this.textBox66.Size = new System.Drawing.Size(70, 29);
-            this.textBox66.TabIndex = 240;
+            this.CamPosition1_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.CamPosition1_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.CamPosition1_textbox.Location = new System.Drawing.Point(26, 51);
+            this.CamPosition1_textbox.Multiline = true;
+            this.CamPosition1_textbox.Name = "CamPosition1_textbox";
+            this.CamPosition1_textbox.Size = new System.Drawing.Size(70, 29);
+            this.CamPosition1_textbox.TabIndex = 240;
             // 
             // label336
             // 
@@ -2021,23 +2021,23 @@
             // 
             this.skinGroupBox34.BackColor = System.Drawing.Color.White;
             this.skinGroupBox34.BorderColor = System.Drawing.Color.Black;
-            this.skinGroupBox34.Controls.Add(this.textBox53);
-            this.skinGroupBox34.Controls.Add(this.textBox54);
-            this.skinGroupBox34.Controls.Add(this.textBox62);
-            this.skinGroupBox34.Controls.Add(this.textBox58);
+            this.skinGroupBox34.Controls.Add(this.Get_thing_hight_textbox);
+            this.skinGroupBox34.Controls.Add(this.Left_OutThing_textbox);
+            this.skinGroupBox34.Controls.Add(this.Left_OutHeight_textbox);
+            this.skinGroupBox34.Controls.Add(this.Right_SLposition_textbox);
             this.skinGroupBox34.Controls.Add(this.label323);
             this.skinGroupBox34.Controls.Add(this.label321);
-            this.skinGroupBox34.Controls.Add(this.textBox59);
-            this.skinGroupBox34.Controls.Add(this.textBox60);
+            this.skinGroupBox34.Controls.Add(this.Right_safePosition_textbox);
+            this.skinGroupBox34.Controls.Add(this.OutModel_height_textbox);
             this.skinGroupBox34.Controls.Add(this.label322);
-            this.skinGroupBox34.Controls.Add(this.textBox57);
+            this.skinGroupBox34.Controls.Add(this.Right_ZMposition_textbox);
             this.skinGroupBox34.Controls.Add(this.label328);
             this.skinGroupBox34.Controls.Add(this.label326);
-            this.skinGroupBox34.Controls.Add(this.textBox63);
+            this.skinGroupBox34.Controls.Add(this.Right_RM_hight_Textbox);
             this.skinGroupBox34.Controls.Add(this.label329);
             this.skinGroupBox34.Controls.Add(this.label332);
-            this.skinGroupBox34.Controls.Add(this.textBox55);
-            this.skinGroupBox34.Controls.Add(this.textBox56);
+            this.skinGroupBox34.Controls.Add(this.Left_safePosition_textbox);
+            this.skinGroupBox34.Controls.Add(this.Left_Chong_position_textbox);
             this.skinGroupBox34.Controls.Add(this.label325);
             this.skinGroupBox34.Controls.Add(this.label331);
             this.skinGroupBox34.Controls.Add(this.label324);
@@ -2055,45 +2055,45 @@
             this.skinGroupBox34.TitleRectBackColor = System.Drawing.Color.White;
             this.skinGroupBox34.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
             // 
-            // textBox53
+            // Get_thing_hight_textbox
             // 
-            this.textBox53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox53.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox53.Location = new System.Drawing.Point(350, 34);
-            this.textBox53.Multiline = true;
-            this.textBox53.Name = "textBox53";
-            this.textBox53.Size = new System.Drawing.Size(70, 29);
-            this.textBox53.TabIndex = 237;
+            this.Get_thing_hight_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Get_thing_hight_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Get_thing_hight_textbox.Location = new System.Drawing.Point(350, 34);
+            this.Get_thing_hight_textbox.Multiline = true;
+            this.Get_thing_hight_textbox.Name = "Get_thing_hight_textbox";
+            this.Get_thing_hight_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Get_thing_hight_textbox.TabIndex = 237;
             // 
-            // textBox54
+            // Left_OutThing_textbox
             // 
-            this.textBox54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox54.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox54.Location = new System.Drawing.Point(181, 90);
-            this.textBox54.Multiline = true;
-            this.textBox54.Name = "textBox54";
-            this.textBox54.Size = new System.Drawing.Size(70, 29);
-            this.textBox54.TabIndex = 236;
+            this.Left_OutThing_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Left_OutThing_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Left_OutThing_textbox.Location = new System.Drawing.Point(181, 90);
+            this.Left_OutThing_textbox.Multiline = true;
+            this.Left_OutThing_textbox.Name = "Left_OutThing_textbox";
+            this.Left_OutThing_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Left_OutThing_textbox.TabIndex = 236;
             // 
-            // textBox62
+            // Left_OutHeight_textbox
             // 
-            this.textBox62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox62.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox62.Location = new System.Drawing.Point(264, 90);
-            this.textBox62.Multiline = true;
-            this.textBox62.Name = "textBox62";
-            this.textBox62.Size = new System.Drawing.Size(70, 29);
-            this.textBox62.TabIndex = 236;
+            this.Left_OutHeight_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Left_OutHeight_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Left_OutHeight_textbox.Location = new System.Drawing.Point(264, 90);
+            this.Left_OutHeight_textbox.Multiline = true;
+            this.Left_OutHeight_textbox.Name = "Left_OutHeight_textbox";
+            this.Left_OutHeight_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Left_OutHeight_textbox.TabIndex = 236;
             // 
-            // textBox58
+            // Right_SLposition_textbox
             // 
-            this.textBox58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox58.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox58.Location = new System.Drawing.Point(11, 36);
-            this.textBox58.Multiline = true;
-            this.textBox58.Name = "textBox58";
-            this.textBox58.Size = new System.Drawing.Size(70, 29);
-            this.textBox58.TabIndex = 240;
+            this.Right_SLposition_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Right_SLposition_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Right_SLposition_textbox.Location = new System.Drawing.Point(11, 36);
+            this.Right_SLposition_textbox.Multiline = true;
+            this.Right_SLposition_textbox.Name = "Right_SLposition_textbox";
+            this.Right_SLposition_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Right_SLposition_textbox.TabIndex = 240;
             // 
             // label323
             // 
@@ -2115,25 +2115,25 @@
             this.label321.TabIndex = 194;
             this.label321.Text = "出模高度";
             // 
-            // textBox59
+            // Right_safePosition_textbox
             // 
-            this.textBox59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox59.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox59.Location = new System.Drawing.Point(100, 36);
-            this.textBox59.Multiline = true;
-            this.textBox59.Name = "textBox59";
-            this.textBox59.Size = new System.Drawing.Size(70, 29);
-            this.textBox59.TabIndex = 239;
+            this.Right_safePosition_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Right_safePosition_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Right_safePosition_textbox.Location = new System.Drawing.Point(100, 36);
+            this.Right_safePosition_textbox.Multiline = true;
+            this.Right_safePosition_textbox.Name = "Right_safePosition_textbox";
+            this.Right_safePosition_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Right_safePosition_textbox.TabIndex = 239;
             // 
-            // textBox60
+            // OutModel_height_textbox
             // 
-            this.textBox60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox60.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox60.Location = new System.Drawing.Point(350, 90);
-            this.textBox60.Multiline = true;
-            this.textBox60.Name = "textBox60";
-            this.textBox60.Size = new System.Drawing.Size(70, 29);
-            this.textBox60.TabIndex = 238;
+            this.OutModel_height_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.OutModel_height_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.OutModel_height_textbox.Location = new System.Drawing.Point(350, 90);
+            this.OutModel_height_textbox.Multiline = true;
+            this.OutModel_height_textbox.Name = "OutModel_height_textbox";
+            this.OutModel_height_textbox.Size = new System.Drawing.Size(70, 29);
+            this.OutModel_height_textbox.TabIndex = 238;
             // 
             // label322
             // 
@@ -2145,15 +2145,15 @@
             this.label322.TabIndex = 196;
             this.label322.Text = "右安全位置";
             // 
-            // textBox57
+            // Right_ZMposition_textbox
             // 
-            this.textBox57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox57.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox57.Location = new System.Drawing.Point(180, 35);
-            this.textBox57.Multiline = true;
-            this.textBox57.Name = "textBox57";
-            this.textBox57.Size = new System.Drawing.Size(70, 29);
-            this.textBox57.TabIndex = 241;
+            this.Right_ZMposition_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Right_ZMposition_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Right_ZMposition_textbox.Location = new System.Drawing.Point(180, 35);
+            this.Right_ZMposition_textbox.Multiline = true;
+            this.Right_ZMposition_textbox.Name = "Right_ZMposition_textbox";
+            this.Right_ZMposition_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Right_ZMposition_textbox.TabIndex = 241;
             // 
             // label328
             // 
@@ -2175,15 +2175,15 @@
             this.label326.TabIndex = 200;
             this.label326.Text = "右装模位置";
             // 
-            // textBox63
+            // Right_RM_hight_Textbox
             // 
-            this.textBox63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox63.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox63.Location = new System.Drawing.Point(266, 35);
-            this.textBox63.Multiline = true;
-            this.textBox63.Name = "textBox63";
-            this.textBox63.Size = new System.Drawing.Size(70, 29);
-            this.textBox63.TabIndex = 235;
+            this.Right_RM_hight_Textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Right_RM_hight_Textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Right_RM_hight_Textbox.Location = new System.Drawing.Point(266, 35);
+            this.Right_RM_hight_Textbox.Multiline = true;
+            this.Right_RM_hight_Textbox.Name = "Right_RM_hight_Textbox";
+            this.Right_RM_hight_Textbox.Size = new System.Drawing.Size(70, 29);
+            this.Right_RM_hight_Textbox.TabIndex = 235;
             // 
             // label329
             // 
@@ -2205,25 +2205,25 @@
             this.label332.TabIndex = 206;
             this.label332.Text = "左下料位";
             // 
-            // textBox55
+            // Left_safePosition_textbox
             // 
-            this.textBox55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox55.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox55.Location = new System.Drawing.Point(99, 90);
-            this.textBox55.Multiline = true;
-            this.textBox55.Name = "textBox55";
-            this.textBox55.Size = new System.Drawing.Size(70, 29);
-            this.textBox55.TabIndex = 235;
+            this.Left_safePosition_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Left_safePosition_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Left_safePosition_textbox.Location = new System.Drawing.Point(99, 90);
+            this.Left_safePosition_textbox.Multiline = true;
+            this.Left_safePosition_textbox.Name = "Left_safePosition_textbox";
+            this.Left_safePosition_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Left_safePosition_textbox.TabIndex = 235;
             // 
-            // textBox56
+            // Left_Chong_position_textbox
             // 
-            this.textBox56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox56.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox56.Location = new System.Drawing.Point(11, 90);
-            this.textBox56.Multiline = true;
-            this.textBox56.Name = "textBox56";
-            this.textBox56.Size = new System.Drawing.Size(70, 29);
-            this.textBox56.TabIndex = 234;
+            this.Left_Chong_position_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Left_Chong_position_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Left_Chong_position_textbox.Location = new System.Drawing.Point(11, 90);
+            this.Left_Chong_position_textbox.Multiline = true;
+            this.Left_Chong_position_textbox.Name = "Left_Chong_position_textbox";
+            this.Left_Chong_position_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Left_Chong_position_textbox.TabIndex = 234;
             // 
             // label325
             // 
@@ -2259,32 +2259,32 @@
             // 
             this.skinGroupBox33.BackColor = System.Drawing.Color.White;
             this.skinGroupBox33.BorderColor = System.Drawing.Color.Black;
-            this.skinGroupBox33.Controls.Add(this.textBox83);
+            this.skinGroupBox33.Controls.Add(this.Person_ChongNumber_textbox);
             this.skinGroupBox33.Controls.Add(this.label359);
-            this.skinGroupBox33.Controls.Add(this.textBox22);
-            this.skinGroupBox33.Controls.Add(this.textBox74);
-            this.skinGroupBox33.Controls.Add(this.textBox72);
-            this.skinGroupBox33.Controls.Add(this.textBox73);
-            this.skinGroupBox33.Controls.Add(this.textBox49);
-            this.skinGroupBox33.Controls.Add(this.textBox50);
-            this.skinGroupBox33.Controls.Add(this.textBox51);
-            this.skinGroupBox33.Controls.Add(this.textBox52);
-            this.skinGroupBox33.Controls.Add(this.textBox45);
-            this.skinGroupBox33.Controls.Add(this.textBox46);
-            this.skinGroupBox33.Controls.Add(this.textBox47);
-            this.skinGroupBox33.Controls.Add(this.textBox48);
-            this.skinGroupBox33.Controls.Add(this.textBox41);
-            this.skinGroupBox33.Controls.Add(this.textBox42);
-            this.skinGroupBox33.Controls.Add(this.textBox43);
-            this.skinGroupBox33.Controls.Add(this.textBox44);
-            this.skinGroupBox33.Controls.Add(this.textBox37);
-            this.skinGroupBox33.Controls.Add(this.textBox38);
-            this.skinGroupBox33.Controls.Add(this.textBox39);
-            this.skinGroupBox33.Controls.Add(this.textBox40);
-            this.skinGroupBox33.Controls.Add(this.textBox35);
-            this.skinGroupBox33.Controls.Add(this.textBox36);
-            this.skinGroupBox33.Controls.Add(this.textBox34);
-            this.skinGroupBox33.Controls.Add(this.textBox27);
+            this.skinGroupBox33.Controls.Add(this.RealPages_textbox);
+            this.skinGroupBox33.Controls.Add(this.Real_Chong_textbox);
+            this.skinGroupBox33.Controls.Add(this.PersonCheckPages_textbox);
+            this.skinGroupBox33.Controls.Add(this.Set_Chong_textbox);
+            this.skinGroupBox33.Controls.Add(this.param20_21);
+            this.skinGroupBox33.Controls.Add(this.param19_20);
+            this.skinGroupBox33.Controls.Add(this.param10_11);
+            this.skinGroupBox33.Controls.Add(this.param9_10);
+            this.skinGroupBox33.Controls.Add(this.param18_19);
+            this.skinGroupBox33.Controls.Add(this.param17_18);
+            this.skinGroupBox33.Controls.Add(this.param16_17);
+            this.skinGroupBox33.Controls.Add(this.param15_16);
+            this.skinGroupBox33.Controls.Add(this.param14_15);
+            this.skinGroupBox33.Controls.Add(this.param13_14);
+            this.skinGroupBox33.Controls.Add(this.param12_13);
+            this.skinGroupBox33.Controls.Add(this.param11_12);
+            this.skinGroupBox33.Controls.Add(this.param8_9);
+            this.skinGroupBox33.Controls.Add(this.param7_8);
+            this.skinGroupBox33.Controls.Add(this.param6_7);
+            this.skinGroupBox33.Controls.Add(this.param5_6);
+            this.skinGroupBox33.Controls.Add(this.param4_5);
+            this.skinGroupBox33.Controls.Add(this.param3_4);
+            this.skinGroupBox33.Controls.Add(this.param2_3);
+            this.skinGroupBox33.Controls.Add(this.param1_2);
             this.skinGroupBox33.Controls.Add(this.label337);
             this.skinGroupBox33.Controls.Add(this.label303);
             this.skinGroupBox33.Controls.Add(this.label300);
@@ -2323,15 +2323,15 @@
             this.skinGroupBox33.TitleRectBackColor = System.Drawing.Color.White;
             this.skinGroupBox33.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
             // 
-            // textBox83
+            // Person_ChongNumber_textbox
             // 
-            this.textBox83.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox83.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox83.Location = new System.Drawing.Point(769, 137);
-            this.textBox83.Multiline = true;
-            this.textBox83.Name = "textBox83";
-            this.textBox83.Size = new System.Drawing.Size(70, 29);
-            this.textBox83.TabIndex = 243;
+            this.Person_ChongNumber_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Person_ChongNumber_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Person_ChongNumber_textbox.Location = new System.Drawing.Point(769, 137);
+            this.Person_ChongNumber_textbox.Multiline = true;
+            this.Person_ChongNumber_textbox.Name = "Person_ChongNumber_textbox";
+            this.Person_ChongNumber_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Person_ChongNumber_textbox.TabIndex = 243;
             // 
             // label359
             // 
@@ -2343,245 +2343,245 @@
             this.label359.TabIndex = 242;
             this.label359.Text = "自主检冲数";
             // 
-            // textBox22
+            // RealPages_textbox
             // 
-            this.textBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox22.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox22.Location = new System.Drawing.Point(598, 138);
-            this.textBox22.Multiline = true;
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(70, 29);
-            this.textBox22.TabIndex = 241;
+            this.RealPages_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.RealPages_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RealPages_textbox.Location = new System.Drawing.Point(598, 138);
+            this.RealPages_textbox.Multiline = true;
+            this.RealPages_textbox.Name = "RealPages_textbox";
+            this.RealPages_textbox.Size = new System.Drawing.Size(70, 29);
+            this.RealPages_textbox.TabIndex = 241;
             // 
-            // textBox74
+            // Real_Chong_textbox
             // 
-            this.textBox74.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox74.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox74.Location = new System.Drawing.Point(100, 137);
-            this.textBox74.Multiline = true;
-            this.textBox74.Name = "textBox74";
-            this.textBox74.Size = new System.Drawing.Size(70, 29);
-            this.textBox74.TabIndex = 238;
+            this.Real_Chong_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Real_Chong_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Real_Chong_textbox.Location = new System.Drawing.Point(100, 137);
+            this.Real_Chong_textbox.Multiline = true;
+            this.Real_Chong_textbox.Name = "Real_Chong_textbox";
+            this.Real_Chong_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Real_Chong_textbox.TabIndex = 238;
             // 
-            // textBox72
+            // PersonCheckPages_textbox
             // 
-            this.textBox72.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox72.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox72.Location = new System.Drawing.Point(434, 138);
-            this.textBox72.Multiline = true;
-            this.textBox72.Name = "textBox72";
-            this.textBox72.Size = new System.Drawing.Size(70, 29);
-            this.textBox72.TabIndex = 240;
+            this.PersonCheckPages_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.PersonCheckPages_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.PersonCheckPages_textbox.Location = new System.Drawing.Point(434, 138);
+            this.PersonCheckPages_textbox.Multiline = true;
+            this.PersonCheckPages_textbox.Name = "PersonCheckPages_textbox";
+            this.PersonCheckPages_textbox.Size = new System.Drawing.Size(70, 29);
+            this.PersonCheckPages_textbox.TabIndex = 240;
             // 
-            // textBox73
+            // Set_Chong_textbox
             // 
-            this.textBox73.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox73.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox73.Location = new System.Drawing.Point(264, 137);
-            this.textBox73.Multiline = true;
-            this.textBox73.Name = "textBox73";
-            this.textBox73.Size = new System.Drawing.Size(70, 29);
-            this.textBox73.TabIndex = 239;
+            this.Set_Chong_textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Set_Chong_textbox.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Set_Chong_textbox.Location = new System.Drawing.Point(264, 137);
+            this.Set_Chong_textbox.Multiline = true;
+            this.Set_Chong_textbox.Name = "Set_Chong_textbox";
+            this.Set_Chong_textbox.Size = new System.Drawing.Size(70, 29);
+            this.Set_Chong_textbox.TabIndex = 239;
             // 
-            // textBox49
+            // param20_21
             // 
-            this.textBox49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox49.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox49.Location = new System.Drawing.Point(769, 97);
-            this.textBox49.Multiline = true;
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(70, 29);
-            this.textBox49.TabIndex = 237;
+            this.param20_21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param20_21.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param20_21.Location = new System.Drawing.Point(769, 97);
+            this.param20_21.Multiline = true;
+            this.param20_21.Name = "param20_21";
+            this.param20_21.Size = new System.Drawing.Size(70, 29);
+            this.param20_21.TabIndex = 237;
             // 
-            // textBox50
+            // param19_20
             // 
-            this.textBox50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox50.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox50.Location = new System.Drawing.Point(685, 97);
-            this.textBox50.Multiline = true;
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(70, 29);
-            this.textBox50.TabIndex = 236;
+            this.param19_20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param19_20.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param19_20.Location = new System.Drawing.Point(685, 97);
+            this.param19_20.Multiline = true;
+            this.param19_20.Name = "param19_20";
+            this.param19_20.Size = new System.Drawing.Size(70, 29);
+            this.param19_20.TabIndex = 236;
             // 
-            // textBox51
+            // param10_11
             // 
-            this.textBox51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox51.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox51.Location = new System.Drawing.Point(769, 38);
-            this.textBox51.Multiline = true;
-            this.textBox51.Name = "textBox51";
-            this.textBox51.Size = new System.Drawing.Size(70, 29);
-            this.textBox51.TabIndex = 235;
+            this.param10_11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param10_11.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param10_11.Location = new System.Drawing.Point(769, 38);
+            this.param10_11.Multiline = true;
+            this.param10_11.Name = "param10_11";
+            this.param10_11.Size = new System.Drawing.Size(70, 29);
+            this.param10_11.TabIndex = 235;
             // 
-            // textBox52
+            // param9_10
             // 
-            this.textBox52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox52.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox52.Location = new System.Drawing.Point(685, 38);
-            this.textBox52.Multiline = true;
-            this.textBox52.Name = "textBox52";
-            this.textBox52.Size = new System.Drawing.Size(70, 29);
-            this.textBox52.TabIndex = 234;
+            this.param9_10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param9_10.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param9_10.Location = new System.Drawing.Point(685, 38);
+            this.param9_10.Multiline = true;
+            this.param9_10.Name = "param9_10";
+            this.param9_10.Size = new System.Drawing.Size(70, 29);
+            this.param9_10.TabIndex = 234;
             // 
-            // textBox45
+            // param18_19
             // 
-            this.textBox45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox45.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox45.Location = new System.Drawing.Point(598, 97);
-            this.textBox45.Multiline = true;
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(70, 29);
-            this.textBox45.TabIndex = 233;
+            this.param18_19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param18_19.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param18_19.Location = new System.Drawing.Point(598, 97);
+            this.param18_19.Multiline = true;
+            this.param18_19.Name = "param18_19";
+            this.param18_19.Size = new System.Drawing.Size(70, 29);
+            this.param18_19.TabIndex = 233;
             // 
-            // textBox46
+            // param17_18
             // 
-            this.textBox46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox46.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox46.Location = new System.Drawing.Point(514, 97);
-            this.textBox46.Multiline = true;
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(70, 29);
-            this.textBox46.TabIndex = 232;
+            this.param17_18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param17_18.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param17_18.Location = new System.Drawing.Point(514, 97);
+            this.param17_18.Multiline = true;
+            this.param17_18.Name = "param17_18";
+            this.param17_18.Size = new System.Drawing.Size(70, 29);
+            this.param17_18.TabIndex = 232;
             // 
-            // textBox47
+            // param16_17
             // 
-            this.textBox47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox47.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox47.Location = new System.Drawing.Point(434, 97);
-            this.textBox47.Multiline = true;
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(70, 29);
-            this.textBox47.TabIndex = 231;
+            this.param16_17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param16_17.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param16_17.Location = new System.Drawing.Point(434, 97);
+            this.param16_17.Multiline = true;
+            this.param16_17.Name = "param16_17";
+            this.param16_17.Size = new System.Drawing.Size(70, 29);
+            this.param16_17.TabIndex = 231;
             // 
-            // textBox48
+            // param15_16
             // 
-            this.textBox48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox48.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox48.Location = new System.Drawing.Point(350, 97);
-            this.textBox48.Multiline = true;
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(70, 29);
-            this.textBox48.TabIndex = 230;
+            this.param15_16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param15_16.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param15_16.Location = new System.Drawing.Point(350, 97);
+            this.param15_16.Multiline = true;
+            this.param15_16.Name = "param15_16";
+            this.param15_16.Size = new System.Drawing.Size(70, 29);
+            this.param15_16.TabIndex = 230;
             // 
-            // textBox41
+            // param14_15
             // 
-            this.textBox41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox41.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox41.Location = new System.Drawing.Point(264, 97);
-            this.textBox41.Multiline = true;
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(70, 29);
-            this.textBox41.TabIndex = 229;
+            this.param14_15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param14_15.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param14_15.Location = new System.Drawing.Point(264, 97);
+            this.param14_15.Multiline = true;
+            this.param14_15.Name = "param14_15";
+            this.param14_15.Size = new System.Drawing.Size(70, 29);
+            this.param14_15.TabIndex = 229;
             // 
-            // textBox42
+            // param13_14
             // 
-            this.textBox42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox42.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox42.Location = new System.Drawing.Point(180, 97);
-            this.textBox42.Multiline = true;
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(70, 29);
-            this.textBox42.TabIndex = 228;
+            this.param13_14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param13_14.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param13_14.Location = new System.Drawing.Point(180, 97);
+            this.param13_14.Multiline = true;
+            this.param13_14.Name = "param13_14";
+            this.param13_14.Size = new System.Drawing.Size(70, 29);
+            this.param13_14.TabIndex = 228;
             // 
-            // textBox43
+            // param12_13
             // 
-            this.textBox43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox43.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox43.Location = new System.Drawing.Point(100, 97);
-            this.textBox43.Multiline = true;
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(70, 29);
-            this.textBox43.TabIndex = 227;
+            this.param12_13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param12_13.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param12_13.Location = new System.Drawing.Point(100, 97);
+            this.param12_13.Multiline = true;
+            this.param12_13.Name = "param12_13";
+            this.param12_13.Size = new System.Drawing.Size(70, 29);
+            this.param12_13.TabIndex = 227;
             // 
-            // textBox44
+            // param11_12
             // 
-            this.textBox44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox44.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox44.Location = new System.Drawing.Point(12, 97);
-            this.textBox44.Multiline = true;
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(70, 29);
-            this.textBox44.TabIndex = 226;
+            this.param11_12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param11_12.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param11_12.Location = new System.Drawing.Point(12, 97);
+            this.param11_12.Multiline = true;
+            this.param11_12.Name = "param11_12";
+            this.param11_12.Size = new System.Drawing.Size(70, 29);
+            this.param11_12.TabIndex = 226;
             // 
-            // textBox37
+            // param8_9
             // 
-            this.textBox37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox37.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox37.Location = new System.Drawing.Point(598, 39);
-            this.textBox37.Multiline = true;
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(70, 29);
-            this.textBox37.TabIndex = 225;
+            this.param8_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param8_9.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param8_9.Location = new System.Drawing.Point(598, 39);
+            this.param8_9.Multiline = true;
+            this.param8_9.Name = "param8_9";
+            this.param8_9.Size = new System.Drawing.Size(70, 29);
+            this.param8_9.TabIndex = 225;
             // 
-            // textBox38
+            // param7_8
             // 
-            this.textBox38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox38.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox38.Location = new System.Drawing.Point(514, 39);
-            this.textBox38.Multiline = true;
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(70, 29);
-            this.textBox38.TabIndex = 224;
+            this.param7_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param7_8.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param7_8.Location = new System.Drawing.Point(514, 39);
+            this.param7_8.Multiline = true;
+            this.param7_8.Name = "param7_8";
+            this.param7_8.Size = new System.Drawing.Size(70, 29);
+            this.param7_8.TabIndex = 224;
             // 
-            // textBox39
+            // param6_7
             // 
-            this.textBox39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox39.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox39.Location = new System.Drawing.Point(434, 39);
-            this.textBox39.Multiline = true;
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(70, 29);
-            this.textBox39.TabIndex = 223;
+            this.param6_7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param6_7.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param6_7.Location = new System.Drawing.Point(434, 39);
+            this.param6_7.Multiline = true;
+            this.param6_7.Name = "param6_7";
+            this.param6_7.Size = new System.Drawing.Size(70, 29);
+            this.param6_7.TabIndex = 223;
             // 
-            // textBox40
+            // param5_6
             // 
-            this.textBox40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox40.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox40.Location = new System.Drawing.Point(350, 39);
-            this.textBox40.Multiline = true;
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(70, 29);
-            this.textBox40.TabIndex = 222;
+            this.param5_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param5_6.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param5_6.Location = new System.Drawing.Point(350, 39);
+            this.param5_6.Multiline = true;
+            this.param5_6.Name = "param5_6";
+            this.param5_6.Size = new System.Drawing.Size(70, 29);
+            this.param5_6.TabIndex = 222;
             // 
-            // textBox35
+            // param4_5
             // 
-            this.textBox35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox35.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox35.Location = new System.Drawing.Point(264, 37);
-            this.textBox35.Multiline = true;
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(70, 29);
-            this.textBox35.TabIndex = 221;
+            this.param4_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param4_5.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param4_5.Location = new System.Drawing.Point(264, 37);
+            this.param4_5.Multiline = true;
+            this.param4_5.Name = "param4_5";
+            this.param4_5.Size = new System.Drawing.Size(70, 29);
+            this.param4_5.TabIndex = 221;
             // 
-            // textBox36
+            // param3_4
             // 
-            this.textBox36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox36.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox36.Location = new System.Drawing.Point(181, 37);
-            this.textBox36.Multiline = true;
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(70, 29);
-            this.textBox36.TabIndex = 220;
+            this.param3_4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param3_4.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param3_4.Location = new System.Drawing.Point(181, 37);
+            this.param3_4.Multiline = true;
+            this.param3_4.Name = "param3_4";
+            this.param3_4.Size = new System.Drawing.Size(70, 29);
+            this.param3_4.TabIndex = 220;
             // 
-            // textBox34
+            // param2_3
             // 
-            this.textBox34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox34.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox34.Location = new System.Drawing.Point(95, 37);
-            this.textBox34.Multiline = true;
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(70, 29);
-            this.textBox34.TabIndex = 219;
+            this.param2_3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param2_3.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param2_3.Location = new System.Drawing.Point(95, 37);
+            this.param2_3.Multiline = true;
+            this.param2_3.Name = "param2_3";
+            this.param2_3.Size = new System.Drawing.Size(70, 29);
+            this.param2_3.TabIndex = 219;
             // 
-            // textBox27
+            // param1_2
             // 
-            this.textBox27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox27.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox27.Location = new System.Drawing.Point(11, 37);
-            this.textBox27.Multiline = true;
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(70, 29);
-            this.textBox27.TabIndex = 218;
+            this.param1_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.param1_2.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.param1_2.Location = new System.Drawing.Point(11, 37);
+            this.param1_2.Multiline = true;
+            this.param1_2.Name = "param1_2";
+            this.param1_2.Size = new System.Drawing.Size(70, 29);
+            this.param1_2.TabIndex = 218;
             // 
             // label337
             // 
@@ -4421,37 +4421,37 @@
         private System.Windows.Forms.Label label207;
         private System.Windows.Forms.TextBox textBox13;
         private CCWin.SkinControl.SkinTabPage skinTabPage6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox KeepNums_textbox;
+        private System.Windows.Forms.TextBox KnifeLength_textbox;
         private System.Windows.Forms.Label label320;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox AbandonNums_textbox;
         private System.Windows.Forms.Label label308;
         private System.Windows.Forms.Label label312;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox71;
+        private System.Windows.Forms.TextBox LayerCount_textbox;
         private System.Windows.Forms.Label label347;
-        private System.Windows.Forms.TextBox textBox69;
+        private System.Windows.Forms.TextBox TCX_textbox;
         private System.Windows.Forms.Label label345;
-        private System.Windows.Forms.TextBox textBox70;
+        private System.Windows.Forms.TextBox Main_Parts_textbox;
         private System.Windows.Forms.Label label346;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox WorkOrder_textbox;
+        private System.Windows.Forms.TextBox ZT_textbox;
+        private System.Windows.Forms.TextBox ScanSum_textbox;
         private System.Windows.Forms.Label label319;
         private System.Windows.Forms.Label label310;
         private System.Windows.Forms.Label label298;
         private CCWin.SkinControl.SkinGroupBox skinGroupBox38;
-        private System.Windows.Forms.TextBox textBox85;
-        private System.Windows.Forms.TextBox textBox86;
-        private System.Windows.Forms.TextBox textBox87;
-        private System.Windows.Forms.TextBox textBox88;
-        private System.Windows.Forms.TextBox textBox89;
-        private System.Windows.Forms.TextBox textBox90;
-        private System.Windows.Forms.TextBox textBox91;
-        private System.Windows.Forms.TextBox textBox92;
-        private System.Windows.Forms.TextBox textBox93;
-        private System.Windows.Forms.TextBox textBox94;
+        private System.Windows.Forms.TextBox DelayTime_textbox;
+        private System.Windows.Forms.TextBox HoleNums_textbox;
+        private System.Windows.Forms.TextBox TensionPower_textbox;
+        private System.Windows.Forms.TextBox MoveSpeed_textbox;
+        private System.Windows.Forms.TextBox TurnPagesNum_textbox;
+        private System.Windows.Forms.TextBox GetThingSpeed_textBox;
+        private System.Windows.Forms.TextBox EveryRowRealNum_textbox;
+        private System.Windows.Forms.TextBox EmptyNums_textbox;
+        private System.Windows.Forms.TextBox EveryRowProdution_textbox;
+        private System.Windows.Forms.TextBox Online_textbox;
         private System.Windows.Forms.Label label370;
         private System.Windows.Forms.Label label371;
         private System.Windows.Forms.Label label372;
@@ -4463,29 +4463,29 @@
         private System.Windows.Forms.Label label378;
         private System.Windows.Forms.Label label379;
         private CCWin.SkinControl.SkinGroupBox skinGroupBox35;
-        private System.Windows.Forms.TextBox textBox61;
-        private System.Windows.Forms.TextBox textBox67;
-        private System.Windows.Forms.TextBox textBox65;
-        private System.Windows.Forms.TextBox textBox68;
-        private System.Windows.Forms.TextBox textBox64;
+        private System.Windows.Forms.TextBox JudgeModel_height_textbox;
+        private System.Windows.Forms.TextBox ScanPosition2_textbox;
+        private System.Windows.Forms.TextBox CamPosition2_textbox;
+        private System.Windows.Forms.TextBox ScanPosition1_textbox;
+        private System.Windows.Forms.TextBox HandHeight_textbox;
         private System.Windows.Forms.Label label335;
-        private System.Windows.Forms.TextBox textBox66;
+        private System.Windows.Forms.TextBox CamPosition1_textbox;
         private System.Windows.Forms.Label label336;
         private System.Windows.Forms.Label label327;
         private System.Windows.Forms.Label label334;
         private System.Windows.Forms.Label label333;
         private System.Windows.Forms.Label label330;
         private CCWin.SkinControl.SkinGroupBox skinGroupBox34;
-        private System.Windows.Forms.TextBox textBox53;
-        private System.Windows.Forms.TextBox textBox54;
-        private System.Windows.Forms.TextBox textBox62;
-        private System.Windows.Forms.TextBox textBox63;
-        private System.Windows.Forms.TextBox textBox57;
-        private System.Windows.Forms.TextBox textBox55;
-        private System.Windows.Forms.TextBox textBox58;
-        private System.Windows.Forms.TextBox textBox56;
-        private System.Windows.Forms.TextBox textBox59;
-        private System.Windows.Forms.TextBox textBox60;
+        private System.Windows.Forms.TextBox Get_thing_hight_textbox;
+        private System.Windows.Forms.TextBox Left_OutThing_textbox;
+        private System.Windows.Forms.TextBox Left_OutHeight_textbox;
+        private System.Windows.Forms.TextBox Right_RM_hight_Textbox;
+        private System.Windows.Forms.TextBox Right_ZMposition_textbox;
+        private System.Windows.Forms.TextBox Left_safePosition_textbox;
+        private System.Windows.Forms.TextBox Right_SLposition_textbox;
+        private System.Windows.Forms.TextBox Left_Chong_position_textbox;
+        private System.Windows.Forms.TextBox Right_safePosition_textbox;
+        private System.Windows.Forms.TextBox OutModel_height_textbox;
         private System.Windows.Forms.Label label328;
         private System.Windows.Forms.Label label329;
         private System.Windows.Forms.Label label331;
@@ -4497,32 +4497,32 @@
         private System.Windows.Forms.Label label322;
         private System.Windows.Forms.Label label321;
         private CCWin.SkinControl.SkinGroupBox skinGroupBox33;
-        private System.Windows.Forms.TextBox textBox83;
+        private System.Windows.Forms.TextBox Person_ChongNumber_textbox;
         private System.Windows.Forms.Label label359;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox74;
-        private System.Windows.Forms.TextBox textBox72;
-        private System.Windows.Forms.TextBox textBox73;
-        private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.TextBox textBox50;
-        private System.Windows.Forms.TextBox textBox51;
-        private System.Windows.Forms.TextBox textBox52;
-        private System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.TextBox textBox46;
-        private System.Windows.Forms.TextBox textBox47;
-        private System.Windows.Forms.TextBox textBox48;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox RealPages_textbox;
+        private System.Windows.Forms.TextBox Real_Chong_textbox;
+        private System.Windows.Forms.TextBox PersonCheckPages_textbox;
+        private System.Windows.Forms.TextBox Set_Chong_textbox;
+        private System.Windows.Forms.TextBox param20_21;
+        private System.Windows.Forms.TextBox param19_20;
+        private System.Windows.Forms.TextBox param10_11;
+        private System.Windows.Forms.TextBox param9_10;
+        private System.Windows.Forms.TextBox param18_19;
+        private System.Windows.Forms.TextBox param17_18;
+        private System.Windows.Forms.TextBox param16_17;
+        private System.Windows.Forms.TextBox param15_16;
+        private System.Windows.Forms.TextBox param14_15;
+        private System.Windows.Forms.TextBox param13_14;
+        private System.Windows.Forms.TextBox param12_13;
+        private System.Windows.Forms.TextBox param11_12;
+        private System.Windows.Forms.TextBox param8_9;
+        private System.Windows.Forms.TextBox param7_8;
+        private System.Windows.Forms.TextBox param6_7;
+        private System.Windows.Forms.TextBox param5_6;
+        private System.Windows.Forms.TextBox param4_5;
+        private System.Windows.Forms.TextBox param3_4;
+        private System.Windows.Forms.TextBox param2_3;
+        private System.Windows.Forms.TextBox param1_2;
         private System.Windows.Forms.Label label337;
         private System.Windows.Forms.Label label303;
         private System.Windows.Forms.Label label300;
@@ -4650,7 +4650,7 @@
         private CCWin.SkinControl.SkinGroupBox skinGroupBox2;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label349;
-        private System.Windows.Forms.TextBox textBox76;
+        private System.Windows.Forms.TextBox Sum_ChongNums_textbox;
         private System.Windows.Forms.Label label353;
         private CCWin.SkinControl.SkinGroupBox skinGroupBox3;
         private System.Windows.Forms.Label label9;
@@ -4665,7 +4665,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label26;
         private CCWin.SkinControl.SkinGroupBox skinGroupBox4;
-        private System.Windows.Forms.TextBox textBox105;
+        private System.Windows.Forms.TextBox SameDistance_textbox;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label27;
