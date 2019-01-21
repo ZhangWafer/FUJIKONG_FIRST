@@ -488,21 +488,17 @@ namespace WindowsFormsApplication1
 
             try
             {
-
-                PcConnectPlc.Write_Data_FxUsb("M2904", 1); // 关PLC
-
-
+                PcConnectPlc.Write_Data_FxUsb("M2904", 1); // 关PLC                
                 PcConnectPlc.Write_Data_FxUsb("M2888", 0); //打开标志位
             }
             catch (Exception ex)
             {
-
                 LogHelper.WriteLog(ex.ToString());
             }
 
 
             string[] msgS = new string[500]; //读取数据
-            string filePath = Application.StartupPath.ToString() + "\\liaohao.txt";
+            string filePath = Application.StartupPath + "\\liaohao.txt";
 
 
             FileOperate.OpenFileString(filePath, out msgS);
@@ -900,7 +896,7 @@ namespace WindowsFormsApplication1
         private void getConfigMsg()
         {
             string[] msgS = new string[500];
-            string filePath = Application.StartupPath.ToString() + "\\config.txt";
+            string filePath = Application.StartupPath + "\\config.txt";
 
             FileOperate.OpenFileString(filePath, out msgS);
 
@@ -1231,7 +1227,7 @@ namespace WindowsFormsApplication1
 
                 }
                 //读取报警信息
-                string filePath = Application.StartupPath.ToString() + "\\alarm.txt";
+                string filePath = Application.StartupPath + "\\alarm.txt";
                 OpenFileDialog of = new OpenFileDialog();
                 of.Filter = "文本文件文件（*.txt）|*.txt|word文件（*.doc）|*.doc";
 
@@ -1995,7 +1991,7 @@ namespace WindowsFormsApplication1
             showModelToForm();
 
             //打开config，读取数据
-            string filePath = Application.StartupPath.ToString() + "\\config.txt";
+            string filePath = Application.StartupPath + "\\config.txt";
 
             FileOperate.OpenFileList(filePath, out msgL);
             msgL[0] = fileName;
@@ -2108,7 +2104,7 @@ namespace WindowsFormsApplication1
 
 
             //------超级密码存储
-            string filePath = Application.StartupPath.ToString() + "\\config.txt";
+            string filePath = Application.StartupPath + "\\config.txt";
             FileOperate.OpenFileList(filePath, out msgL);
             msgL[0] = filePathNow;
             msgL[3] = ("");
@@ -2139,7 +2135,7 @@ namespace WindowsFormsApplication1
             msgL.Clear();
 
             //保存报警信息
-            filePath = Application.StartupPath.ToString() + "\\alarm.txt";
+            filePath = Application.StartupPath + "\\alarm.txt";
             string[] str = new string[500];
 
             try
@@ -2156,7 +2152,7 @@ namespace WindowsFormsApplication1
 
             //log信息保存
 
-            filePath = Application.StartupPath.ToString() + "\\log.txt";
+            filePath = Application.StartupPath + "\\log.txt";
             string[] logStr = new string[2];
 
             FileOperate.SaveFileString(filePath, logStr);
@@ -2829,7 +2825,7 @@ namespace WindowsFormsApplication1
                                     machine = textBox3.Text;
                                     job10 = false;
                                     List<string> msgL = new List<string>();
-                                    string filePath = Application.StartupPath.ToString() + "\\job.txt";
+                                    string filePath = Application.StartupPath + "\\job.txt";
                                     //打开根目录下的Auditor.TXT 路径
                                     FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
                                     string[] job1 = new string[100];
@@ -2967,7 +2963,7 @@ namespace WindowsFormsApplication1
                                     if (Audit_textBox.Text != Operater_textbox.Text)
                                     {
                                         List<string> msgL = new List<string>();
-                                        string filePath = Application.StartupPath.ToString() + "\\Auditor.txt";
+                                        string filePath = Application.StartupPath + "\\Auditor.txt";
                                         //打开根目录下的Auditor.TXT 路径
                                         FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
                                         string[] Auditor1 = new string[2];
@@ -3395,7 +3391,7 @@ namespace WindowsFormsApplication1
 
                         List<string> msgL = new List<string>(); //数据保存
 
-                        string filePath = Application.StartupPath.ToString() + "\\liaohao.txt";
+                        string filePath = Application.StartupPath + "\\liaohao.txt";
 
                         FileOperate.OpenFileList(filePath, out msgL);
 
@@ -3523,7 +3519,7 @@ namespace WindowsFormsApplication1
                     machine = textBox3.Text;
 
                     List<string> msgL = new List<string>();
-                    string filePath = Application.StartupPath.ToString() + "\\job.txt"; //打开根目录下的Auditor.TXT 路径
+                    string filePath = Application.StartupPath + "\\job.txt"; //打开根目录下的Auditor.TXT 路径
                     FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
                     string[] job1 = new string[100];
 
@@ -3641,7 +3637,7 @@ namespace WindowsFormsApplication1
                     Auditor = Audit_textBox.Text;
 
                     List<string> msgL = new List<string>();
-                    string filePath = Application.StartupPath.ToString() + "\\Auditor.txt"; //打开根目录下的Auditor.TXT 路径
+                    string filePath = Application.StartupPath + "\\Auditor.txt"; //打开根目录下的Auditor.TXT 路径
                     FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
                     string[] Auditor1 = new string[2];
 
@@ -3879,7 +3875,7 @@ namespace WindowsFormsApplication1
 
                             List<string> msgL1 = new List<string>(); //数据保存
 
-                            string filePath1 = Application.StartupPath.ToString() + "\\liaohao.txt";
+                            string filePath1 = Application.StartupPath + "\\liaohao.txt";
 
                             FileOperate.OpenFileList(filePath1, out msgL1);
 
