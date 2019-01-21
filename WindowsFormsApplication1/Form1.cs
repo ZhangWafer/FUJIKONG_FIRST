@@ -28,7 +28,6 @@ namespace WindowsFormsApplication1
     {
         private SerialPort ComDevice = new SerialPort(); //串口通信使用
         public static Form1 frm1 = null;
-        private float X, Y;
 
         #region  程序初始化
 
@@ -53,12 +52,8 @@ namespace WindowsFormsApplication1
         string forbidden;
         //string path1="";
         int houjia = 0;
-        string a3;
         int a33 = 0;
-        string yunxing = "";
         int liaohao;
-        string lhsj = "";
-
 
         bool shenghe = false;
         string shuju = "";
@@ -151,19 +146,14 @@ namespace WindowsFormsApplication1
         string[] fileModelStr = new string[20]; //储存分析得到的 型号名称
         List<string> fileModelList = new List<string>(); //储存分析得到的 型号名称
 
-        Boolean closeSoftware = false; //关机赋值true
-
-
         //--------------------------------------------------------
 
         int[] PLC_MS = new int[200]; //IO状态 读取 原始数据
         int[] PLC_DS = new int[200]; //寄存器
 
-        //ushort qq;
-        ushort qq2;
         // -------------------------------------------------
         int RunningStation = 0; //运行状态记录
-        string Running = ""; //扫码头更新
+
 
         #endregion
 
@@ -1932,10 +1922,7 @@ namespace WindowsFormsApplication1
 
             try
             {
-
                 保存ToolStripMenuItem_Click(null, null);
-                closeSoftware = true;
-
             }
             catch(Exception ex)
             {
@@ -3405,8 +3392,6 @@ namespace WindowsFormsApplication1
 
                     if (ret == "OK")
                     {
-                        yunxing = "ok";
-
                         List<string> msgL = new List<string>(); //数据保存
 
                         string filePath = Application.StartupPath.ToString() + "\\liaohao.txt";
