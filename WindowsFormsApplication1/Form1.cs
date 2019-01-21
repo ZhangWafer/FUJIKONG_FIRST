@@ -37,7 +37,7 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
-           
+
         }
 
         #endregion
@@ -46,7 +46,7 @@ namespace WindowsFormsApplication1
 
         System.Diagnostics.Process p = new System.Diagnostics.Process(); //开启另外一个软件用的东西
 
-       
+
         string port; //串口号2
 
         string forbidden;
@@ -100,15 +100,15 @@ namespace WindowsFormsApplication1
 
         int mold3;
         string sm3 = "";
-       
+
 
         int sm = 0;
         int sm1 = 0;
         int sm2 = 0;
 
-        public string czy; //操作员
-        public string cj; //厂家
-        public string gcs; //工程师、调机
+
+
+
         string Password; //提取数据密码
 
         string Batch; //批号
@@ -349,7 +349,7 @@ namespace WindowsFormsApplication1
             if (content.Length >= 2 && label340.Text != content)
             {
                 sm3 = content;
-            
+
             }
 
 
@@ -407,7 +407,7 @@ namespace WindowsFormsApplication1
         {
             if (MessageBox.Show("PLC连接失败，点击确认退出", "警告", MessageBoxButtons.OK) == DialogResult.OK)
             {
-                Dispose(); 
+                Dispose();
                 Application.Exit();
             }
             else
@@ -613,9 +613,9 @@ namespace WindowsFormsApplication1
                     catch (Exception ex)
                     {
                         LogHelper.WriteLog(ex.ToString());
-                      
+
                     }
-                 
+
 
                 }
             }
@@ -860,7 +860,7 @@ namespace WindowsFormsApplication1
                         //PcConnectPlc.Write_Data_FxUsb("D2938", Convert.ToInt32(sArray22[3]));//调
                         ////
 
-      
+
 
                         SameDistance_textbox.Text = PLC_DS[62].ToString(); //同间距
 
@@ -899,6 +899,18 @@ namespace WindowsFormsApplication1
 
         #region  读取config数据
 
+        private string JDLaccount = Properties.Settings.Default.JDLaccount; //稼动率账号
+        private string JDLpwd = Properties.Settings.Default.JDLpwd; //稼动率密码
+        private string machineidentifier = Properties.Settings.Default.identifier; //机台编号
+        private string serverAccount = Properties.Settings.Default.serverAccount; //服务器账号
+        private string serverPwd = Properties.Settings.Default.serverPwd; //服务器密码
+        private string barcodeAccount = Properties.Settings.Default.BarcodeAccount; //Barcode账号
+        private string barcodePwd = Properties.Settings.Default.Barcodepwd; //Barcode密码
+        private string SuperUser = Properties.Settings.Default.SuperUser; //超级管理员textbox8码 厂家
+        private string enginerUser = Properties.Settings.Default.EnginerUser; //工程师 textbox8码
+        private string operatorUser = Properties.Settings.Default.OperaterUser; //操作员textbox8码
+
+
         private void getConfigMsg()
         {
             string[] msgS = new string[500];
@@ -910,68 +922,34 @@ namespace WindowsFormsApplication1
             port = msgS[2]; //扫码串口
             supe = msgS[3]; //超级密码
             Password = msgS[4]; // 用户密码
-            fwzh = msgS[5]; //服务器
+            fwzh = msgS[5]; //服务器  
             bjrq = msgS[6]; //报警日期
             shuju = msgS[7]; //报警日期
             scmj = msgS[8]; //上次模具
             jmtj = msgS[9]; //架摸调机
             smsj = msgS[10]; //扫码数据服务器
 
-            string strs1 = Password;
-            string[] s = Regex.Split(strs1, ",", RegexOptions.IgnoreCase); //分割读取数组数值
-            cj = s[0]; //用户密码
-            gcs = s[1];
-            czy = s[2];
 
-            string strs2 = fwzh;
-            string[] s1 = Regex.Split(strs2, ",", RegexOptions.IgnoreCase); //分割读取数组数值
-            textBox4.Text = s1[0]; //服务器账户
-            textBox1.Text = s1[1]; //服务器 密码
-            textBox3.Text = s1[2]; //机台编号
-            textBox100.Text = s1[3]; //
+            string strs4 = scmj;
+            string[] s4 = Regex.Split(strs4, ",", RegexOptions.IgnoreCase); //上次模具
+            LastModel_Textbox.Text = s4[0]; //
+            Model2_textBox1.Text = s4[1]; //
+            LastModel2_textBox.Text = s4[2]; //
+            KnifeLength_textbox.Text = s4[3]; //
+            AbandonNums_textbox.Text = s4[4]; //
+            label34.Text = s4[5]; //
+            label35.Text = s4[6];
+            liaohao = Convert.ToInt32(label35.Text);
 
-            string strs3 = shuju;
-            string[] s3 = Regex.Split(strs3, ",", RegexOptions.IgnoreCase); //服务器
-            textBox97.Text = s3[0]; //
-            textBox98.Text = s3[1]; //
-            try
-            {
-                string strs4 = scmj;
-                string[] s4 = Regex.Split(strs4, ",", RegexOptions.IgnoreCase); //上次模具
-                LastModel_Textbox.Text = s4[0]; //
-                Model2_textBox1.Text = s4[1]; //
-                LastModel2_textBox.Text = s4[2]; //
-                KnifeLength_textbox.Text = s4[3]; //
-                AbandonNums_textbox.Text = s4[4]; //
-                label34.Text = s4[5]; //
-                label35.Text = s4[6];
-                liaohao = Convert.ToInt32(label35.Text);
-            }
-            catch
-            {
-            }
-            try
-            {
-                string strs5 = jmtj;
-                string[] s5 = Regex.Split(strs5, ",", RegexOptions.IgnoreCase); //加模具调机
-                JM_textbox.Text = s5[0]; //
-                label5.Text = s5[1]; //
-                TJ_textbox.Text = s5[2]; //
-                label6.Text = s5[3]; //
-            }
-            catch
-            {
-            }
-            try
-            {
-                string strs6 = smsj;
-                string[] s6 = Regex.Split(strs6, ",", RegexOptions.IgnoreCase); //加模具调机
-                textBox28.Text = s6[0]; //
-                textBox99.Text = s6[1]; //
-            }
-            catch
-            {
-            }
+
+            string strs5 = jmtj;
+            string[] s5 = Regex.Split(strs5, ",", RegexOptions.IgnoreCase); //加模具调机
+            JM_textbox.Text = s5[0]; //
+            label5.Text = s5[1]; //
+            TJ_textbox.Text = s5[2]; //
+            label6.Text = s5[3]; //
+
+
             if (Directory.Exists(@"D:\Data")) //判断是否有这个文件夹--D:\数据备份\
             {
 
@@ -1333,7 +1311,7 @@ namespace WindowsFormsApplication1
             //string cj = PcConnectPlc.double_Word_To_Int(PLC_DS[42], PLC_DS[43]).ToString();   //厂家
             //string gcs = PcConnectPlc.double_Word_To_Int(PLC_DS[42], PLC_DS[43]).ToString();   //工程师、调机
 
-            if ((UserID_textbox.Text == cj) || (UserID_textbox.Text == "890672"))
+            if ((UserID_textbox.Text == SuperUser) || (UserID_textbox.Text == "890672"))
             {
                 //厂家
                 forbidden = "cj";
@@ -1344,15 +1322,14 @@ namespace WindowsFormsApplication1
 
 
                 skinGroupBox10.Text = "厂家-已登录";
-              
+
                 //     //PcConnectPlc.Write_Data_FxCom("M127", 1);  //密码登录
 
                 label297.Enabled = true; //作业员
                 label301.Enabled = true; //磨具
                 label302.Enabled = true; //审核人
-                textBox4.Enabled = true; //稼动率账号密码
-                textBox1.Enabled = true;
-                textBox3.Enabled = true;
+
+
 
                 UserID_textbox.Text = "******";
 
@@ -1369,7 +1346,7 @@ namespace WindowsFormsApplication1
                 //textBox25.BackColor = Color.White; 
 
             }
-            else if (UserID_textbox.Text == czy)
+            else if (UserID_textbox.Text == operatorUser)
             {
                 //操作员
                 forbidden = "czy";
@@ -1377,7 +1354,7 @@ namespace WindowsFormsApplication1
                 skinTabControl2.Enabled = true; //
                 skinGroupBox23.Enabled = true;
                 skinGroupBox10.Text = "操作员-已登录";
-               
+
                 //       //PcConnectPlc.Write_Data_FxCom("M127", 1);  //密码登录
 
                 label297.Enabled = false; //作业员
@@ -1385,13 +1362,13 @@ namespace WindowsFormsApplication1
                 label302.Enabled = false; //审核人
 
 
-                textBox4.Enabled = false; //稼动率账号密码
-                textBox1.Enabled = false;
-                textBox3.Enabled = false;
+
+
+
 
                 UserID_textbox.Text = "******";
             }
-            else if (UserID_textbox.Text == gcs)
+            else if (UserID_textbox.Text == enginerUser)
             {
                 //工程师
                 forbidden = "gcs";
@@ -1399,7 +1376,7 @@ namespace WindowsFormsApplication1
                 skinTabControl2.Enabled = true; //
                 skinGroupBox23.Enabled = true;
                 skinGroupBox10.Text = "工程师-已登录";
-             
+
                 //       //PcConnectPlc.Write_Data_FxCom("M127", 1);  //密码登录
 
                 label297.Enabled = false; //作业员
@@ -1407,9 +1384,9 @@ namespace WindowsFormsApplication1
                 label302.Enabled = false; //审核人
 
                 LastModel_Textbox.ReadOnly = false;
-                textBox4.Enabled = false; //稼动率账号密码
-                textBox1.Enabled = false;
-                textBox3.Enabled = false;
+
+
+
                 UserID_textbox.Text = "******";
             }
         }
@@ -1426,9 +1403,8 @@ namespace WindowsFormsApplication1
             skinGroupBox10.Text = "未登录";
             //       //PcConnectPlc.Write_Data_FxCom("M127", 0);  //密码登录
             skinTabControl2.Enabled = false;
-            textBox4.Enabled = false; //稼动率账号密码
-            textBox1.Enabled = false;
-            textBox3.Enabled = false;
+
+
 
         }
 
@@ -1924,7 +1900,7 @@ namespace WindowsFormsApplication1
             {
                 保存ToolStripMenuItem_Click(null, null);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 LogHelper.WriteLog(ex.ToString());
             }
@@ -2095,7 +2071,7 @@ namespace WindowsFormsApplication1
                 msgL.Clear();
                 showModelToForm();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 LogHelper.WriteLog(ex.ToString());
             }
@@ -2112,17 +2088,18 @@ namespace WindowsFormsApplication1
             msgL[0] = filePathNow;
             msgL[3] = ("");
 
-            msgL[4] = cj + "," + gcs + "," + czy;
+            msgL[4] = SuperUser + "," + enginerUser + "," + operatorUser;
 
-            msgL[5] = textBox4.Text + "," + textBox1.Text + "," + textBox3.Text + "," + textBox100.Text; //稼动率服务器
+            msgL[5] = JDLaccount + "," + JDLpwd + "," + machineidentifier + "," + machineidentifier; //稼动率服务器
 
             msgL[6] = bjrq;
 
-            msgL[7] = textBox97.Text + "," + textBox98.Text; //数据服务器
+            msgL[7] = ServerAccount.Text + "," + serverPwd; //数据服务器
 
             if (Model2_textBox1.Text != "" && LastModel2_textBox.Text != "")
             {
-                msgL[8] = LastModel_Textbox.Text + "," + Model2_textBox1.Text + "," + LastModel2_textBox.Text + "," + KnifeLength_textbox.Text + "," +
+                msgL[8] = LastModel_Textbox.Text + "," + Model2_textBox1.Text + "," + LastModel2_textBox.Text + "," +
+                          KnifeLength_textbox.Text + "," +
                           AbandonNums_textbox.Text + "," + label34.Text + "," + label35.Text; //上次模具数据
 
             }
@@ -2130,7 +2107,7 @@ namespace WindowsFormsApplication1
             {
                 msgL[9] = JM_textbox.Text + "," + label5.Text + "," + TJ_textbox.Text + "," + label6.Text; //加模具人员-调机人员
             }
-            msgL[10] = textBox28.Text + "," + textBox99.Text; //扫描头数据上传
+            msgL[10] = barcodeAccount + "," + barcodePwd; //扫描头数据上传
 
 
 
@@ -2334,10 +2311,12 @@ namespace WindowsFormsApplication1
                         Barcodeweizhi = ScanPosition1_textbox.Text + "/" + CamPosition2_textbox.Text;
                     }
                     string Para1 = "EQU_ID|DAY|SCAN_DATE|PARTNUM|BARCODE|LOCATE_XY|SET_NUM|REAL_NUM|IS_MIX";
-                    string Para2 = textBox3.Text + "|" + System.DateTime.Now.ToString("yyyy/MM/dd") + "|" +
-                                   System.DateTime.Now.ToString("yyyyMMddHHmmss") + "|" + LH_textbox.Text + "|" + Barcode +
-                                   "|" + Barcodeweizhi + "|" + Set_Chong_textbox.Text + "|" + Real_Chong_textbox.Text + "|" + Mixture1;
-                    string ret = webFun.sendDataToSerGrp(textBox28.Text, textBox99.Text, textBox3.Text, "CX01", "CX01",
+                    string Para2 = machineidentifier + "|" + System.DateTime.Now.ToString("yyyy/MM/dd") + "|" +
+                                   System.DateTime.Now.ToString("yyyyMMddHHmmss") + "|" + LH_textbox.Text + "|" +
+                                   Barcode +
+                                   "|" + Barcodeweizhi + "|" + Set_Chong_textbox.Text + "|" + Real_Chong_textbox.Text +
+                                   "|" + Mixture1;
+                    string ret = webFun.sendDataToSerGrp(barcodeAccount, barcodePwd, machineidentifier, "CX01", "CX01",
                         Para1, Para2, System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
 
                 }
@@ -2358,7 +2337,7 @@ namespace WindowsFormsApplication1
 
         private void button81_Click(object sender, EventArgs e)
         {
-//超级密码开关
+            //超级密码开关
 
             a6 =
                 Convert.ToInt32(
@@ -2377,12 +2356,11 @@ namespace WindowsFormsApplication1
                 label290.Visible = true;
                 label291.Visible = true;
                 numericUpDown8.Value = 0;
-                textBox98.Enabled = true;
-                textBox97.Enabled = true;
-                textBox99.Enabled = true;
-                textBox28.Enabled = true;
-                textBox1.Enabled = true;
-                textBox4.Enabled = true;
+
+
+
+
+
 
 
             }
@@ -2399,12 +2377,10 @@ namespace WindowsFormsApplication1
 
                 numericUpDown8.Value = 0;
 
-                textBox98.Enabled = false;
-                textBox97.Enabled = false;
-                textBox99.Enabled = false;
-                textBox28.Enabled = false;
-                textBox1.Enabled = false;
-                textBox4.Enabled = false;
+
+
+
+
             }
         }
 
@@ -2414,7 +2390,8 @@ namespace WindowsFormsApplication1
         private void button101_Click(object sender, EventArgs e) //搜索
         {
 
-            if (JM_textbox.Text != "" && TJ_textbox.Text != "" && Model2_textBox1.Text != "" && LastModel2_textBox.Text != "" &&
+            if (JM_textbox.Text != "" && TJ_textbox.Text != "" && Model2_textBox1.Text != "" &&
+                LastModel2_textBox.Text != "" &&
                 PH_textbox.Text != "" && LayerNumber_textbox.Text != "")
             {
                 if (PH_textbox.Text.Length >= 10 && LayerNumber_textbox.Text.Length >= 1)
@@ -2434,7 +2411,7 @@ namespace WindowsFormsApplication1
 
                         Lay = LayerNumber_textbox.Text;
                         Batch = PH_textbox.Text;
-                        DataSet yy = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0001", "0009",
+                        DataSet yy = webFun.getDataFromSer(serverAccount, serverPwd, "#01", "0001", "0009",
                             Batch + "|SFCZ1_ZD_PunchCut|" + Lay, System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                         textBox2.Text = Batch + Lay;
 
@@ -2463,7 +2440,8 @@ namespace WindowsFormsApplication1
 
                             if (mj == false)
                             {
-                                MessageBox.Show(DateTime.Now.ToString() + LastModel2_textBox.Text + "/" + BOM_textbox.Text +
+                                MessageBox.Show(DateTime.Now.ToString() + LastModel2_textBox.Text + "/" +
+                                                BOM_textbox.Text +
                                                 "模具名称不匹配！");
 
                                 List<string> msgL = new List<string>(); //存数据
@@ -2473,7 +2451,8 @@ namespace WindowsFormsApplication1
                                 string[] Mold1 = new string[100];
 
                                 msgL[0] = msgL[0].Insert(0,
-                                    DateTime.Now.ToString() + LastModel2_textBox.Text + "/" + BOM_textbox.Text + "模具名称不匹配！" +
+                                    DateTime.Now.ToString() + LastModel2_textBox.Text + "/" + BOM_textbox.Text +
+                                    "模具名称不匹配！" +
                                     "\r\n");
                                 FileOperate.SaveFileList(filePath, msgL);
                                 msgL.Clear();
@@ -2572,597 +2551,603 @@ namespace WindowsFormsApplication1
             try
             {
 
-     
-            timer4.Enabled = false;
-            if (saoma3 == true)
-            {
-                //if (skinGroupBox10.Text != "厂家-已登录")
 
-
-
-                if ((textBox32.Text.Length > 2) && (textBox32.Text != saoma2))
+                timer4.Enabled = false;
+                if (saoma3 == true)
                 {
-                    string b = textBox32.Text;
-                    try
+                    //if (skinGroupBox10.Text != "厂家-已登录")
+
+
+
+                    if ((textBox32.Text.Length > 2) && (textBox32.Text != saoma2))
                     {
-                        string[] sArray = b.Split('*');
-
-                        switch (saoma1)
+                        string b = textBox32.Text;
+                        try
                         {
-                            case 1:
-                                //批号
-                                string[] ph = sArray[1].Split('.');
-                                if (ph[0].Length >= 10 && ph[0].Length <= 14) // 批号不带小数点
-                                {
-                                    PH_textbox.Text = sArray[1];
+                            string[] sArray = b.Split('*');
 
-                                    textBox17_Click(null, null); //称别
-                                    PH_textbox.BackColor = Color.White;
-                                }
-                                else
-                                {
-                                    textBox14_Click(null, null); //称别
-                                }
-                                break;
-                            case 2: //成别
-                                if (sArray[1].Length >= 1 && sArray[1].Length <= 4)
-                                {
-                                    LayerNumber_textbox.Text = sArray[1];
-                                    if (PH_textbox.Text.Length >= 10 && LayerNumber_textbox.Text.Length >= 1)
+                            switch (saoma1)
+                            {
+                                case 1:
+                                    //批号
+                                    string[] ph = sArray[1].Split('.');
+                                    if (ph[0].Length >= 10 && ph[0].Length <= 14) // 批号不带小数点
                                     {
+                                        PH_textbox.Text = sArray[1];
 
-
-                                        try
+                                        textBox17_Click(null, null); //称别
+                                        PH_textbox.BackColor = Color.White;
+                                    }
+                                    else
+                                    {
+                                        textBox14_Click(null, null); //称别
+                                    }
+                                    break;
+                                case 2: //成别
+                                    if (sArray[1].Length >= 1 && sArray[1].Length <= 4)
+                                    {
+                                        LayerNumber_textbox.Text = sArray[1];
+                                        if (PH_textbox.Text.Length >= 10 && LayerNumber_textbox.Text.Length >= 1)
                                         {
-                                            radioButton15.Checked = true;
-                                            radioButton14.Checked = false;
-                                            radioButton13.Checked = false;
-                                            Check_textbox.Text = "合格继续生产";
 
-                                            radioButton17.Checked = true;
-                                            radioButton16.Checked = false;
-                                            GoodBadProduct_textbox.Text = "OK";
 
-                                            Lay = LayerNumber_textbox.Text;
-                                            Batch = PH_textbox.Text;
-                                            DataSet yy = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01",
-                                                "0001", "0009", Batch + "|SFCZ1_ZD_PunchCut|" + Lay,
-                                                System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
-                                            textBox2.Text = Batch + Lay;
-
-                                            if (yy.Tables[0].Rows.Count > 0)
+                                            try
                                             {
+                                                radioButton15.Checked = true;
+                                                radioButton14.Checked = false;
+                                                radioButton13.Checked = false;
+                                                Check_textbox.Text = "合格继续生产";
 
-                                                string u9 = yy.Tables[0].Rows[0][9].ToString(); //BOM资料-模具
+                                                radioButton17.Checked = true;
+                                                radioButton16.Checked = false;
+                                                GoodBadProduct_textbox.Text = "OK";
 
+                                                Lay = LayerNumber_textbox.Text;
+                                                Batch = PH_textbox.Text;
+                                                DataSet yy = webFun.getDataFromSer(serverAccount, serverPwd, "#01",
+                                                    "0001", "0009", Batch + "|SFCZ1_ZD_PunchCut|" + Lay,
+                                                    System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                                                textBox2.Text = Batch + Lay;
 
-                                                if (LastModel2_textBox.Text != "" && mj == false)
+                                                if (yy.Tables[0].Rows.Count > 0)
                                                 {
-                                                    BOM_textbox.Text = u9;
-                                                    string muju = u9;
-                                                    string[] muju1 =
-                                                        muju.Split(new char[13]
-                                                        {
-                                                            '同', '(', ')', '/', '（', '）', '或', '修', '模', '由', '一', '二',
-                                                            '衝'
-                                                        });
-                                                    for (int i = 0; i < muju1.Count(); i++)
+
+                                                    string u9 = yy.Tables[0].Rows[0][9].ToString(); //BOM资料-模具
+
+
+                                                    if (LastModel2_textBox.Text != "" && mj == false)
                                                     {
-                                                        if (muju1[i] == LastModel2_textBox.Text)
+                                                        BOM_textbox.Text = u9;
+                                                        string muju = u9;
+                                                        string[] muju1 =
+                                                            muju.Split(new char[13]
+                                                            {
+                                                                '同', '(', ')', '/', '（', '）', '或', '修', '模', '由', '一',
+                                                                '二',
+                                                                '衝'
+                                                            });
+                                                        for (int i = 0; i < muju1.Count(); i++)
                                                         {
-                                                            i = 10;
-                                                            mj = true;
+                                                            if (muju1[i] == LastModel2_textBox.Text)
+                                                            {
+                                                                i = 10;
+                                                                mj = true;
+                                                            }
                                                         }
                                                     }
-                                                }
 
-                                                if (mj == false)
-                                                {
-                                                    MessageBox.Show(DateTime.Now.ToString() + LastModel2_textBox.Text + "/" +
-                                                                    BOM_textbox.Text + "模具名称不匹配！");
+                                                    if (mj == false)
+                                                    {
+                                                        MessageBox.Show(DateTime.Now.ToString() +
+                                                                        LastModel2_textBox.Text + "/" +
+                                                                        BOM_textbox.Text + "模具名称不匹配！");
 
-                                                    List<string> msgL = new List<string>(); //存数据
-                                                    string filePath = @"D:\Data backup\" +
-                                                                      System.DateTime.Now.ToString("yyyyMMdd") +
-                                                                      "\\MoldNum match.txt"; //打开根目录下的Auditor.TXT 路径
-                                                    FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
-                                                    string[] Mold1 = new string[100];
+                                                        List<string> msgL = new List<string>(); //存数据
+                                                        string filePath = @"D:\Data backup\" +
+                                                                          System.DateTime.Now.ToString("yyyyMMdd") +
+                                                                          "\\MoldNum match.txt"; //打开根目录下的Auditor.TXT 路径
+                                                        FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
+                                                        string[] Mold1 = new string[100];
 
-                                                    msgL[0] = msgL[0].Insert(0,
-                                                        DateTime.Now.ToString() + LastModel2_textBox.Text + "/" + BOM_textbox.Text +
-                                                        "模具名称不匹配！" + "\r\n");
-                                                    FileOperate.SaveFileList(filePath, msgL);
-                                                    msgL.Clear();
+                                                        msgL[0] = msgL[0].Insert(0,
+                                                            DateTime.Now.ToString() + LastModel2_textBox.Text + "/" +
+                                                            BOM_textbox.Text +
+                                                            "模具名称不匹配！" + "\r\n");
+                                                        FileOperate.SaveFileList(filePath, msgL);
+                                                        msgL.Clear();
 
-                                                    BOM_textbox.Text = "";
-                                                    LayerNumber_textbox.Text = "";
-                                                    PH_textbox.Text = "";
+                                                        BOM_textbox.Text = "";
+                                                        LayerNumber_textbox.Text = "";
+                                                        PH_textbox.Text = "";
+                                                    }
+                                                    else
+                                                    {
+                                                        MOLD(); //提取数据
+                                                        label23.Text = mold3.ToString();
+
+                                                        BOM_textbox.Text = u9;
+                                                        string uu = yy.Tables[0].Rows[0][0].ToString(); //料号
+                                                        LH_textbox.Text = uu;
+                                                        string u10 = yy.Tables[0].Rows[0][1].ToString(); //在制程
+                                                        label367.Text = u10;
+                                                        string u1 = yy.Tables[0].Rows[0][2].ToString(); //图程序
+                                                        TCX_textbox.Text = u1;
+                                                        string u3 = yy.Tables[0].Rows[0][3].ToString(); //主图程序
+                                                        ZT_textbox.Text = u3;
+                                                        string u5 = yy.Tables[0].Rows[0][5].ToString(); //-主配件
+                                                        Main_Parts_textbox.Text = u5;
+                                                        string u6 = yy.Tables[0].Rows[0][6].ToString(); //岑别名称
+                                                        LayerCount_textbox.Text = u6;
+                                                        string u7 = yy.Tables[0].Rows[0][7].ToString(); //第几次过站
+                                                        label354.Text = u7;
+                                                        string u4 = yy.Tables[0].Rows[0][8].ToString(); //工令
+                                                        WorkOrder_textbox.Text = u4;
+                                                        mj = false;
+                                                        LayerNumber_textbox.BackColor = Color.White;
+
+                                                        textBox15_Click(null, null); //作业员
+
+                                                        保存ToolStripMenuItem_Click(null, null); //保存一次数据
+                                                    }
                                                 }
                                                 else
                                                 {
-                                                    MOLD(); //提取数据
-                                                    label23.Text = mold3.ToString();
-
-                                                    BOM_textbox.Text = u9;
-                                                    string uu = yy.Tables[0].Rows[0][0].ToString(); //料号
-                                                    LH_textbox.Text = uu;
-                                                    string u10 = yy.Tables[0].Rows[0][1].ToString(); //在制程
-                                                    label367.Text = u10;
-                                                    string u1 = yy.Tables[0].Rows[0][2].ToString(); //图程序
-                                                    TCX_textbox.Text = u1;
-                                                    string u3 = yy.Tables[0].Rows[0][3].ToString(); //主图程序
-                                                    ZT_textbox.Text = u3;
-                                                    string u5 = yy.Tables[0].Rows[0][5].ToString(); //-主配件
-                                                    Main_Parts_textbox.Text = u5;
-                                                    string u6 = yy.Tables[0].Rows[0][6].ToString(); //岑别名称
-                                                    LayerCount_textbox.Text = u6;
-                                                    string u7 = yy.Tables[0].Rows[0][7].ToString(); //第几次过站
-                                                    label354.Text = u7;
-                                                    string u4 = yy.Tables[0].Rows[0][8].ToString(); //工令
-                                                    WorkOrder_textbox.Text = u4;
-                                                    mj = false;
-                                                    LayerNumber_textbox.BackColor = Color.White;
-
-                                                    textBox15_Click(null, null); //作业员
-
-                                                    保存ToolStripMenuItem_Click(null, null); //保存一次数据
+                                                    MessageBox.Show("系统未过帐，请联系负责人确认系统！");
+                                                    textBox17_Click(null, null); //作业员
                                                 }
                                             }
-                                            else
+                                            catch
                                             {
-                                                MessageBox.Show("系统未过帐，请联系负责人确认系统！");
+                                                MessageBox.Show("未从系统获取到任何信息，请维护系统，谢谢！", "提示！");
+                                                LayerNumber_textbox.Text = "";
+                                                PH_textbox.Text = "";
                                                 textBox17_Click(null, null); //作业员
                                             }
                                         }
-                                        catch
+                                        else
                                         {
-                                            MessageBox.Show("未从系统获取到任何信息，请维护系统，谢谢！", "提示！");
+                                            MessageBox.Show("扫码数据不全或者数据不对！", "提示！");
                                             LayerNumber_textbox.Text = "";
                                             PH_textbox.Text = "";
                                             textBox17_Click(null, null); //作业员
                                         }
                                     }
-                                    else
-                                    {
-                                        MessageBox.Show("扫码数据不全或者数据不对！", "提示！");
-                                        LayerNumber_textbox.Text = "";
-                                        PH_textbox.Text = "";
-                                        textBox17_Click(null, null); //作业员
-                                    }
-                                }
 
-                                break;
-                            case 3: //模具
-                                if (sArray[1].Length >= 7)
-                                {
-                                    //  textBox24.Text ="SG"+sArray[1];
-                                    if (MoldNum != sArray[1])
+                                    break;
+                                case 3: //模具
+                                    if (sArray[1].Length >= 7)
                                     {
-                                        MoldNum = sArray[1];
-                                        JM_textbox.Text = "";
-                                        TJ_textbox.Text = "";
-                                        label5.Text = "架模时间";
-                                        label6.Text = "调机时间";
-                                    }
-                                    mj = false; //模具
-                                    try
-                                    {
-                                        DataSet E = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0001",
-                                            "0010", MoldNum, System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
-                                        if (E.Tables[0].Rows.Count >= 0)
+                                        //  textBox24.Text ="SG"+sArray[1];
+                                        if (MoldNum != sArray[1])
                                         {
-                                            Model2_textBox1.Text = MoldNum;
-                                            string A = E.Tables[0].Rows[0][0].ToString(); //实际模具名称
-                                            LastModel2_textBox.Text = A;
-                                            try
-                                            {
-                                                string B = E.Tables[0].Rows[0][1].ToString(); //模具累计冲次数
-                                                AbandonNums_textbox.Text = B;
-                                                string C = E.Tables[0].Rows[0][2].ToString(); //刀口余量
-                                                KnifeLength_textbox.Text = C;
-
-                                                if (B != "")
-                                                {
-                                                    bool mold4 = false;
-                                                    if ((Convert.ToInt32(B) == 398000) && mold4 == false)
-                                                    {
-                                                        MessageBox.Show("模具寿命已冲裁398000！", "预警提示！");
-                                                        mold4 = true;
-                                                    }
-                                                    if (Convert.ToInt32(B) == 400000 && mold4 == false)
-                                                    {
-                                                        MessageBox.Show("模具寿命已冲裁400000！", "报警提示！");
-                                                        mold4 = true;
-                                                    }
-                                                }
-
-
-                                                if (C != "")
-                                                {
-                                                    bool mold5 = false;
-                                                    if (C == "1.1" && mold5 == false)
-                                                    {
-                                                        MessageBox.Show("刀口余量等于1.1", "预警提示！");
-                                                        mold5 = true;
-                                                    }
-                                                    if (C == "0.6" && mold5 == false)
-                                                    {
-                                                        MessageBox.Show("刀口余量等于0.6,禁止使用模具！", "报警提示！");
-                                                        mold5 = true;
-                                                    }
-                                                }
-                                            }
-                                            catch
-                                            {
-                                            }
-                                            Model2_textBox1.BackColor = Color.White;
-                                            textBox96_Click(null, null); //下一个位置
-
+                                            MoldNum = sArray[1];
+                                            JM_textbox.Text = "";
+                                            TJ_textbox.Text = "";
+                                            label5.Text = "架模时间";
+                                            label6.Text = "调机时间";
                                         }
-                                        else
+                                        mj = false; //模具
+                                        try
                                         {
-                                            MessageBox.Show("未从系统读取到信息，请维护模具系统！", "提示！");
+                                            DataSet E = webFun.getDataFromSer(serverAccount, serverPwd, "#01", "0001",
+                                                "0010", MoldNum, System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                                            if (E.Tables[0].Rows.Count >= 0)
+                                            {
+                                                Model2_textBox1.Text = MoldNum;
+                                                string A = E.Tables[0].Rows[0][0].ToString(); //实际模具名称
+                                                LastModel2_textBox.Text = A;
+                                                try
+                                                {
+                                                    string B = E.Tables[0].Rows[0][1].ToString(); //模具累计冲次数
+                                                    AbandonNums_textbox.Text = B;
+                                                    string C = E.Tables[0].Rows[0][2].ToString(); //刀口余量
+                                                    KnifeLength_textbox.Text = C;
+
+                                                    if (B != "")
+                                                    {
+                                                        bool mold4 = false;
+                                                        if ((Convert.ToInt32(B) == 398000) && mold4 == false)
+                                                        {
+                                                            MessageBox.Show("模具寿命已冲裁398000！", "预警提示！");
+                                                            mold4 = true;
+                                                        }
+                                                        if (Convert.ToInt32(B) == 400000 && mold4 == false)
+                                                        {
+                                                            MessageBox.Show("模具寿命已冲裁400000！", "报警提示！");
+                                                            mold4 = true;
+                                                        }
+                                                    }
+
+
+                                                    if (C != "")
+                                                    {
+                                                        bool mold5 = false;
+                                                        if (C == "1.1" && mold5 == false)
+                                                        {
+                                                            MessageBox.Show("刀口余量等于1.1", "预警提示！");
+                                                            mold5 = true;
+                                                        }
+                                                        if (C == "0.6" && mold5 == false)
+                                                        {
+                                                            MessageBox.Show("刀口余量等于0.6,禁止使用模具！", "报警提示！");
+                                                            mold5 = true;
+                                                        }
+                                                    }
+                                                }
+                                                catch
+                                                {
+                                                }
+                                                Model2_textBox1.BackColor = Color.White;
+                                                textBox96_Click(null, null); //下一个位置
+
+                                            }
+                                            else
+                                            {
+                                                MessageBox.Show("未从系统读取到信息，请维护模具系统！", "提示！");
+                                                textBox24_Click(null, null); //下一个位置
+                                                Model2_textBox1.Text = "";
+                                                LastModel2_textBox.Text = "";
+                                            }
+                                        }
+                                        catch
+                                        {
+                                            MessageBox.Show("从系统未获取到模具数据！请维护模治具系统！", "提示!");
                                             textBox24_Click(null, null); //下一个位置
                                             Model2_textBox1.Text = "";
                                             LastModel2_textBox.Text = "";
                                         }
                                     }
-                                    catch
+
+
+
+
+                                    break;
+                                case 4: //操作员
+
+                                    if (sArray[1].Length == 8 || sArray[1].Length == 7)
                                     {
-                                        MessageBox.Show("从系统未获取到模具数据！请维护模治具系统！", "提示!");
-                                        textBox24_Click(null, null); //下一个位置
-                                        Model2_textBox1.Text = "";
-                                        LastModel2_textBox.Text = "";
-                                    }
-                                }
+                                        Operater_textbox.Text = sArray[1];
 
-
-
-
-                                break;
-                            case 4: //操作员
-
-                                if (sArray[1].Length == 8 || sArray[1].Length == 7)
-                                {
-                                    Operater_textbox.Text = sArray[1];
-
-                                    Job = Operater_textbox.Text;
-                                    machine = textBox3.Text;
-                                    job10 = false;
-                                    List<string> msgL = new List<string>();
-                                    string filePath = Application.StartupPath.ToString() + "\\job.txt";
-                                    //打开根目录下的Auditor.TXT 路径
-                                    FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
-                                    string[] job1 = new string[100];
-
-                                    for (int i = 0; i < msgL.Count; i++) //循环数组数值最大长度
-                                    {
-                                        job1 = msgL[i].Split(','); //分割数组中,前面和后面的。
-                                        if (job1[0] == Operater_textbox.Text) //判断分割后的前面和文本是否一样，一样则直接打开相同
-                                        {
-                                            if (DateTime.Parse(job1[1]) > DateTime.Now)
-                                            {
-                                                //textBox25_Click(null, null);//作业员
-                                                Operater_textbox.BackColor = Color.White;
-                                                job10 = true;
-                                                label93.Text = job1[1].ToString();
-                                                i = msgL.Count;
-                                                button2_Click(null, null); //作业员
-                                            }
-                                            else
-                                            {
-                                                //    msgL[i].TrimStart();
-                                                job10 = true;
-                                                try
-                                                {
-                                                    DataSet d = webFun.getDataFromSer(textBox97.Text, textBox98.Text,
-                                                        "#01", "0001", "0011", Job + "|" + machine,
-                                                        System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
-                                                    if (d.Tables[0].Rows.Count >= 0)
-                                                    {
-                                                        string z = d.Tables[0].Rows[0][0].ToString();
-                                                        if (Convert.ToInt32(z) >= 1) //审核是否有权限
-                                                        {
-                                                            Operater_textbox.BackColor = Color.White;
-                                                            //textBox25_Click(null, null);//作业员
-                                                            button2_Click(null, null); //作业员
-                                                            job10 = true;
-                                                            label93.Text = System.DateTime.Now.AddDays(7).ToString();
-                                                            msgL[i] = Operater_textbox.Text + "," +
-                                                                      System.DateTime.Now.AddDays(7).ToString();
-                                                            //更改日期，插人
-                                                            FileOperate.SaveFileList(filePath, msgL);
-                                                            msgL.Clear();
-                                                            i = msgL.Count;
-                                                        }
-                                                        else
-                                                        {
-                                                            label93.Text = "没有权限";
-                                                            Operater_textbox.Text = "";
-                                                        }
-                                                    }
-                                                    else
-                                                    {
-                                                        MessageBox.Show("读取作业员无权限，请维护系统！", "提示！");
-                                                        Operater_textbox.Text = "";
-                                                        Operater_textbox.BackColor = Color.Transparent;
-                                                    }
-                                                }
-                                                catch
-                                                {
-                                                    MessageBox.Show("读取服务器系统异常，请检查网络！", "提示！");
-                                                    Operater_textbox.Text = "";
-                                                }
-                                            }
-                                        }
-                                    }
-                                    if (job10 == false) //如果没记录，则连接服务器读取
-                                    {
-                                        try
-                                        {
-                                            DataSet d = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01",
-                                                "0001", "0011", Job + "|" + machine,
-                                                System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
-                                            if (d.Tables[0].Rows.Count >= 0)
-                                            {
-                                                string z = d.Tables[0].Rows[0][0].ToString(); //审核是否有权限
-                                                if (Convert.ToInt32(z) >= 1)
-                                                {
-                                                    string aa = Operater_textbox.Text + "," + DateTime.Now.AddDays(7);
-                                                    msgL.Add(aa);
-                                                    FileOperate.SaveFileList(filePath, msgL);
-                                                    msgL.Clear();
-                                                    job10 = true;
-                                                    Operater_textbox.BackColor = Color.White;
-                                                    label93.Text = System.DateTime.Now.AddDays(7).ToString();
-                                                    //textBox25_Click(null, null);//作业员
-                                                    button2_Click(null, null); //作业员
-
-                                                }
-                                                else
-                                                {
-                                                    label93.Text = "没有权限";
-                                                    Operater_textbox.Text = "";
-                                                    textBox15_Click(null, null); //作业员
-                                                }
-                                            }
-                                            else
-                                            {
-                                                MessageBox.Show("读取作业员无权限，请维护系统！", "提示！");
-                                                Audit_textBox.BackColor = Color.Transparent;
-                                                Operater_textbox.Text = "";
-                                                textBox15_Click(null, null); //作业员
-                                            }
-                                        }
-                                        catch
-                                        {
-                                            MessageBox.Show("读取服务器系统异常，请检查网络！", "提示！");
-                                            Operater_textbox.Text = "";
-                                            textBox15_Click(null, null); //作业员
-                                        }
-                                    }
-                                }
-                                if (label93.Text != "没有权限")
-                                {
-                                    houjia = 0;
-
-                                    a33 = 0;
-
-                                    label358.Text = ZhangNumber_textbox.Text; //张数
-                                    label353.Text = Sum_ChongNums_textbox.Text; //冲数
-
-
-                                    PcConnectPlc.Write_Data_FxUsb("M2903", 1); //可以运行
-
-                                }
-
-                                break;
-
-                            case 5: //审核人
-                                if (sArray[1].Length == 8 && label93.Text != "没有权限")
-                                {
-                                    Auditor10 = false;
-                                    Audit_textBox.Text = sArray[1];
-                                    // textBox25.Text = textBox25.Text;
-                                    Auditor = Audit_textBox.Text;
-                                    if (Audit_textBox.Text != Operater_textbox.Text)
-                                    {
+                                        Job = Operater_textbox.Text;
+                                        machine = machineidentifier;
+                                        job10 = false;
                                         List<string> msgL = new List<string>();
-                                        string filePath = Application.StartupPath.ToString() + "\\Auditor.txt";
+                                        string filePath = Application.StartupPath.ToString() + "\\job.txt";
                                         //打开根目录下的Auditor.TXT 路径
                                         FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
-                                        string[] Auditor1 = new string[2];
+                                        string[] job1 = new string[100];
 
                                         for (int i = 0; i < msgL.Count; i++) //循环数组数值最大长度
                                         {
-                                            Auditor1 = msgL[i].Split(','); //分割数组中,前面和后面的。
-                                            if (Auditor1[0] == Audit_textBox.Text) //判断分割后的前面和文本是否一样，一样则直接打开相同
+                                            job1 = msgL[i].Split(','); //分割数组中,前面和后面的。
+                                            if (job1[0] == Operater_textbox.Text) //判断分割后的前面和文本是否一样，一样则直接打开相同
                                             {
-                                                if (DateTime.Parse(Auditor1[1]) > DateTime.Now)
+                                                if (DateTime.Parse(job1[1]) > DateTime.Now)
                                                 {
-                                                    Auditor10 = true;
-                                                    label94.Text = Auditor1[1].ToString();
-                                                    button25_Click(null, null);
-                                                    Audit_textBox.BackColor = Color.White;
+                                                    //textBox25_Click(null, null);//作业员
+                                                    Operater_textbox.BackColor = Color.White;
+                                                    job10 = true;
+                                                    label93.Text = job1[1].ToString();
                                                     i = msgL.Count;
+                                                    button2_Click(null, null); //作业员
                                                 }
                                                 else
                                                 {
-                                                    msgL[i].TrimStart();
-                                                    Auditor10 = true;
+                                                    //    msgL[i].TrimStart();
+                                                    job10 = true;
                                                     try
                                                     {
-                                                        DataSet d = webFun.getDataFromSer(textBox97.Text, textBox98.Text,
-                                                            "#01", "0001", "0012", Auditor + "|SFCZ1_ZD_PunchCut",
+                                                        DataSet d = webFun.getDataFromSer(serverAccount, serverPwd,
+                                                            "#01", "0001", "0011", Job + "|" + machine,
                                                             System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                                                         if (d.Tables[0].Rows.Count >= 0)
                                                         {
-                                                            string f = d.Tables[0].Rows[0][0].ToString();
-                                                            if (Convert.ToInt32(f) >= 1) //审核是否有权限
+                                                            string z = d.Tables[0].Rows[0][0].ToString();
+                                                            if (Convert.ToInt32(z) >= 1) //审核是否有权限
                                                             {
-                                                                button25_Click(null, null);
-                                                                Auditor10 = true;
-                                                                label94.Text = System.DateTime.Now.AddDays(7).ToString();
-                                                                msgL[i] = Audit_textBox.Text + "," +
+                                                                Operater_textbox.BackColor = Color.White;
+                                                                //textBox25_Click(null, null);//作业员
+                                                                button2_Click(null, null); //作业员
+                                                                job10 = true;
+                                                                label93.Text = System.DateTime.Now.AddDays(7).ToString();
+                                                                msgL[i] = Operater_textbox.Text + "," +
                                                                           System.DateTime.Now.AddDays(7).ToString();
                                                                 //更改日期，插人
                                                                 FileOperate.SaveFileList(filePath, msgL);
                                                                 msgL.Clear();
-                                                                Audit_textBox.BackColor = Color.White;
                                                                 i = msgL.Count;
                                                             }
                                                             else
                                                             {
-                                                                label94.Text = "没有权限";
-                                                                Audit_textBox.Text = "";
-                                                                textBox25_Click(null, null); //作业员
+                                                                label93.Text = "没有权限";
+                                                                Operater_textbox.Text = "";
                                                             }
-                                                            //  textBox25.BackColor = Color.Green;
                                                         }
                                                         else
                                                         {
-                                                            MessageBox.Show("读取审核人无权限，请维护系统！", "提示！");
-                                                            Audit_textBox.BackColor = Color.Transparent;
-                                                            textBox25_Click(null, null); //作业员
+                                                            MessageBox.Show("读取作业员无权限，请维护系统！", "提示！");
+                                                            Operater_textbox.Text = "";
+                                                            Operater_textbox.BackColor = Color.Transparent;
                                                         }
                                                     }
                                                     catch
                                                     {
                                                         MessageBox.Show("读取服务器系统异常，请检查网络！", "提示！");
-                                                        textBox25_Click(null, null); //作业员
+                                                        Operater_textbox.Text = "";
                                                     }
                                                 }
                                             }
                                         }
-                                        if (Auditor10 == false) //如果没记录，则连接服务器读取
+                                        if (job10 == false) //如果没记录，则连接服务器读取
                                         {
                                             try
                                             {
-                                                DataSet d = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01",
-                                                    "0001", "0012", Auditor + "|SFCZ1_ZD_PunchCut",
+                                                DataSet d = webFun.getDataFromSer(serverAccount, serverPwd, "#01",
+                                                    "0001", "0011", Job + "|" + machine,
                                                     System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                                                 if (d.Tables[0].Rows.Count >= 0)
                                                 {
-                                                    string f = d.Tables[0].Rows[0][0].ToString(); //审核是否有权限
-                                                    if (Convert.ToInt32(f) >= 1)
+                                                    string z = d.Tables[0].Rows[0][0].ToString(); //审核是否有权限
+                                                    if (Convert.ToInt32(z) >= 1)
                                                     {
-                                                        string aa = Audit_textBox.Text + "," + DateTime.Now.AddDays(7);
+                                                        string aa = Operater_textbox.Text + "," +
+                                                                    DateTime.Now.AddDays(7);
                                                         msgL.Add(aa);
                                                         FileOperate.SaveFileList(filePath, msgL);
                                                         msgL.Clear();
-                                                        Auditor10 = true;
-                                                        label94.Text = System.DateTime.Now.AddDays(7).ToString();
-                                                        button25_Click(null, null);
-                                                        Audit_textBox.BackColor = Color.White;
+                                                        job10 = true;
+                                                        Operater_textbox.BackColor = Color.White;
+                                                        label93.Text = System.DateTime.Now.AddDays(7).ToString();
+                                                        //textBox25_Click(null, null);//作业员
+                                                        button2_Click(null, null); //作业员
+
                                                     }
                                                     else
                                                     {
-                                                        label94.Text = "没有权限";
-                                                        Audit_textBox.Text = "";
-                                                        textBox25_Click(null, null); //作业员
+                                                        label93.Text = "没有权限";
+                                                        Operater_textbox.Text = "";
+                                                        textBox15_Click(null, null); //作业员
                                                     }
-                                                    //  textBox25.BackColor = Color.Green;
                                                 }
                                                 else
                                                 {
-                                                    MessageBox.Show("读取审核人无权限，请维护系统！", "提示！");
+                                                    MessageBox.Show("读取作业员无权限，请维护系统！", "提示！");
                                                     Audit_textBox.BackColor = Color.Transparent;
-                                                    textBox25_Click(null, null); //作业员
+                                                    Operater_textbox.Text = "";
+                                                    textBox15_Click(null, null); //作业员
                                                 }
                                             }
                                             catch
                                             {
                                                 MessageBox.Show("读取服务器系统异常，请检查网络！", "提示！");
-                                                textBox25_Click(null, null); //作业员
+                                                Operater_textbox.Text = "";
+                                                textBox15_Click(null, null); //作业员
                                             }
                                         }
+                                    }
+                                    if (label93.Text != "没有权限")
+                                    {
+                                        houjia = 0;
 
+                                        a33 = 0;
+
+                                        label358.Text = ZhangNumber_textbox.Text; //张数
+                                        label353.Text = Sum_ChongNums_textbox.Text; //冲数
+
+
+                                        PcConnectPlc.Write_Data_FxUsb("M2903", 1); //可以运行
+
+                                    }
+
+                                    break;
+
+                                case 5: //审核人
+                                    if (sArray[1].Length == 8 && label93.Text != "没有权限")
+                                    {
+                                        Auditor10 = false;
+                                        Audit_textBox.Text = sArray[1];
+                                        // textBox25.Text = textBox25.Text;
+                                        Auditor = Audit_textBox.Text;
+                                        if (Audit_textBox.Text != Operater_textbox.Text)
+                                        {
+                                            List<string> msgL = new List<string>();
+                                            string filePath = Application.StartupPath.ToString() + "\\Auditor.txt";
+                                            //打开根目录下的Auditor.TXT 路径
+                                            FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
+                                            string[] Auditor1 = new string[2];
+
+                                            for (int i = 0; i < msgL.Count; i++) //循环数组数值最大长度
+                                            {
+                                                Auditor1 = msgL[i].Split(','); //分割数组中,前面和后面的。
+                                                if (Auditor1[0] == Audit_textBox.Text) //判断分割后的前面和文本是否一样，一样则直接打开相同
+                                                {
+                                                    if (DateTime.Parse(Auditor1[1]) > DateTime.Now)
+                                                    {
+                                                        Auditor10 = true;
+                                                        label94.Text = Auditor1[1].ToString();
+                                                        button25_Click(null, null);
+                                                        Audit_textBox.BackColor = Color.White;
+                                                        i = msgL.Count;
+                                                    }
+                                                    else
+                                                    {
+                                                        msgL[i].TrimStart();
+                                                        Auditor10 = true;
+                                                        try
+                                                        {
+                                                            DataSet d = webFun.getDataFromSer(serverAccount, serverPwd,
+                                                                "#01", "0001", "0012", Auditor + "|SFCZ1_ZD_PunchCut",
+                                                                System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                                                            if (d.Tables[0].Rows.Count >= 0)
+                                                            {
+                                                                string f = d.Tables[0].Rows[0][0].ToString();
+                                                                if (Convert.ToInt32(f) >= 1) //审核是否有权限
+                                                                {
+                                                                    button25_Click(null, null);
+                                                                    Auditor10 = true;
+                                                                    label94.Text =
+                                                                        System.DateTime.Now.AddDays(7).ToString();
+                                                                    msgL[i] = Audit_textBox.Text + "," +
+                                                                              System.DateTime.Now.AddDays(7).ToString();
+                                                                    //更改日期，插人
+                                                                    FileOperate.SaveFileList(filePath, msgL);
+                                                                    msgL.Clear();
+                                                                    Audit_textBox.BackColor = Color.White;
+                                                                    i = msgL.Count;
+                                                                }
+                                                                else
+                                                                {
+                                                                    label94.Text = "没有权限";
+                                                                    Audit_textBox.Text = "";
+                                                                    textBox25_Click(null, null); //作业员
+                                                                }
+                                                                //  textBox25.BackColor = Color.Green;
+                                                            }
+                                                            else
+                                                            {
+                                                                MessageBox.Show("读取审核人无权限，请维护系统！", "提示！");
+                                                                Audit_textBox.BackColor = Color.Transparent;
+                                                                textBox25_Click(null, null); //作业员
+                                                            }
+                                                        }
+                                                        catch
+                                                        {
+                                                            MessageBox.Show("读取服务器系统异常，请检查网络！", "提示！");
+                                                            textBox25_Click(null, null); //作业员
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            if (Auditor10 == false) //如果没记录，则连接服务器读取
+                                            {
+                                                try
+                                                {
+                                                    DataSet d = webFun.getDataFromSer(serverAccount, serverPwd, "#01",
+                                                        "0001", "0012", Auditor + "|SFCZ1_ZD_PunchCut",
+                                                        System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                                                    if (d.Tables[0].Rows.Count >= 0)
+                                                    {
+                                                        string f = d.Tables[0].Rows[0][0].ToString(); //审核是否有权限
+                                                        if (Convert.ToInt32(f) >= 1)
+                                                        {
+                                                            string aa = Audit_textBox.Text + "," +
+                                                                        DateTime.Now.AddDays(7);
+                                                            msgL.Add(aa);
+                                                            FileOperate.SaveFileList(filePath, msgL);
+                                                            msgL.Clear();
+                                                            Auditor10 = true;
+                                                            label94.Text = System.DateTime.Now.AddDays(7).ToString();
+                                                            button25_Click(null, null);
+                                                            Audit_textBox.BackColor = Color.White;
+                                                        }
+                                                        else
+                                                        {
+                                                            label94.Text = "没有权限";
+                                                            Audit_textBox.Text = "";
+                                                            textBox25_Click(null, null); //作业员
+                                                        }
+                                                        //  textBox25.BackColor = Color.Green;
+                                                    }
+                                                    else
+                                                    {
+                                                        MessageBox.Show("读取审核人无权限，请维护系统！", "提示！");
+                                                        Audit_textBox.BackColor = Color.Transparent;
+                                                        textBox25_Click(null, null); //作业员
+                                                    }
+                                                }
+                                                catch
+                                                {
+                                                    MessageBox.Show("读取服务器系统异常，请检查网络！", "提示！");
+                                                    textBox25_Click(null, null); //作业员
+                                                }
+                                            }
+
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("审核人与作业员同一工号，请使用不同工号审核！");
+                                            Audit_textBox.Text = "";
+                                            textBox32.Text = "";
+                                            textBox25_Click(null, null); //作业员
+                                        }
                                     }
                                     else
                                     {
-                                        MessageBox.Show("审核人与作业员同一工号，请使用不同工号审核！");
-                                        Audit_textBox.Text = "";
-                                        textBox32.Text = "";
+                                        MessageBox.Show("输入格式不对或者作业员未取得权限！");
                                         textBox25_Click(null, null); //作业员
+
                                     }
-                                }
-                                else
-                                {
-                                    MessageBox.Show("输入格式不对或者作业员未取得权限！");
-                                    textBox25_Click(null, null); //作业员
 
-                                }
-  
 
-                                break;
-                            case 6: //加模具人员
+                                    break;
+                                case 6: //加模具人员
 
-                                if (sArray[1].Length == 8 && LastModel2_textBox.Text != "")
-                                {
-                                    JM_textbox.Text = sArray[1];
-                                    label5.Text = System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"); //时间
-                                    textBox95_Click(null, null);
-
-                                    JM_textbox.BackColor = Color.White;
-                                }
-                                else
-                                {
-                                    textBox96_Click(null, null);
-                                }
-                                break;
-                            case 7: //调机人员
-                                if (JM_textbox.Text != sArray[1])
-                                {
-                                    if (sArray[1].Length == 8 && JM_textbox.Text != "")
+                                    if (sArray[1].Length == 8 && LastModel2_textBox.Text != "")
                                     {
-                                        textBox14_Click(null, null);
-                                        TJ_textbox.Text = sArray[1];
-                                        TJ_textbox.BackColor = Color.White;
-                                        label6.Text = System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"); //时间
+                                        JM_textbox.Text = sArray[1];
+                                        label5.Text = System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"); //时间
+                                        textBox95_Click(null, null);
 
+                                        JM_textbox.BackColor = Color.White;
                                     }
                                     else
                                     {
-                                        textBox95_Click(null, null);
+                                        textBox96_Click(null, null);
                                     }
-                                }
-                                else
-                                {
-                                    MessageBox.Show("架模人员和调机人员不能相同！");
+                                    break;
+                                case 7: //调机人员
+                                    if (JM_textbox.Text != sArray[1])
+                                    {
+                                        if (sArray[1].Length == 8 && JM_textbox.Text != "")
+                                        {
+                                            textBox14_Click(null, null);
+                                            TJ_textbox.Text = sArray[1];
+                                            TJ_textbox.BackColor = Color.White;
+                                            label6.Text = System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"); //时间
 
-                                    textBox95_Click(null, null);
+                                        }
+                                        else
+                                        {
+                                            textBox95_Click(null, null);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("架模人员和调机人员不能相同！");
 
-                                }
+                                        textBox95_Click(null, null);
 
-                                break;
+                                    }
+
+                                    break;
+                            }
+                            sArray[1] = "";
+                            b = "";
+                            textBox32.Text = "";
                         }
-                        sArray[1] = "";
-                        b = "";
-                        textBox32.Text = "";
-                    }
-                    catch
-                    {
-                        b = "";
-                        textBox32.Text = "";
-                        LastModel_Textbox.Text = "";
-                    }
+                        catch
+                        {
+                            b = "";
+                            textBox32.Text = "";
+                            LastModel_Textbox.Text = "";
+                        }
 
+                    }
+                    if ((textBox32.Text.Length <= 2) && (saoma3 == true))
+                    {
+                        saoma3 = false;
+                        textBox32.Text = "";
+                        //textBox14.BackColor = Color.White;
+                        //textBox17.BackColor = Color.White;
+                        //textBox15.BackColor = Color.White;
+                        //textBox24.BackColor = Color.White;
+                        //textBox25.BackColor = Color.White;
+                        //textBox96.BackColor = Color.White;
+                        //textBox95.BackColor = Color.White;
+                    }
                 }
-                if ((textBox32.Text.Length <= 2) && (saoma3 == true))
-                {
-                    saoma3 = false;
-                    textBox32.Text = "";
-                    //textBox14.BackColor = Color.White;
-                    //textBox17.BackColor = Color.White;
-                    //textBox15.BackColor = Color.White;
-                    //textBox24.BackColor = Color.White;
-                    //textBox25.BackColor = Color.White;
-                    //textBox96.BackColor = Color.White;
-                    //textBox95.BackColor = Color.White;
-                }
-            }
-            label14.Text = DateTime.Now.ToString("ss");
-            timer4.Enabled = true;
+                label14.Text = DateTime.Now.ToString("ss");
+                timer4.Enabled = true;
             }
             catch (Exception ex)
             {
@@ -3288,7 +3273,9 @@ namespace WindowsFormsApplication1
                 timer4.Enabled = false; //关闭权限定时器
                 try
                 {
-                    Person_ChongNumber_textbox.Text = ((Convert.ToInt32(PersonCheckPages_textbox.Text))*(Convert.ToInt32(Set_Chong_textbox.Text))).ToString();
+                    Person_ChongNumber_textbox.Text =
+                        ((Convert.ToInt32(PersonCheckPages_textbox.Text))*(Convert.ToInt32(Set_Chong_textbox.Text)))
+                            .ToString();
                     //自主检查
                 }
                 catch
@@ -3300,9 +3287,10 @@ namespace WindowsFormsApplication1
                 {
 
                     label352.Text = System.DateTime.Now.ToString("yyyyMMddHHmmss"); //开始时间
-                 
-                    DataSet yy = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0004", "G0001",
-                        "SFCZ1_ZD_PunchCut|" + System.DateTime.Now.ToString("yyyyMMdd") + "|" + Machine_id_textbox.Text + "|" + a,
+
+                    DataSet yy = webFun.getDataFromSer(serverAccount, serverPwd, "#01", "0004", "G0001",
+                        "SFCZ1_ZD_PunchCut|" + System.DateTime.Now.ToString("yyyyMMdd") + "|" + Machine_id_textbox.Text +
+                        "|" + a,
                         System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                     //读取表单号,---第一步
                     if (yy.Tables[0].Rows.Count > 0) //如果有表单号，直接提取，没有就创建。
@@ -3314,22 +3302,23 @@ namespace WindowsFormsApplication1
                     }
                     else
                     {
-                        DataSet ww = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0004", "0002",
+                        DataSet ww = webFun.getDataFromSer(serverAccount, serverPwd, "#01", "0004", "0002",
                             System.DateTime.Now.ToString("yyyyMMdd") + "|" + a,
                             System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                         //2018081200950--第二步
                         string ee = ww.Tables[0].Rows[0][0].ToString(); //单号
                         BD_textbox.Text = ee;
 
-                        string ret1 = webFun.sendDataToSerGrp(textBox97.Text, textBox98.Text, "#01", "0004", "0003",
+                        string ret1 = webFun.sendDataToSerGrp(serverAccount, serverPwd, "#01", "0004", "0003",
                             "paperNo|Status|DoDate|MachineNo|Report|ClassInfo|Factory|CreateTime|CreateEmpid",
-                            BD_textbox.Text + "|1|" + System.DateTime.Now.ToString("yyyyMMdd") + "|" + Machine_id_textbox.Text +
+                            BD_textbox.Text + "|1|" + System.DateTime.Now.ToString("yyyyMMdd") + "|" +
+                            Machine_id_textbox.Text +
                             "|SFCZ1_ZD_PunchCut|" + a + "|001|" + System.DateTime.Now.ToString("yyyyMMddHHmmss") + "|" +
                             Operater_textbox.Text,
                             System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss")); //第三步
 
                     }
-                    DataSet y1 = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0001", "0002",
+                    DataSet y1 = webFun.getDataFromSer(serverAccount, serverPwd, "#01", "0001", "0002",
                         PH_textbox.Text, System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                     // 第四步
 
@@ -3341,7 +3330,7 @@ namespace WindowsFormsApplication1
                         string y21 = y1.Tables[0].Rows[0][2].ToString(); //
                     }
 
-                    DataSet y4 = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0001", "0009",
+                    DataSet y4 = webFun.getDataFromSer(serverAccount, serverPwd, "#01", "0001", "0009",
                         PH_textbox.Text + "|SFCZ1_ZD_PunchCut|" + LayerNumber_textbox.Text,
                         System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                     //                 //   第五步
@@ -3373,20 +3362,26 @@ namespace WindowsFormsApplication1
 
                     PcConnectPlc.Write_Data_FxUsb("M2903", 1); //可以运行
 
-                    string ret = webFun.sendDataToSerGrp(textBox97.Text, textBox98.Text, "#01", "0004", "0006",
+                    string ret = webFun.sendDataToSerGrp(serverAccount, serverPwd, "#01", "0004", "0006",
                         "paperNo|MacState|StartTime|EndTime|Lotnum|Layer|MainSerial|Partnum|WorkNo|SfcLayer|LayerName|Serial|IsMain|OrderId|Item2|Item1|Item3|Item4|Item5|Item6|Item7|Item8|Qty|Item10|Item11|Item13|Item14|Item15|Item16|CreateEmpid|CreateTime|ModifyEmpid|ModifyTime",
                         BD_textbox.Text + "|正常|" + label352.Text + "|" + "" + "|"
-                        + PH_textbox.Text + "|" + LayerNumber_textbox.Text + "|" + ZT_textbox.Text + "|" + LH_textbox.Text + "|" +
+                        + PH_textbox.Text + "|" + LayerNumber_textbox.Text + "|" + ZT_textbox.Text + "|" +
+                        LH_textbox.Text + "|" +
                         WorkOrder_textbox.Text + "|"
-                        + label367.Text + "|" + LayerCount_textbox.Text + "|" + TCX_textbox.Text + "|" + Main_Parts_textbox.Text + "|" +
+                        + label367.Text + "|" + LayerCount_textbox.Text + "|" + TCX_textbox.Text + "|" +
+                        Main_Parts_textbox.Text + "|" +
                         label354.Text + "|"
-                        + Model2_textBox1.Text + "|" + LastModel2_textBox.Text + "|" + KeepNums_textbox.Text + "|" + AbandonNums_textbox.Text + "|" +
+                        + Model2_textBox1.Text + "|" + LastModel2_textBox.Text + "|" + KeepNums_textbox.Text + "|" +
+                        AbandonNums_textbox.Text + "|" +
                         KnifeLength_textbox.Text + "|"
                         + BOM_textbox.Text + "|"
-                        + Enum_textbox.Text + "|" + Check_textbox.Text + "|" + label22.Text + " | " + GoodBadProduct_textbox.Text + "|" +
+                        + Enum_textbox.Text + "|" + Check_textbox.Text + "|" + label22.Text + " | " +
+                        GoodBadProduct_textbox.Text + "|" +
                         Person_ChongNumber_textbox.Text + "|"
-                        + param1_2.Text + "|" + HandHeight_textbox.Text + "|" + Audit_textBox.Text + "|" + ChongNumber_textbox.Text + "|"
-                        + Operater_textbox.Text + "|" + System.DateTime.Now.ToString("yyyyMMddHHmmss") + "|" + Operater_textbox.Text +
+                        + param1_2.Text + "|" + HandHeight_textbox.Text + "|" + Audit_textBox.Text + "|" +
+                        ChongNumber_textbox.Text + "|"
+                        + Operater_textbox.Text + "|" + System.DateTime.Now.ToString("yyyyMMddHHmmss") + "|" +
+                        Operater_textbox.Text +
                         "|" + System.DateTime.Now.ToString("yyyyMMddHHmmss"),
                         System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
 
@@ -3400,16 +3395,20 @@ namespace WindowsFormsApplication1
 
                         msgL[0] = "1";
 
-                        msgL[1] = BD_textbox.Text + "," + label352.Text + "," + PH_textbox.Text + "," + LayerNumber_textbox.Text +
+                        msgL[1] = BD_textbox.Text + "," + label352.Text + "," + PH_textbox.Text + "," +
+                                  LayerNumber_textbox.Text +
                                   "," + ZT_textbox.Text + "," + LH_textbox.Text + "," + WorkOrder_textbox.Text;
 
-                        msgL[2] = label367.Text + "," + LayerCount_textbox.Text + "," + TCX_textbox.Text + "," + Main_Parts_textbox.Text +
+                        msgL[2] = label367.Text + "," + LayerCount_textbox.Text + "," + TCX_textbox.Text + "," +
+                                  Main_Parts_textbox.Text +
                                   "," + label354.Text + "," + Model2_textBox1.Text + "," + LastModel2_textBox.Text;
 
-                        msgL[3] = KeepNums_textbox.Text + "," + AbandonNums_textbox.Text + "," + KnifeLength_textbox.Text + "," + BOM_textbox.Text +
+                        msgL[3] = KeepNums_textbox.Text + "," + AbandonNums_textbox.Text + "," +
+                                  KnifeLength_textbox.Text + "," + BOM_textbox.Text +
                                   "," + Enum_textbox.Text + "," + Check_textbox.Text;
 
-                        msgL[4] = label22.Text + "," + GoodBadProduct_textbox.Text + "," + Person_ChongNumber_textbox.Text + "," + param1_2.Text +
+                        msgL[4] = label22.Text + "," + GoodBadProduct_textbox.Text + "," +
+                                  Person_ChongNumber_textbox.Text + "," + param1_2.Text +
                                   "," + HandHeight_textbox.Text + "," + Audit_textBox.Text + "," + Operater_textbox.Text;
 
                         msgL[5] = JM_textbox.Text + "," + label5.Text + "," + TJ_textbox.Text + "," + label6.Text + "," +
@@ -3447,7 +3446,7 @@ namespace WindowsFormsApplication1
                 {
                     try
                     {
-                        DataSet E = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0001", "0010",
+                        DataSet E = webFun.getDataFromSer(serverAccount, serverPwd, "#01", "0001", "0010",
                             Model2_textBox1.Text, System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                         if (E.Tables[0].Rows.Count > 0)
                         {
@@ -3488,7 +3487,7 @@ namespace WindowsFormsApplication1
                                 }
                             }
 
-              
+
                         }
                         else
                         {
@@ -3519,7 +3518,7 @@ namespace WindowsFormsApplication1
                 if (Operater_textbox.Text.Length == 8 || Operater_textbox.Text.Length == 7)
                 {
                     Job = Operater_textbox.Text;
-                    machine = textBox3.Text;
+                    machine = machineidentifier;
 
                     List<string> msgL = new List<string>();
                     string filePath = Application.StartupPath.ToString() + "\\job.txt"; //打开根目录下的Auditor.TXT 路径
@@ -3540,7 +3539,7 @@ namespace WindowsFormsApplication1
                             {
                                 try
                                 {
-                                    DataSet d = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0001",
+                                    DataSet d = webFun.getDataFromSer(serverAccount, serverPwd, "#01", "0001",
                                         "0011", Job + "|" + machine, System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                                     if (d.Tables[0].Rows.Count >= 0)
                                     {
@@ -3549,7 +3548,8 @@ namespace WindowsFormsApplication1
                                         {
                                             job10 = true;
                                             label93.Text = System.DateTime.Now.AddDays(7).ToString();
-                                            msgL[i] = Operater_textbox.Text + "," + System.DateTime.Now.AddDays(7).ToString();
+                                            msgL[i] = Operater_textbox.Text + "," +
+                                                      System.DateTime.Now.AddDays(7).ToString();
                                             //更改日期，插人
                                             FileOperate.SaveFileList(filePath, msgL);
                                             msgL.Clear();
@@ -3587,7 +3587,7 @@ namespace WindowsFormsApplication1
                     {
                         try
                         {
-                            DataSet d = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0001", "0011",
+                            DataSet d = webFun.getDataFromSer(serverAccount, serverPwd, "#01", "0001", "0011",
                                 Job + "|" + machine, System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                             if (d.Tables[0].Rows.Count >= 0)
                             {
@@ -3660,7 +3660,7 @@ namespace WindowsFormsApplication1
                                 //  Auditor10 = true;
                                 try
                                 {
-                                    DataSet d = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0001",
+                                    DataSet d = webFun.getDataFromSer(serverAccount, serverPwd, "#01", "0001",
                                         "0012", Auditor + "|SFCZ1_ZD_PunchCut",
                                         System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                                     if (d.Tables[0].Rows.Count >= 0)
@@ -3670,7 +3670,8 @@ namespace WindowsFormsApplication1
                                         {
                                             Auditor10 = true;
                                             label94.Text = System.DateTime.Now.AddDays(7).ToString();
-                                            msgL[i] = Audit_textBox.Text + "," + System.DateTime.Now.AddDays(7).ToString();
+                                            msgL[i] = Audit_textBox.Text + "," +
+                                                      System.DateTime.Now.AddDays(7).ToString();
                                             //更改日期，插人
                                             FileOperate.SaveFileList(filePath, msgL);
                                             msgL.Clear();
@@ -3701,7 +3702,7 @@ namespace WindowsFormsApplication1
                     {
                         try
                         {
-                            DataSet d = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0001", "0012",
+                            DataSet d = webFun.getDataFromSer(serverAccount, serverPwd, "#01", "0001", "0012",
                                 Auditor + "|SFCZ1_ZD_PunchCut", System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                             if (d.Tables[0].Rows.Count >= 0)
                             {
@@ -3756,7 +3757,8 @@ namespace WindowsFormsApplication1
 
                 if (PLC_DS[13] != 0)
                 {
-                    if (PLC_DS[13] != 0 && Check_textbox.Text != "" && Enum_textbox.Text != "" && GoodBadProduct_textbox.Text != "")
+                    if (PLC_DS[13] != 0 && Check_textbox.Text != "" && Enum_textbox.Text != "" &&
+                        GoodBadProduct_textbox.Text != "")
                     {
 
                         //mold3 = mold3 + 1;
@@ -3787,20 +3789,25 @@ namespace WindowsFormsApplication1
 
                         label25.Text = KD_Tiao_textbox.Text;
 
-                        string ret = webFun.sendDataToSerGrp(textBox97.Text, textBox98.Text, "#01", "0004", "0006",
+                        string ret = webFun.sendDataToSerGrp(serverAccount, serverPwd, "#01", "0004", "0006",
                             "paperNo|MacState|StartTime|EndTime|Lotnum|Layer|MainSerial|Partnum|WorkNo|SfcLayer|LayerName|Serial|IsMain|OrderId|Item2|Item1|Item3|Item4|Item5|Item6|Item7|Item8|Qty|Item10|Item11|Item13|Item14|Item15|Item16|CreateEmpid|CreateTime|ModifyEmpid|ModifyTime",
                             BD_textbox.Text + "|正常|" + label352.Text + "|" +
                             System.DateTime.Now.ToString("yyyyMMddHHmmss") + "|"
-                            + PH_textbox.Text + "|" + LayerNumber_textbox.Text + "|" + ZT_textbox.Text + "|" + LH_textbox.Text + "|" +
+                            + PH_textbox.Text + "|" + LayerNumber_textbox.Text + "|" + ZT_textbox.Text + "|" +
+                            LH_textbox.Text + "|" +
                             WorkOrder_textbox.Text + "|"
-                            + label367.Text + "|" + LayerCount_textbox.Text + "|" + TCX_textbox.Text + "|" + Main_Parts_textbox.Text + "|" +
+                            + label367.Text + "|" + LayerCount_textbox.Text + "|" + TCX_textbox.Text + "|" +
+                            Main_Parts_textbox.Text + "|" +
                             label354.Text + "|"
-                            + Model2_textBox1.Text + "|" + LastModel2_textBox.Text + "|" + KeepNums_textbox.Text + "|" + AbandonNums_textbox.Text + "|" +
+                            + Model2_textBox1.Text + "|" + LastModel2_textBox.Text + "|" + KeepNums_textbox.Text + "|" +
+                            AbandonNums_textbox.Text + "|" +
                             KnifeLength_textbox.Text + "|"
                             + BOM_textbox.Text + "|"
-                            + Enum_textbox.Text + "|" + Check_textbox.Text + "|" + label22.Text + " | " + GoodBadProduct_textbox.Text + "|" +
+                            + Enum_textbox.Text + "|" + Check_textbox.Text + "|" + label22.Text + " | " +
+                            GoodBadProduct_textbox.Text + "|" +
                             Person_ChongNumber_textbox.Text + "|"
-                            + param1_2.Text + "|" + HandHeight_textbox.Text + "|" + Audit_textBox.Text + "|" + ChongNumber_textbox.Text + "|"
+                            + param1_2.Text + "|" + HandHeight_textbox.Text + "|" + Audit_textBox.Text + "|" +
+                            ChongNumber_textbox.Text + "|"
                             + Operater_textbox.Text + "|" + System.DateTime.Now.ToString("yyyyMMddHHmmss") + "|" +
                             Operater_textbox.Text + "|" + System.DateTime.Now.ToString("yyyyMMddHHmmss"),
                             System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
@@ -3809,7 +3816,7 @@ namespace WindowsFormsApplication1
 
                         PcConnectPlc.Write_Data_FxUsb("M2904", 1); // 关PLC
 
-                      
+
 
                         PH_textbox.Enabled = true; //开始后对应输入控件不可输入
                         LayerNumber_textbox.Enabled = true;
@@ -3854,19 +3861,26 @@ namespace WindowsFormsApplication1
                                 LH_textbox.Text + "料号|" + WorkOrder_textbox.Text + "共令|" + "\r\n"
                                 + label367.Text + "SFC|" + LayerCount_textbox.Text + "称别|" + TCX_textbox.Text + "涂程序|" +
                                 Main_Parts_textbox.Text + "主配件|" + label354.Text + "几次过站|" + "\r\n"
-                                + Model2_textBox1.Text + "模具SG|" + LastModel2_textBox.Text + "模具编号|" + KeepNums_textbox.Text + "保养|" +
-                                AbandonNums_textbox.Text + "报废|" + KnifeLength_textbox.Text + "刀量|" + BOM_textbox.Text + "BOM|" + "\r\n"
+                                + Model2_textBox1.Text + "模具SG|" + LastModel2_textBox.Text + "模具编号|" +
+                                KeepNums_textbox.Text + "保养|" +
+                                AbandonNums_textbox.Text + "报废|" + KnifeLength_textbox.Text + "刀量|" + BOM_textbox.Text +
+                                "BOM|" + "\r\n"
                                 + Enum_textbox.Text + "类型|" + Check_textbox.Text + "检验结果|" + label22.Text + "实际PNL | " +
-                                GoodBadProduct_textbox.Text + "规格判断|" + Person_ChongNumber_textbox.Text + "自主检查|" + "\r\n"
-                                + JudgeModel_height_textbox.Text + "调模高度|" + param1_2.Text + "间距1|" + HandHeight_textbox.Text + "手臂高度|" +
+                                GoodBadProduct_textbox.Text + "规格判断|" + Person_ChongNumber_textbox.Text + "自主检查|" +
+                                "\r\n"
+                                + JudgeModel_height_textbox.Text + "调模高度|" + param1_2.Text + "间距1|" +
+                                HandHeight_textbox.Text + "手臂高度|" +
                                 Audit_textBox.Text + "操作人员|" + Operater_textbox.Text + "审合人员|" + "\r\n"
                                 + JM_textbox.Text + "架模人员|" + label5.Text + "架模时间|" + TJ_textbox.Text + "调机人员|" +
                                 label6.Text + "调机时间|" + ChongNumber_textbox.Text + "冲数|" + "\r\n"
-                                + KD_Zhang_textbox.Text + "提取数PNL|" + EveryRowProdution_textbox.Text + "奥特母-每卷总量|" + EveryRowRealNum_textbox.Text + "实际量|" +
+                                + KD_Zhang_textbox.Text + "提取数PNL|" + EveryRowProdution_textbox.Text + "奥特母-每卷总量|" +
+                                EveryRowRealNum_textbox.Text + "实际量|" +
                                 TurnPagesNum_textbox.Text + "翻页面|" + "\r\n"
-                                + EmptyNums_textbox.Text + "空料数|" + HoleNums_textbox.Text + "载带空数|" + DelayTime_textbox.Text + "感应延时|" +
+                                + EmptyNums_textbox.Text + "空料数|" + HoleNums_textbox.Text + "载带空数|" +
+                                DelayTime_textbox.Text + "感应延时|" +
                                 GetThingSpeed_textBox.Text + "拉料速率|" + "\r\n"
-                                + MoveSpeed_textbox.Text + "自动速度|" + TensionPower_textbox.Text + "张力|" + label24.Text + "生产开始前检验张数|" +
+                                + MoveSpeed_textbox.Text + "自动速度|" + TensionPower_textbox.Text + "张力|" + label24.Text +
+                                "生产开始前检验张数|" +
                                 label341.Text + " - " + label342.Text + " - " + label343.Text + " - " + liaohao + "料号|"
                                 + System.DateTime.Now.ToString("yyyyMMddHHmmss") + "\r\n");
 
@@ -4202,7 +4216,7 @@ namespace WindowsFormsApplication1
 
                 label207.Text = DateTime.Now.ToString(); //时间显示
 
-                Machine_id_textbox.Text = textBox3.Text; //机台编号
+                Machine_id_textbox.Text = machineidentifier; //机台编号
 
                 running_State();
 
@@ -4221,9 +4235,11 @@ namespace WindowsFormsApplication1
 
                 //张数 冲数显示
 
-                ZhangNumber_textbox.Text = (((double) PcConnectPlc.double_Word_To_Int(PLC_DS[28], PLC_DS[29]))).ToString(); //张数
+                ZhangNumber_textbox.Text =
+                    (((double) PcConnectPlc.double_Word_To_Int(PLC_DS[28], PLC_DS[29]))).ToString(); //张数
 
-                Sum_ChongNums_textbox.Text = (((double) PcConnectPlc.double_Word_To_Int(PLC_DS[30], PLC_DS[31]))).ToString(); //冲数
+                Sum_ChongNums_textbox.Text =
+                    (((double) PcConnectPlc.double_Word_To_Int(PLC_DS[30], PLC_DS[31]))).ToString(); //冲数
 
 
                 //不清楚功能的界面刷新
@@ -4293,13 +4309,13 @@ namespace WindowsFormsApplication1
 
                         string parameterName = name1;
                         string parameterValue = value1;
-                        string ret = webFun.sendDataToSer(textBox4.Text, textBox1.Text, textBox100.Text,
+                        string ret = webFun.sendDataToSer(JDLaccount, JDLpwd, machineidentifier,
                             parameterName, parameterValue,
                             System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                         if (ret == "OK")
                         {
                             JDL_textbox.Text = parameterValue + " " +
-                                             System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
+                                               System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
                             JDL_textbox.BackColor = Color.Green;
                             //send data correct
                         }
@@ -4312,13 +4328,13 @@ namespace WindowsFormsApplication1
                         label344.Text = "Waiting";
                         string parameterName = name1;
                         string parameterValue = value1;
-                        string ret = webFun.sendDataToSer(textBox4.Text, textBox1.Text, textBox100.Text,
+                        string ret = webFun.sendDataToSer(JDLaccount, JDLpwd, machineidentifier,
                             parameterName, parameterValue,
                             System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                         if (ret == "OK")
                         {
                             JDL_textbox.Text = parameterValue + " " +
-                                             System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
+                                               System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
                             JDL_textbox.BackColor = Color.Yellow;
                             //send data correct
                         }
@@ -4331,13 +4347,13 @@ namespace WindowsFormsApplication1
                         label344.Text = "Alarm";
                         string parameterName = name1;
                         string parameterValue = value1;
-                        string ret = webFun.sendDataToSer(textBox4.Text, textBox1.Text, textBox100.Text,
+                        string ret = webFun.sendDataToSer(JDLaccount, JDLpwd, machineidentifier,
                             parameterName, parameterValue,
                             System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                         if (ret == "OK")
                         {
                             JDL_textbox.Text = parameterValue + " " +
-                                             System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
+                                               System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
                             JDL_textbox.BackColor = Color.Red;
                             //send data correct
                         }
@@ -4359,7 +4375,7 @@ namespace WindowsFormsApplication1
 
                     string parameterName = name1 + "|" + name2 + "|" + name3;
                     string parameterValue = value1 + "|" + value2 + "|" + value3;
-                    string ret = webFun.sendDataToSer(textBox4.Text, textBox1.Text, textBox100.Text,
+                    string ret = webFun.sendDataToSer(JDLaccount, JDLpwd, machineidentifier,
                         parameterName, parameterValue,
                         System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
 
@@ -4384,7 +4400,7 @@ namespace WindowsFormsApplication1
                     value3 = "1";
                     string parameterName = name1 + "|" + name2 + "|" + name3;
                     string parameterValue = value1 + "|" + value2 + "|" + value3;
-                    string ret = webFun.sendDataToSer(textBox4.Text, textBox1.Text, textBox100.Text,
+                    string ret = webFun.sendDataToSer(JDLaccount, JDLpwd, machineidentifier,
                         parameterName, parameterValue,
                         System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                     if (ret == "OK")
@@ -4402,6 +4418,11 @@ namespace WindowsFormsApplication1
                 label11.Text = (tongxing).ToString();
             }
 
+
+        }
+
+        private void button78_Click(object sender, EventArgs e)
+        {
 
         }
 

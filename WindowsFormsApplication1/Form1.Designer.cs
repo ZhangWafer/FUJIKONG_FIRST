@@ -77,24 +77,24 @@
             this.skinTabPage19 = new CCWin.SkinControl.SkinTabPage();
             this.skinGroupBox30 = new CCWin.SkinControl.SkinGroupBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox100 = new System.Windows.Forms.TextBox();
+            this.MachineIdentity_1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox99 = new System.Windows.Forms.TextBox();
+            this.BarcodeAccount = new System.Windows.Forms.TextBox();
+            this.BarcodePwd = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox97 = new System.Windows.Forms.TextBox();
+            this.ServerAccount = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox98 = new System.Windows.Forms.TextBox();
+            this.ServerPwd = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label272 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.MachineIdentity_2 = new System.Windows.Forms.TextBox();
+            this.JDL_Account = new System.Windows.Forms.TextBox();
             this.label270 = new System.Windows.Forms.Label();
             this.label271 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.JDL_Pwd = new System.Windows.Forms.TextBox();
             this.skinTabPage10 = new CCWin.SkinControl.SkinTabPage();
             this.label291 = new System.Windows.Forms.Label();
             this.label290 = new System.Windows.Forms.Label();
@@ -687,6 +687,7 @@
             this.button78.TabIndex = 57;
             this.button78.Text = "确定";
             this.button78.UseVisualStyleBackColor = true;
+            this.button78.Click += new System.EventHandler(this.button78_Click);
             // 
             // groupBox3
             // 
@@ -891,24 +892,24 @@
             this.skinGroupBox30.BackColor = System.Drawing.Color.White;
             this.skinGroupBox30.BorderColor = System.Drawing.Color.Black;
             this.skinGroupBox30.Controls.Add(this.label33);
-            this.skinGroupBox30.Controls.Add(this.textBox100);
+            this.skinGroupBox30.Controls.Add(this.MachineIdentity_1);
             this.skinGroupBox30.Controls.Add(this.label9);
             this.skinGroupBox30.Controls.Add(this.label20);
             this.skinGroupBox30.Controls.Add(this.label21);
-            this.skinGroupBox30.Controls.Add(this.textBox28);
-            this.skinGroupBox30.Controls.Add(this.textBox99);
+            this.skinGroupBox30.Controls.Add(this.BarcodeAccount);
+            this.skinGroupBox30.Controls.Add(this.BarcodePwd);
             this.skinGroupBox30.Controls.Add(this.label16);
             this.skinGroupBox30.Controls.Add(this.label17);
-            this.skinGroupBox30.Controls.Add(this.textBox97);
+            this.skinGroupBox30.Controls.Add(this.ServerAccount);
             this.skinGroupBox30.Controls.Add(this.label18);
-            this.skinGroupBox30.Controls.Add(this.textBox98);
+            this.skinGroupBox30.Controls.Add(this.ServerPwd);
             this.skinGroupBox30.Controls.Add(this.label15);
             this.skinGroupBox30.Controls.Add(this.label272);
-            this.skinGroupBox30.Controls.Add(this.textBox3);
-            this.skinGroupBox30.Controls.Add(this.textBox4);
+            this.skinGroupBox30.Controls.Add(this.MachineIdentity_2);
+            this.skinGroupBox30.Controls.Add(this.JDL_Account);
             this.skinGroupBox30.Controls.Add(this.label270);
             this.skinGroupBox30.Controls.Add(this.label271);
-            this.skinGroupBox30.Controls.Add(this.textBox1);
+            this.skinGroupBox30.Controls.Add(this.JDL_Pwd);
             this.skinGroupBox30.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.skinGroupBox30.ForeColor = System.Drawing.Color.Black;
             this.skinGroupBox30.Location = new System.Drawing.Point(10, 17);
@@ -932,14 +933,14 @@
             this.label33.TabIndex = 167;
             this.label33.Text = "编码：";
             // 
-            // textBox100
+            // MachineIdentity_1
             // 
-            this.textBox100.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox100.Location = new System.Drawing.Point(455, 40);
-            this.textBox100.Name = "textBox100";
-            this.textBox100.Size = new System.Drawing.Size(252, 26);
-            this.textBox100.TabIndex = 166;
-            this.textBox100.Text = "CX01#";
+            this.MachineIdentity_1.Font = new System.Drawing.Font("宋体", 12F);
+            this.MachineIdentity_1.Location = new System.Drawing.Point(455, 40);
+            this.MachineIdentity_1.Name = "MachineIdentity_1";
+            this.MachineIdentity_1.Size = new System.Drawing.Size(252, 26);
+            this.MachineIdentity_1.TabIndex = 166;
+            this.MachineIdentity_1.Text = "CX01#";
             // 
             // label9
             // 
@@ -971,25 +972,25 @@
             this.label21.TabIndex = 164;
             this.label21.Text = "密码：";
             // 
-            // textBox28
+            // BarcodeAccount
             // 
-            this.textBox28.Enabled = false;
-            this.textBox28.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox28.Location = new System.Drawing.Point(63, 139);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(80, 26);
-            this.textBox28.TabIndex = 161;
-            this.textBox28.Text = "test";
+            this.BarcodeAccount.Enabled = false;
+            this.BarcodeAccount.Font = new System.Drawing.Font("宋体", 12F);
+            this.BarcodeAccount.Location = new System.Drawing.Point(63, 139);
+            this.BarcodeAccount.Name = "BarcodeAccount";
+            this.BarcodeAccount.Size = new System.Drawing.Size(80, 26);
+            this.BarcodeAccount.TabIndex = 161;
+            this.BarcodeAccount.Text = "test";
             // 
-            // textBox99
+            // BarcodePwd
             // 
-            this.textBox99.Enabled = false;
-            this.textBox99.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox99.Location = new System.Drawing.Point(265, 139);
-            this.textBox99.Name = "textBox99";
-            this.textBox99.Size = new System.Drawing.Size(80, 26);
-            this.textBox99.TabIndex = 162;
-            this.textBox99.Text = "test";
+            this.BarcodePwd.Enabled = false;
+            this.BarcodePwd.Font = new System.Drawing.Font("宋体", 12F);
+            this.BarcodePwd.Location = new System.Drawing.Point(265, 139);
+            this.BarcodePwd.Name = "BarcodePwd";
+            this.BarcodePwd.Size = new System.Drawing.Size(80, 26);
+            this.BarcodePwd.TabIndex = 162;
+            this.BarcodePwd.Text = "test";
             // 
             // label16
             // 
@@ -1011,15 +1012,15 @@
             this.label17.TabIndex = 156;
             this.label17.Text = "账号：";
             // 
-            // textBox97
+            // ServerAccount
             // 
-            this.textBox97.Enabled = false;
-            this.textBox97.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox97.Location = new System.Drawing.Point(63, 86);
-            this.textBox97.Name = "textBox97";
-            this.textBox97.Size = new System.Drawing.Size(80, 26);
-            this.textBox97.TabIndex = 157;
-            this.textBox97.Text = "test1";
+            this.ServerAccount.Enabled = false;
+            this.ServerAccount.Font = new System.Drawing.Font("宋体", 12F);
+            this.ServerAccount.Location = new System.Drawing.Point(63, 86);
+            this.ServerAccount.Name = "ServerAccount";
+            this.ServerAccount.Size = new System.Drawing.Size(80, 26);
+            this.ServerAccount.TabIndex = 157;
+            this.ServerAccount.Text = "test1";
             // 
             // label18
             // 
@@ -1031,15 +1032,15 @@
             this.label18.TabIndex = 158;
             this.label18.Text = "密码：";
             // 
-            // textBox98
+            // ServerPwd
             // 
-            this.textBox98.Enabled = false;
-            this.textBox98.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox98.Location = new System.Drawing.Point(265, 86);
-            this.textBox98.Name = "textBox98";
-            this.textBox98.Size = new System.Drawing.Size(80, 26);
-            this.textBox98.TabIndex = 159;
-            this.textBox98.Text = "test1";
+            this.ServerPwd.Enabled = false;
+            this.ServerPwd.Font = new System.Drawing.Font("宋体", 12F);
+            this.ServerPwd.Location = new System.Drawing.Point(265, 86);
+            this.ServerPwd.Name = "ServerPwd";
+            this.ServerPwd.Size = new System.Drawing.Size(80, 26);
+            this.ServerPwd.TabIndex = 159;
+            this.ServerPwd.Text = "test1";
             // 
             // label15
             // 
@@ -1061,24 +1062,24 @@
             this.label272.TabIndex = 149;
             this.label272.Text = "账号：";
             // 
-            // textBox3
+            // MachineIdentity_2
             // 
-            this.textBox3.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox3.Location = new System.Drawing.Point(455, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(252, 26);
-            this.textBox3.TabIndex = 154;
-            this.textBox3.Text = "CX01#";
+            this.MachineIdentity_2.Font = new System.Drawing.Font("宋体", 12F);
+            this.MachineIdentity_2.Location = new System.Drawing.Point(455, 89);
+            this.MachineIdentity_2.Name = "MachineIdentity_2";
+            this.MachineIdentity_2.Size = new System.Drawing.Size(252, 26);
+            this.MachineIdentity_2.TabIndex = 154;
+            this.MachineIdentity_2.Text = "CX01#";
             // 
-            // textBox4
+            // JDL_Account
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox4.Location = new System.Drawing.Point(63, 37);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(80, 26);
-            this.textBox4.TabIndex = 150;
-            this.textBox4.Text = "F0716614";
+            this.JDL_Account.Enabled = false;
+            this.JDL_Account.Font = new System.Drawing.Font("宋体", 12F);
+            this.JDL_Account.Location = new System.Drawing.Point(63, 37);
+            this.JDL_Account.Name = "JDL_Account";
+            this.JDL_Account.Size = new System.Drawing.Size(80, 26);
+            this.JDL_Account.TabIndex = 150;
+            this.JDL_Account.Text = "F0716614";
             // 
             // label270
             // 
@@ -1100,15 +1101,15 @@
             this.label271.TabIndex = 151;
             this.label271.Text = "密码：";
             // 
-            // textBox1
+            // JDL_Pwd
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox1.Location = new System.Drawing.Point(265, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(80, 26);
-            this.textBox1.TabIndex = 152;
-            this.textBox1.Text = "6614";
+            this.JDL_Pwd.Enabled = false;
+            this.JDL_Pwd.Font = new System.Drawing.Font("宋体", 12F);
+            this.JDL_Pwd.Location = new System.Drawing.Point(265, 37);
+            this.JDL_Pwd.Name = "JDL_Pwd";
+            this.JDL_Pwd.Size = new System.Drawing.Size(80, 26);
+            this.JDL_Pwd.TabIndex = 152;
+            this.JDL_Pwd.Text = "6614";
             // 
             // skinTabPage10
             // 
@@ -4398,16 +4399,16 @@
         private CCWin.SkinControl.SkinGroupBox skinGroupBox30;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox97;
+        private System.Windows.Forms.TextBox ServerAccount;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox98;
+        private System.Windows.Forms.TextBox ServerPwd;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label272;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox MachineIdentity_2;
+        private System.Windows.Forms.TextBox JDL_Account;
         private System.Windows.Forms.Label label270;
         private System.Windows.Forms.Label label271;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox JDL_Pwd;
         private CCWin.SkinControl.SkinTabPage skinTabPage10;
         private System.Windows.Forms.Label label291;
         private System.Windows.Forms.Label label290;
@@ -4656,8 +4657,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox99;
+        private System.Windows.Forms.TextBox BarcodeAccount;
+        private System.Windows.Forms.TextBox BarcodePwd;
         private System.Windows.Forms.Button checkOk_btn;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
@@ -4673,7 +4674,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox100;
+        private System.Windows.Forms.TextBox MachineIdentity_1;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label36;
