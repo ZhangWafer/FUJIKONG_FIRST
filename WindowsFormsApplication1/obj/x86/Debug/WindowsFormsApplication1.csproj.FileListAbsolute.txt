@@ -2656,7 +2656,6 @@ E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\bin\Debug\WindowsFormsApplicat
 E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\bin\Debug\log4net.dll
 E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.dll
 E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\bin\Debug\log4net.xml
-E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
 E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
 E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form4.resources
 E:\GitHub\FUJIKONG_FIRST\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources

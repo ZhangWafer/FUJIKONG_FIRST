@@ -11,27 +11,16 @@
 
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading; //引用多线程
-
 using System.IO; //创建文件流
-using System.Security.Cryptography;
-using System.Runtime.InteropServices; //打开软键盘 
 using System.IO.Ports;
-using CCWin;
 using System.Text.RegularExpressions;
-using System.Runtime.CompilerServices;
-using System.Diagnostics; //检测代码运行时间
-using System.Management; //获取CPU序列号  ，另还要将其 引用后，才能才这里using
-using System.Drawing.Drawing2D;
-using System.Runtime.Remoting.Channels;
 using MathCollect;
-using System.Web.Services;
 
 namespace WindowsFormsApplication1
 {
@@ -57,26 +46,11 @@ namespace WindowsFormsApplication1
         #region  全局变量
 
         System.Diagnostics.Process p = new System.Diagnostics.Process(); //开启另外一个软件用的东西
-        //Boolean boreadPictureModel = false;  //读取上一次打开的模板   读取成功返回true
-        string portName; //串口号
+
+       
         string port; //串口号2
-        //string liftarm;//左臂1
-        //string ringhtarm;//右臂2
-        //string punching;//冲数3
-        //string separate1;//隔纸1-4
-        //string separate2;//隔纸2-5
-        //string gap1;//间距1-6
-        //string gap2;//间距2-6
-        //string gap3;//间距3-6
-        //string gap4;//间距4-6
-        //string gap5;//间距间距功能选择
-        //string gap6;//功能开关1
-        //string gap7;//功能开关2
-        //string gap8;//料盘脱针---
-        //string gap9;//推高---
-        //string gap10;//扫码位置---
+
         string forbidden;
-        string Forbidden;
         //string path1="";
         int houjia = 0;
         string a3;
@@ -122,8 +96,7 @@ namespace WindowsFormsApplication1
         int a = 0;
         int by = 0;
         bool by1 = false;
-        DateTime time1 = DateTime.Now.AddMinutes(2);
-        DateTime time2 = DateTime.Now.AddMinutes(1);
+
         // bool time3 = false;
 
         int saoma1;
@@ -132,7 +105,7 @@ namespace WindowsFormsApplication1
 
         int mold3;
         string sm3 = "";
-        string sm4 = "";
+       
 
         int sm = 0;
         int sm1 = 0;
@@ -172,7 +145,7 @@ namespace WindowsFormsApplication1
         WebApplication1.WebReference.Service1 webFun = new WebApplication1.WebReference.Service1(); //连接客户服务器
 
 
-        string filePathNow = "", fileModelPath = ""; //当前型号的路径
+        string filePathNow = ""; //当前型号的路径
 
 
         string[] fileModelStr = new string[20]; //储存分析得到的 型号名称
@@ -180,12 +153,12 @@ namespace WindowsFormsApplication1
 
         Boolean closeSoftware = false; //关机赋值true
 
-        string[] TCP_IP = new string[2]; //TCP IP地址
+
         //--------------------------------------------------------
 
         int[] PLC_MS = new int[200]; //IO状态 读取 原始数据
         int[] PLC_DS = new int[200]; //寄存器
-        ushort[] PLC_DS1 = new ushort[20]; //读取数据格式信捷PLC
+
         //ushort qq;
         ushort qq2;
         // -------------------------------------------------
@@ -386,7 +359,7 @@ namespace WindowsFormsApplication1
             if (content.Length >= 2 && label340.Text != content)
             {
                 sm3 = content;
-                sm4 = content;
+            
             }
 
 
@@ -665,8 +638,6 @@ namespace WindowsFormsApplication1
         }
 
         #endregion
-
-
 
         #region 误删新增功能---
 
@@ -947,8 +918,8 @@ namespace WindowsFormsApplication1
 
             //msgS数组读取到的数据
 
-            fileModelPath = msgS[0]; //上一次型号路径
-            portName = msgS[1]; //串口号
+            
+           
             port = msgS[2]; //扫码串口
             supe = msgS[3]; //超级密码
             Password = msgS[4]; // 用户密码
@@ -1048,8 +1019,6 @@ namespace WindowsFormsApplication1
         }
 
         #endregion
-
-
 
         #region 读取型号数据,传给窗体
 
@@ -1326,9 +1295,6 @@ namespace WindowsFormsApplication1
 
         #endregion
 
-
-
-
         #region 控件多，不刷新界面，防止卡顿
 
         //控件多，以下不刷新界面，防止卡顿------------------------------------
@@ -1394,7 +1360,7 @@ namespace WindowsFormsApplication1
 
 
                 skinGroupBox10.Text = "厂家-已登录";
-                Forbidden = forbidden; //记录登录状态
+              
                 //     //PcConnectPlc.Write_Data_FxCom("M127", 1);  //密码登录
 
                 label297.Enabled = true; //作业员
@@ -1427,7 +1393,7 @@ namespace WindowsFormsApplication1
                 skinTabControl2.Enabled = true; //
                 skinGroupBox23.Enabled = true;
                 skinGroupBox10.Text = "操作员-已登录";
-                Forbidden = forbidden; //记录登录状态
+               
                 //       //PcConnectPlc.Write_Data_FxCom("M127", 1);  //密码登录
 
                 label297.Enabled = false; //作业员
@@ -1449,7 +1415,7 @@ namespace WindowsFormsApplication1
                 skinTabControl2.Enabled = true; //
                 skinGroupBox23.Enabled = true;
                 skinGroupBox10.Text = "工程师-已登录";
-                Forbidden = forbidden; //记录登录状态
+             
                 //       //PcConnectPlc.Write_Data_FxCom("M127", 1);  //密码登录
 
                 label297.Enabled = false; //作业员
@@ -1524,10 +1490,6 @@ namespace WindowsFormsApplication1
 
 
         #endregion
-
-
-
-
 
         #region 报警提示
 
@@ -1990,8 +1952,6 @@ namespace WindowsFormsApplication1
         }
 
         #endregion
-
-
 
         #region 窗体无边框时  可以移动窗体
 
@@ -4186,8 +4146,6 @@ namespace WindowsFormsApplication1
                 MessageBox.Show("BOM模具栏位空或者操作人员没有权限！");
             }
         }
-
-
 
         //  1s  1次的timer2
         private void timer2_Tick(object sender, EventArgs e)
