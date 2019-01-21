@@ -836,7 +836,7 @@ namespace WindowsFormsApplication1
 
                         ////// numericUpDown94.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[3]) / 48f);//写入
                         Right_ZMposition_textbox.Text = (PLC_DS[42]/48f).ToString();
-                        ; //写入
+                        //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2922", Convert.ToInt32(sArray21[3]));//装
 
                         //////  numericUpDown93.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[4]) / 48f);//写入
