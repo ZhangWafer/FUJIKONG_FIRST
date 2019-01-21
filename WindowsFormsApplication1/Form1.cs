@@ -113,7 +113,7 @@ namespace WindowsFormsApplication1
 
         string Batch; //批号
         string Lay; //层别
-        string Mold; //模具编号
+        string MoldNum; //模具编号
         string Auditor; //审核人
 
         string Job; //作业
@@ -648,7 +648,7 @@ namespace WindowsFormsApplication1
                             path = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\Mixture.txt";
                             break;
                         case 2:
-                            path = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\Mold match.txt";
+                            path = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\MoldNum match.txt";
                             break;
                         case 3:
                             path = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") + "\\send.txt";
@@ -2468,7 +2468,7 @@ namespace WindowsFormsApplication1
 
                                 List<string> msgL = new List<string>(); //存数据
                                 string filePath = @"D:\Data backup\" + System.DateTime.Now.ToString("yyyyMMdd") +
-                                                  "\\Mold match.txt"; //打开根目录下的Auditor.TXT 路径
+                                                  "\\MoldNum match.txt"; //打开根目录下的Auditor.TXT 路径
                                 FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
                                 string[] Mold1 = new string[100];
 
@@ -2664,7 +2664,7 @@ namespace WindowsFormsApplication1
                                                     List<string> msgL = new List<string>(); //存数据
                                                     string filePath = @"D:\Data backup\" +
                                                                       System.DateTime.Now.ToString("yyyyMMdd") +
-                                                                      "\\Mold match.txt"; //打开根目录下的Auditor.TXT 路径
+                                                                      "\\MoldNum match.txt"; //打开根目录下的Auditor.TXT 路径
                                                     FileOperate.OpenFileList(filePath, out msgL); //存储到数值中
                                                     string[] Mold1 = new string[100];
 
@@ -2736,9 +2736,9 @@ namespace WindowsFormsApplication1
                                 if (sArray[1].Length >= 7)
                                 {
                                     //  textBox24.Text ="SG"+sArray[1];
-                                    if (Mold != sArray[1])
+                                    if (MoldNum != sArray[1])
                                     {
-                                        Mold = sArray[1];
+                                        MoldNum = sArray[1];
                                         JM_textbox.Text = "";
                                         TJ_textbox.Text = "";
                                         label5.Text = "架模时间";
@@ -2748,10 +2748,10 @@ namespace WindowsFormsApplication1
                                     try
                                     {
                                         DataSet E = webFun.getDataFromSer(textBox97.Text, textBox98.Text, "#01", "0001",
-                                            "0010", Mold, System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
+                                            "0010", MoldNum, System.DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"));
                                         if (E.Tables[0].Rows.Count >= 0)
                                         {
-                                            Model2_textBox1.Text = Mold;
+                                            Model2_textBox1.Text = MoldNum;
                                             string A = E.Tables[0].Rows[0][0].ToString(); //实际模具名称
                                             LastModel2_textBox.Text = A;
                                             try
