@@ -509,7 +509,6 @@ namespace WindowsFormsApplication1
             {
                 if (MessageBox.Show("是否恢复到上次未结单前?", "提示", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-
                     string[] lh = Regex.Split(msgS[1], ",", RegexOptions.IgnoreCase); //分割读取数组数值
                     BD_textbox.Text = lh[0]; //
                     label352.Text = lh[1]; //
@@ -607,10 +606,7 @@ namespace WindowsFormsApplication1
                     catch (Exception ex)
                     {
                         LogHelper.WriteLog(ex.ToString());
-                      
                     }
-                 
-
                 }
             }
         }
@@ -618,7 +614,6 @@ namespace WindowsFormsApplication1
         private void loadingForm4()
         {
             Application.Run(new Form4());
-
         }
 
         #endregion
@@ -655,7 +650,6 @@ namespace WindowsFormsApplication1
 
                     try
                     {
-
                         // Delete the file if it exists.
                         if (File.Exists(path))
                         {
@@ -692,7 +686,6 @@ namespace WindowsFormsApplication1
             {
                 LogHelper.WriteLog(ex.ToString());
             }
-
         }
 
         #endregion
@@ -709,7 +702,6 @@ namespace WindowsFormsApplication1
                 showModelToForm(); ///显示到界面
                 getFileMsg(path);
                 label67.BackColor = Color.Transparent;
-
             }
             else
             {
@@ -820,7 +812,7 @@ namespace WindowsFormsApplication1
 
                         ////// numericUpDown94.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[3]) / 48f);//写入
                         textBox57.Text = (PLC_DS[42]/48f).ToString();
-                        ; //写入
+                        //写入
                         ////PcConnectPlc.Write_Data_FxUsb("D2922", Convert.ToInt32(sArray21[3]));//装
 
                         //////  numericUpDown93.Value = Convert.ToDecimal(Convert.ToInt32(sArray21[4]) / 48f);//写入
@@ -870,8 +862,6 @@ namespace WindowsFormsApplication1
                             label27.Text = "1";
                             label28.Text = "不同间距";
                         }
-
-
                     }
                     else
                     {
@@ -940,48 +930,35 @@ namespace WindowsFormsApplication1
                 label34.Text = s4[5]; //
                 label35.Text = s4[6];
                 liaohao = Convert.ToInt32(label35.Text);
-            }
-            catch
-            {
-            }
-            try
-            {
+
+
                 string strs5 = jmtj;
                 string[] s5 = Regex.Split(strs5, ",", RegexOptions.IgnoreCase); //加模具调机
                 JM_textbox.Text = s5[0]; //
                 label5.Text = s5[1]; //
                 TJ_textbox.Text = s5[2]; //
                 label6.Text = s5[3]; //
-            }
-            catch
-            {
-            }
-            try
-            {
+
+
                 string strs6 = smsj;
                 string[] s6 = Regex.Split(strs6, ",", RegexOptions.IgnoreCase); //加模具调机
                 textBox28.Text = s6[0]; //
                 textBox99.Text = s6[1]; //
             }
-            catch
+            catch (Exception ex)
             {
+                LogHelper.WriteLog(ex.ToString());
             }
-            if (Directory.Exists(@"D:\Data")) //判断是否有这个文件夹--D:\数据备份\
-            {
 
-            }
-            else
+            if (!Directory.Exists(@"D:\Data")) //判断是否有这个文件夹--D:\数据备份\
             {
                 Directory.CreateDirectory(@"D:\Data");
             }
 
             if (Directory.Exists(@"D:\Data backup")) //判断是否有这个文件夹--E:\数据备份\
             {
-                if (Directory.Exists(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd")))
+                if (!Directory.Exists(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd")))
                     //判断是否有这个文件夹--E:\数据备份\
-                {
-                }
-                else
                 {
                     Directory.CreateDirectory(@"D:\Data backup\\" + System.DateTime.Now.ToString("yyyyMMdd")); //没有就创建
 
